@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: 'http://blog.tedshd.io/'
 languageCode: en-us
 defaultContentLanguage: en
 title: tedshd's DevNote
