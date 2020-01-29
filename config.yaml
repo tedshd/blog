@@ -1,75 +1,68 @@
-baseURL: https://example.com
+baseURL: /
 languageCode: en-us
 defaultContentLanguage: en
-title: Cupper
-theme: cupper-hugo-theme
-googleAnalytics: UA-123456789-1
-disqusShortname: yourdiscussshortname
+title: tedshd's DevNote
+theme: hugo-theme-okayish-blog
+copyright: © 2020 Tedshd
+googleAnalytics: UA-49247550-2
+disqusShortname: tedshd
 enableGitInfo: true
-
-taxonomies:
-  tag: tags
-
-permalinks:
-  post: /:filename/
-
-imaging:
-  quality: 99
+hasCJKLanguage: true
+paginate: 2
+staticDir: static
 
 params:
-  description: An accessibility-friendly Hugo theme, ported from the [original Cupper](https://github.com/ThePacielloGroup/cupper) project.
-  homeMetaContent: An accessibility-friendly Hugo theme, ported from the original Cupper project.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
-  # For more date formats see https://gohugo.io/functions/format/
-  dateFormat: Jan 2, 2006
-  codePenUser: someUser
-  katex: true
+# These will be used for OpenGraph, Twitter Card and Schema.org
+  description: Develop & Design Note by Ted
+  images: ['https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png']
+  avatar: https://graph.facebook.com/100004089951579/picture?type=large
+  themecolor: #607d8b
+
+  # This is the number of terms within a taxonomy per page
+  termsPaginate: 50
+  # Enable/disable share links (Facebook, Twitter and LinkedIn)
+  shareLinksEnabled: false
+  # Enable/disable Google Analytics in local server
+  gaLocalEnabled: false
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+
+# Add `author` under `[taxonomies]` as below
+# so that you can provide metadata for each author
+#
+# See: https://gohugo.io/content-management/taxonomies/#add-custom-metadata-to-a-taxonomy-term
+  author: Tedshd
+
+# Add menu items to the navigation bar as below.
+# N.B. Use identifiers as the keys for translations.
 
 menu:
-  nav:
-    - name: Home
-      url: /
-      weight: 1
-    - name: Blog
-      url: /post/
-      weight: 2
-    - name: Tags
-      url: /tags/
-      weight: 3
-    - name: About
-      url: /about/
-      weight: 4
-    - name: RSS
-      url: /index.xml
-      weight: 5
+  main:
+  - identifier: "categories"
+    name: "Categories"
+    url: "/categories"
+  - identifier: "tags"
+    name: "tags"
+    url: "/tags"
+  sub:
+  - identifier: "Github"
+    name: "Github"
+    url: "https://github.com/tedshd"
 
-markup:
-  defaultMarkdownHandler: goldmark
-  goldmark:
-    extensions:
-      definitionList: true
-      footnote: true
-      linkify: true
-      strikethrough: true
-      table: true
-      taskList: true
-      typographer: true
-    parser:
-      attribute: true
-      autoHeadingID: true
-    renderer:
-      hardWraps: false
-      unsafe: true
-      xHTML: false
-  highlight:
-    codeFences: false
-    hl_Lines: ""
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: true
-    style: monokai
-    tabWidth: 4
-  tableOfContents:
-    endLevel: 6
-    startLevel: 2
+  - identifier: "Linkedin"
+    name: "Linkedin"
+    url: "https://tw.linkedin.com/in/tedshd"
+
+  - identifier: "Blog"
+    name: "Blog"
+    url: "http://tysh310246.blogspot.tw/"
+
+  - identifier: "Facebook"
+    name: "Facebook"
+    url: "https://www.facebook.com/chander.shiu"
+
+  - identifier: "About"
+    name: "About"
+    url: "http://tedshd.github.io/resume/"
