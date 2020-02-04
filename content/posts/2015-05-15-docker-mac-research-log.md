@@ -54,6 +54,12 @@ docker run -t -i ubuntu /bin/bash
 root@b0cdeb409841:/#
 ```
 
+#### docker run
+
+```shell
+docker run -idt --name <container name> -v <mount absolute path or ~ path>:<docker path> <IMAGE>:<TAG>
+```
+
 #### end container
 
 ```shell
