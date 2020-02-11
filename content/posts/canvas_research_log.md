@@ -54,7 +54,7 @@ canvas.height = size * scale;
 ## Upload use file API
 
 ```HTML
-<input type="file" accept="image/*" style="display:none">
+<input type="file" accept="image/*">
 ```
 
 ```javascript
@@ -67,7 +67,7 @@ function handleFiles(files) {
   if (!files.length) {
     // error haandle
   } else {
-    return window.URL.createObjectURL(files[i]);
+    return window.URL.createObjectURL(files[0]);
   }
 }
 
@@ -75,7 +75,18 @@ function handleFiles(files) {
 
 ## Download canvas to PNG
 
+```html
+<a id="download" href="#">Download Canvas</a>
+```
+
 ```javascript
+
+document.querySelector('#download').addEventListener('click', function () {
+  downloadCanvas({
+    link: this,
+    canvasDom: document.querySelector('canvas'),
+  })
+});
 
 function downloadCanvas(arg) {
   var link = arg.link,
@@ -146,25 +157,29 @@ function initCanvas(arg) {
 
 ```javascript
 
-function downloadCanvas(arg) {
-  var link = arg.link,
-    konvaObject = arg.konvaObject,
-    filename = arg.filename || 'canvas.png';
+function downloadURI(uri, name) {
+  var fileName = 'grid_' + new Date() +'.png';
+  var dataURL = stage.toDataURL({ pixelRatio: 1 });
 
-  if (!link || !konvaObject) {
-    console.error('downloadCanvas: link or konvaObject not set');
-    return;
-  }
+  dataURL = dataURL.replace(/^data:image\/[^;]*/, 'data:application/octet-stream');
+  dataURL = dataURL.replace(/^data:application\/octet-stream/, 'data:application/octet-stream;headers=Content-Disposition%3A%20attachment%3B%20filename=' + fileName);
 
-  var url = konvaObject.toDataURL({pixelRatio: window.devicePixelRatio});
-
-  /* Change MIME type to trick the browser to downlaod the file instead of displaying it */
-  url = url.replace(/^data:image\/[^;]*/, 'data:application/octet-stream');
-  /* In addition to <a>'s "download" attribute, you can define HTTP-style headers */
-  url = url.replace(/^data:application\/octet-stream/, 'data:application/octet-stream;headers=Content-Disposition%3A%20attachment%3B%20filename=' + filename);
-
-  link.href = url;
+  var link = document.createElement('a');
+  link.download = fileName;
+  link.href = dataURL;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  delete link;
 }
+
+document.getElementById('save').addEventListener(
+  'click',
+  function() {
+    downloadURI();
+  },
+  false
+);
 
 ```
 
