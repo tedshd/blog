@@ -15,7 +15,7 @@ font-family: Microsoft JhengHei, Arial, Tahoma, Geneva, sans-serif;
 Add use mobile device default font
 
 ```css
-font-family: Microsoft JhengHei, Roboto, Helvetica, Arial, Tahoma, Geneva, sans-serif;
+font-family: Microsoft JhengHei, Heiti, Roboto, Helvetica, Arial, monospace, Tahoma, Geneva, sans-serif !important;
 ```
 
 
