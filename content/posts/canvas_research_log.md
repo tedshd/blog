@@ -1,5 +1,5 @@
 ---
-title: "Canvas_research_log"
+title: "Canvas research log"
 date: 2020-02-04T15:20:23+08:00
 draft: false
 ---
