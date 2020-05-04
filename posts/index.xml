@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Tedshd</copyright>
-    <lastBuildDate>Wed, 04 Mar 2020 17:27:19 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 13:53:19 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.tedshd.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google search result with structured data</title>
+      <link>http://blog.tedshd.io/posts/google_search_result_structure_data_research_log/</link>
+      <pubDate>Mon, 04 May 2020 13:53:19 +0800</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/google_search_result_structure_data_research_log/</guid>
+      <description>前言 現在可以確認的是 Google 並不會以單純的 Google structured data 來呈現在 search result 以往驗證過的是 search result 裡的 title 和描述並不完全會採用 meta 中的 title 和 description 現在在線上的頁面也再次驗證了 Google</description>
+    </item>
     
     <item>
       <title>Mobile web remove touch background</title>
