@@ -1,28 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>sublime on tedshd&#39;s DevNote</title>
-    <link>http://blog.tedshd.io/categories/sublime/</link>
-    <description>Recent content in sublime on tedshd&#39;s DevNote</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Tedshd</copyright>
-    <lastBuildDate>Thu, 01 Sep 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.tedshd.io/categories/sublime/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Sublime Text - How to modify font size in sidebar</title>
-      <link>http://blog.tedshd.io/posts/2016-09-01-sublime-text-how-to-modify-font-size-in-sidebar/</link>
-      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2016-09-01-sublime-text-how-to-modify-font-size-in-sidebar/</guid>
-      <description>Sublime Text - How to modify font size in sidebar In sublime text 3
-If you want modify font size in sidebar
-Follow step
- Preferences -&amp;gt; Browse Packages Open User directory Create a file File named your theme name  How to get it Preferences -&amp;gt; Settings - User -&amp;gt; theme Or default theme Default.sublime-theme   Add content  [{&amp;#34;class&amp;#34;: &amp;#34;sidebar_label&amp;#34;,&amp;#34;font.size&amp;#34;: 18},]other in Mac the path is</description>
-    </item>
-    
-  </channel>
-</rss>

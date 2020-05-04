@@ -1,103 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>mac on tedshd&#39;s DevNote</title>
-    <link>http://blog.tedshd.io/categories/mac/</link>
-    <description>Recent content in mac on tedshd&#39;s DevNote</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Tedshd</copyright>
-    <lastBuildDate>Fri, 16 Nov 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.tedshd.io/categories/mac/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Mac - Get file user(owner) name &amp; user id</title>
-      <link>http://blog.tedshd.io/posts/2018-11-16-mac-get-file-user-name/</link>
-      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2018-11-16-mac-get-file-user-name/</guid>
-      <description>Mac - Get file user name &amp;amp; user id Get file owner name stat -f &amp;#39;%Su&amp;#39; &amp;lt;file or folder name&amp;gt; Get user id show user id // or id &amp;lt;user name&amp;gt; get uid id -u // or id -u &amp;lt;user name&amp;gt; get file owner uid stat -f &amp;lsquo;%Su&amp;rsquo; &amp;lt;file or folder name&amp;gt; | xargs id -u stat -f &#39;%u&#39; &amp;lt;file or folder name&amp;gt; Refer - 将Linu</description>
-    </item>
-    
-    <item>
-      <title>Mac - Use readlink in Mac OS X</title>
-      <link>http://blog.tedshd.io/posts/2018-10-24-mac-use-readlink-in-mac-os-x/</link>
-      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2018-10-24-mac-use-readlink-in-mac-os-x/</guid>
-      <description>Mac - Use readlink in Mac OS X  install coreutils  brew install coreutilstest greadlink  greadlink -f &amp;lt;file name&amp;gt;alias command line  alias readlink=greadlinkrefer - How can I get the behavior of GNU&#39;s readlink -f on a Mac?;</description>
-    </item>
-    
-    <item>
-      <title>Linux / Unix - terminal control</title>
-      <link>http://blog.tedshd.io/posts/2015-09-30-linux-unix-terminal-control/</link>
-      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2015-09-30-linux-unix-terminal-control/</guid>
-      <description>Linux / Unix - terminal control 終端機指令列的一些操作 Ctrl + a: 回到此行最前面 Ctrl + e: 到此行的最後面 Ctrl + u: 清除一行中游標之前的所有文字 Ctrl + k: 清除一行字游標之後的所有文</description>
-    </item>
-    
-    <item>
-      <title>Mac - hide desktop icon</title>
-      <link>http://blog.tedshd.io/posts/2015-07-22-mac-hide-desktop-icon/</link>
-      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2015-07-22-mac-hide-desktop-icon/</guid>
-      <description>Mac - hide desktop icon Hide defaults write com.apple.finder CreateDesktop -bool falseThen
-killall FinderShow defaults write com.apple.finder CreateDesktop -bool trueThen
-killall FinderRefer - Hide All Desktop Icons in Mac OS X</description>
-    </item>
-    
-    <item>
-      <title>Mac - SSHFS</title>
-      <link>http://blog.tedshd.io/posts/2014-08-21-mac-sshfs/</link>
-      <pubDate>Thu, 21 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2014-08-21-mac-sshfs/</guid>
-      <description>Mac - SSHFS SSHFS can help Mac user mount remote support SSH protocol. Intro
-Usage
-It has problem in oh-my-zsh! </description>
-    </item>
-    
-    <item>
-      <title>Vim - colorscheme</title>
-      <link>http://blog.tedshd.io/posts/2014-04-05-vim-colorscheme/</link>
-      <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2014-04-05-vim-colorscheme/</guid>
-      <description>Vim - colorscheme Vim 主題 mkdir ~/.vim/colors/ 找到 &amp;lt;colorscheme&amp;gt;.vim 並丟到 ~/.vim/colors/ 即可 在 .vimrc 設定 colorscheme &amp;lt;colorscheme&amp;gt; 就會變成該主題 Some Colorscheme Vim Colorscheme Gallery vimcolorschemetest vim online Newest - Vim Colors Refer - 挑選 Vim 顏色(Color Scheme)</description>
-    </item>
-    
-    <item>
-      <title>Node.js - install</title>
-      <link>http://blog.tedshd.io/posts/2014-04-04-nodejs-install/</link>
-      <pubDate>Fri, 04 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2014-04-04-nodejs-install/</guid>
-      <description>Node.js - install Mac 利用 homebrew 安裝 brew install node node.js Refer - Install Node.js and npm using Homebrew on OS X Ubuntu sudo apt-get install nodejs-legacy sudo apt-get install npm Refer - Can not install packages using node package manager in Ubuntu Update Now node merge iojs and version update to v4 But now homebrew not updgrade to v4 So i use nvm Refer - Node.js 安</description>
-    </item>
-    
-    <item>
-      <title>Mac - Build Front End Developer Environment</title>
-      <link>http://blog.tedshd.io/posts/2014-01-27-mac-build-front-end-developer-environment/</link>
-      <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2014-01-27-mac-build-front-end-developer-environment/</guid>
-      <description>Mac - Build Front End Developer Environment 趁入手新 Mac 順便重溫一下如何建立給前端攻城獅爽爽用的開發環境 大部分都會涉及 terminal 操作 由於 Mac 是 unix, 基本上 terminal 操作指令都跟 Linux 一樣 常見的指令 Mac</description>
-    </item>
-    
-    <item>
-      <title>Vim config in Mac</title>
-      <link>http://blog.tedshd.io/posts/2013-08-27-vim-config-in-mac/</link>
-      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2013-08-27-vim-config-in-mac/</guid>
-      <description>Some different in Mac PageDown, PageUp, Home, End It is not useful in setting vimrc.
-Solution Terminal-&amp;gt;Preference-&amp;gt;KeyBoard
-Home: \033[1~End: \033[4~PageUp: \033[5~PageDown: \033[6~</description>
-    </item>
-    
-  </channel>
-</rss>

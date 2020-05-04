@@ -1,37 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>apache on tedshd&#39;s DevNote</title>
-    <link>http://blog.tedshd.io/categories/apache/</link>
-    <description>Recent content in apache on tedshd&#39;s DevNote</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Tedshd</copyright>
-    <lastBuildDate>Wed, 05 Aug 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.tedshd.io/categories/apache/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Apache - Apache Command Line on Mac / Ubuntu</title>
-      <link>http://blog.tedshd.io/posts/2015-08-05-apache-apache-command-line-on-mac-ubuntu/</link>
-      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2015-08-05-apache-apache-command-line-on-mac-ubuntu/</guid>
-      <description>Apache - Apache Command Line on Mac / Ubuntu Mac sudo apachectl startsudo apachectl restartsudo apachectl statussudo apachectl stopUbuntu sudo /etc/init.d/apache2 startsudo /etc/init.d/apache2 restartsudo /etc/init.d/apache2 statussudo /etc/init.d/apache2 stopsudo service apache2 startsudo service apache2 restartsudo service apache2 statussudo service apache2 stopRefer - Ubuntu Linux: Start / Restart / Stop Apache Web Server</description>
-    </item>
-    
-    <item>
-      <title>Apache - dir permission cnfig</title>
-      <link>http://blog.tedshd.io/posts/2015-05-07-apache-dir-permission-cnfig/</link>
-      <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2015-05-07-apache-dir-permission-cnfig/</guid>
-      <description>Apache - dir permission cnfig If yooouo want use virtual host
-Yoou can set /etc/apache2/extra/httpd-vhosts.conf this file
-Add
-&amp;lt;Directory /Users/ted/tedadev/local/bomb01&amp;gt;AllowOverride AllOptions Indexes MultiViews FollowSymLinksRequire all granted&amp;lt;/Directory&amp;gt;&amp;lt;VirtualHost *:80&amp;gt;DocumentRoot &amp;#34;/Users/ted/tedadev/local/bomb01&amp;#34;ServerName www.bomb01.comErrorLog &amp;#34;/Volumes/RamDisk/ysm-error.log&amp;#34;CustomLog &amp;#34;/Volumes/RamDisk/ysm-access.log&amp;#34; common&amp;lt;/VirtualHost&amp;gt;Refer - Forbidden 403, You don’t have permission to access /~username/ on this server</description>
-    </item>
-    
-  </channel>
-</rss>

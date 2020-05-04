@@ -1,62 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>gulp on tedshd&#39;s DevNote</title>
-    <link>http://blog.tedshd.io/categories/gulp/</link>
-    <description>Recent content in gulp on tedshd&#39;s DevNote</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Tedshd</copyright>
-    <lastBuildDate>Sat, 15 Aug 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.tedshd.io/categories/gulp/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>JavaScript - Google Closure Compiler V.S. Gulp uglify</title>
-      <link>http://blog.tedshd.io/posts/2015-08-15-javascript-google-closure-compiler-vs-gulp-uglify/</link>
-      <pubDate>Sat, 15 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2015-08-15-javascript-google-closure-compiler-vs-gulp-uglify/</guid>
-      <description>JavaScript - Google Closure Compiler V.S. Gulp uglify Intro I have two choice
-  Google Closure Compiler
-  UglifyJs
-  Google Closure Compiler Google Closure Compiler
-Google Closure Compiler is a tool for minify and uglify js.
-  From Google
-  Java
-  Command Line
-  Slow
-  UglifyJs mishoo/UglifyJS2
-  More option setting
-  Node.js
-  Command Line</description>
-    </item>
-    
-    <item>
-      <title>gulp.js - Concatenate File When Gulp Watch</title>
-      <link>http://blog.tedshd.io/posts/2015-08-09-gulpjs-concatenate-file-when-gulp-watch/</link>
-      <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2015-08-09-gulpjs-concatenate-file-when-gulp-watch/</guid>
-      <description>gulp.js - Concatenate File When Gulp Watch package.json {&amp;#34;name&amp;#34;: &amp;#34;gulp&amp;#34;,&amp;#34;version&amp;#34;: &amp;#34;3.8.7&amp;#34;,&amp;#34;devDependencies&amp;#34;: {&amp;#34;gulp&amp;#34;: &amp;#34;^3.9.0&amp;#34;,&amp;#34;gulp-concat&amp;#34;: &amp;#34;^2.6.0&amp;#34;,&amp;#34;gulp-watch&amp;#34;: &amp;#34;^4.3.4&amp;#34;}}gulpfile.js var gulp = require(&amp;#39;gulp&amp;#39;),watch = require(&amp;#39;gulp-watch&amp;#39;),concat = require(&amp;#39;gulp-concat&amp;#39;);var js;gulp.task(&amp;#39;concat&amp;#39;, function (cb) {var options = {};watch(&amp;#39;dev/*.js&amp;#39;, options, function (e) {// console.log(&amp;#39;e:&amp;#39;+JSON.stringify(e)); // console.log(&amp;#39;\n&amp;#39;); console.log(new Date() + &amp;#39; -- &amp;#39; + e.history[0].replace(e.base, &amp;#39;&amp;#39;));js = e.history[0].replace(e.base, &amp;#39;&amp;#39;);gulp.src([&amp;#39;util/util.js&amp;#39;, &amp;#39;util/mod.js&amp;#39;, &amp;#39;dev/&amp;#39; + js]).</description>
-    </item>
-    
-    <item>
-      <title>gulp.js - Use Log</title>
-      <link>http://blog.tedshd.io/posts/2014-08-07-gulpjs-use-log/</link>
-      <pubDate>Thu, 07 Aug 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2014-08-07-gulpjs-use-log/</guid>
-      <description>gulp.js - Use Log Intro gulp.js
-Getting Started
-Grunt vs Gulp - Beyond the Numbers
-package.json version setting dependencies
-How to pipe to another task in Gulp? gulp.task(&amp;#39;first&amp;#39;, function() {// first task});gulp.task(&amp;#39;second&amp;#39;, [&amp;#39;first&amp;#39;], function() {// this occurs after &amp;#39;first&amp;#39; finishes});Refer - How to pipe to another task in Gulp?
-Use Package Compass First, must install compass
-gulp-compass
-var gulp = require(&amp;#39;gulp&amp;#39;);var compass = require(&amp;#39;gulp-compass&amp;#39;);gulp.</description>
-    </item>
-    
-  </channel>
-</rss>

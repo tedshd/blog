@@ -1,37 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>codeigniter on tedshd&#39;s DevNote</title>
-    <link>http://blog.tedshd.io/categories/codeigniter/</link>
-    <description>Recent content in codeigniter on tedshd&#39;s DevNote</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Tedshd</copyright>
-    <lastBuildDate>Mon, 02 Sep 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://blog.tedshd.io/categories/codeigniter/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Codeigniter - Note</title>
-      <link>http://blog.tedshd.io/posts/2013-09-02-codeigniter-note/</link>
-      <pubDate>Mon, 02 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2013-09-02-codeigniter-note/</guid>
-      <description>Something about CI note user guide
-redirect $this-&amp;gt;load-&amp;gt;helper(&amp;#39;url&amp;#39;); </description>
-    </item>
-    
-    <item>
-      <title>Codeigniter - AJAX(post)</title>
-      <link>http://blog.tedshd.io/posts/2013-08-29-codeigniter-ajaxpost/</link>
-      <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.tedshd.io/posts/2013-08-29-codeigniter-ajaxpost/</guid>
-      <description>CI AJAX(Post) Usage JavaScript(jQuery)
-$.post(&amp;#39;/api/post&amp;#39;,{val: &amp;#39;string&amp;#39;,val2: 1},function(data) {console.log(data);if(data.status === &amp;#39;ok&amp;#39;) {// dosomething } else {// alert fail }},&amp;#39;json&amp;#39;);$.ajax({url: &amp;#39;/login/signup&amp;#39;,type: &amp;#39;POST&amp;#39;,data: {account: $(&amp;#39;input[name=&amp;#34;account&amp;#34;]&amp;#39;).val()},success: function(data) {console.log(data);}});PHP
-&amp;lt;?php// api.phppublic function post(){$val = $this-&amp;gt;input-&amp;gt;post(&amp;#39;val&amp;#39;);$val2 = $this-&amp;gt;input-&amp;gt;post(&amp;#39;val2&amp;#39;);if ($val){// dosomething//response $output = array(&amp;#39;status&amp;#39; =&amp;gt; &amp;#39;ok&amp;#39;,&amp;#39;msg&amp;#39; =&amp;gt; &amp;#39;success&amp;#39;);echo json_encode($output);exit;}$output = array(&amp;#39;status&amp;#39; =&amp;gt; &amp;#39;fail&amp;#39;,&amp;#39;msg&amp;#39; =&amp;gt; &amp;#39;error&amp;#39;);echo json_encode($output);exit;}?</description>
-    </item>
-    
-  </channel>
-</rss>
