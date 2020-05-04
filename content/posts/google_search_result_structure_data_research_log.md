@@ -1,7 +1,7 @@
 ---
 title: "Google search result with structured data"
 date: 2020-05-04T13:53:19+08:00
-draft: true
+draft: false
 ---
 
 ## 前言
