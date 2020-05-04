@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>paypal on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/paypal/</link>
+    <description>Recent content in paypal on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sat, 20 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/paypal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paypal - 如何取得 API 簽章</title>
+      <link>http://blog.tedshd.io/posts/2018-10-20-paypal-how-to-take-the-api-seal/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2018-10-20-paypal-how-to-take-the-api-seal/</guid>
+      <description>登入 Payapl account 接下來如下圖步驟即可 這樣就有 API 用戶名稱 API 密碼 API 電子簽章 這樣即可使用在一些第三方串接 Paypal 的服務了 Refer - How to get PayPal API username, password and signature information?</description>
+    </item>
+    
+    <item>
+      <title>paypal - 利用 paypal 開發一個簡單的 EC</title>
+      <link>http://blog.tedshd.io/posts/2018-05-11-paypal-paypal-ec/</link>
+      <pubDate>Fri, 11 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2018-05-11-paypal-paypal-ec/</guid>
+      <description>paypal - 利用 paypal 開發一個簡單的 EC Intro Paypal 大致分兩種方式來處理支付功能 api paypal button 這邊大致上會以paypal button 的方式來處理, 相對起來較為簡易</description>
+    </item>
+    
+  </channel>
+</rss>

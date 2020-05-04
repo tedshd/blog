@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac sublime-text on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/mac-sublime-text/</link>
+    <description>Recent content in mac sublime-text on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Fri, 04 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/mac-sublime-text/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sublime - Command Line</title>
+      <link>http://blog.tedshd.io/posts/2014-04-04-sublime-command-line/</link>
+      <pubDate>Fri, 04 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-04-04-sublime-command-line/</guid>
+      <description>Sublime - Command Line in Mac OS X make a symlink ln -s &amp;#34;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&amp;#34; /bin/subl // sublimetext 3 ln -s &amp;#34;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&amp;#34; /bin/subl And Use it subl --help Usage: subl [arguments] [files] edit the given files or: subl [arguments] [directories] open the given directories or: subl [arguments] - edit stdin Arguments: --project &amp;lt;project&amp;gt;: Load the given project --command &amp;lt;command&amp;gt;: Run the given command -n or --new-window: Open a</description>
+    </item>
+    
+  </channel>
+</rss>

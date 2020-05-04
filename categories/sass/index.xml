@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sass on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/sass/</link>
+    <description>Recent content in sass on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Thu, 10 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/sass/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS - SASS handle index</title>
+      <link>http://blog.tedshd.io/posts/2014-07-10-css-sass-handle-index/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-07-10-css-sass-handle-index/</guid>
+      <description>CSS - SASS handle index Can use var control z-index $elements: con, slider, masthead; .masthead { /* z-index: 3 */ z-index: index($elements, masthead); } .slider { /* z-index: 2 */ z-index: index($elements, slider); } .con { /* z-index: 1 */ z-index: index($elements, con); } Refer - 使用 sass 有效控管 z-index 圖層順序</description>
+    </item>
+    
+    <item>
+      <title>Sass compile two spaces</title>
+      <link>http://blog.tedshd.io/posts/2013-11-20-sass-compile-two-spaces/</link>
+      <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-11-20-sass-compile-two-spaces/</guid>
+      <description>Sass compile two spaces Use Sass compile to css css lndent is 2 spaces if want 4 spaces Must modify this sass source code
+sass-3.2.10/lib/sass/tree/visitors/to_css.rb# before tab_str = &amp;#39; &amp;#39; * (@tabs + node.tabs)# after tab_str = &amp;#39; &amp;#39; * (@tabs + node.tabs)Refer - Change indentation in Sass</description>
+    </item>
+    
+    <item>
+      <title>Use CSS3 animation in Compass</title>
+      <link>http://blog.tedshd.io/posts/2013-10-12-use-css3-animation-in-compass/</link>
+      <pubDate>Sat, 12 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-10-12-use-css3-animation-in-compass/</guid>
+      <description>Use CSS3 Animation In Compass Compass default dosen&#39;t have mixin in CSS3 animation We can use this method in scss
+/* define */$animation-support: webkit, moz, o, ms, not khtml;/* use */.animation {@includeexperimental(&amp;#39;animation-name&amp;#39;, move, $animation-support);@includeexperimental(&amp;#39;animation-duration&amp;#39;, 5s, $animation-support);@includeexperimental(&amp;#39;animation-iteration-count&amp;#39;, 1, $animation-support);}and add keyframes
+/* define */$animation-support: webkit, moz, o, ms, not khtml;@mixinkeyframes($name) {@-webkit-keyframes #{$name} {@content;}@-moz-keyframes #{$name} {@content;}@-ms-keyframes #{$name} {@content;}@keyframes #{$name} {@content;}}/* use */.</description>
+    </item>
+    
+  </channel>
+</rss>
