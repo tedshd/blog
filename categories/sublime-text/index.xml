@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sublime-text on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/sublime-text/</link>
+    <description>Recent content in sublime-text on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Thu, 27 Feb 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/sublime-text/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sublime - change layout view in 2 columns</title>
+      <link>http://blog.tedshd.io/posts/2014-02-27-sublime-change-layout-view-in-2-columns/</link>
+      <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-02-27-sublime-change-layout-view-in-2-columns/</guid>
+      <description>Sublime - change layout view in 2 columns Video
+Setting Preferences -&amp;gt; Key Bindings - User
+set key to use
+[{&amp;#34;keys&amp;#34;: [&amp;#34;super+ctrl+left&amp;#34;],&amp;#34;command&amp;#34;: &amp;#34;set_layout&amp;#34;,&amp;#34;args&amp;#34;:{&amp;#34;cols&amp;#34;: [0.0, 0.95, 1.0],&amp;#34;rows&amp;#34;: [0.0, 1.0],&amp;#34;cells&amp;#34;: [[0, 0, 1, 1], [1, 0, 2, 1]]}},{&amp;#34;keys&amp;#34;: [&amp;#34;super+ctrl+right&amp;#34;],&amp;#34;command&amp;#34;: &amp;#34;set_layout&amp;#34;,&amp;#34;args&amp;#34;:{&amp;#34;cols&amp;#34;: [0.0, 0.05, 1.0],&amp;#34;rows&amp;#34;: [0.0, 1.0],&amp;#34;cells&amp;#34;: [[0, 0, 1, 1], [1, 0, 2, 1]]}}]Update Add focus If add focus, it need 2 commands so need write a python plugin</description>
+    </item>
+    
+    <item>
+      <title>‎Sublime Text - Plug-In</title>
+      <link>http://blog.tedshd.io/posts/2013-09-02-sublime-text-plug-in/</link>
+      <pubDate>Mon, 02 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-09-02-sublime-text-plug-in/</guid>
+      <description>Plug-In Install by Package Control Fisrt use sublime need install Package Control Ctrl + ~ show command line enter import urllib2,os; pf=&amp;#39;Package Control.sublime-package&amp;#39;; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),&amp;#39;wb&amp;#39;).write(urllib2.urlopen(&amp;#39;http://sublime.wbond.net/&amp;#39;+pf.replace(&amp;#39; &amp;#39;,&amp;#39;%20&amp;#39;)).read()); print &amp;#39;Please restart Sublime Text to finish installation&amp;#39; restart sublime finish ZenCoding jsFormat 讓 js 整齊 ctrl + alt + f GitHub SublimeTmpl 載入預設的樣板 Emmet 快速輸入 Gist</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text - initial setting</title>
+      <link>http://blog.tedshd.io/posts/2013-09-01-sublime-text-initial-setting/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-09-01-sublime-text-initial-setting/</guid>
+      <description>Initial Setting Sublime Text 手冊 Preferences-&amp;gt;Settings-Default &amp;#34;default_encoding&amp;#34;: &amp;#34;UTF-8&amp;#34; &amp;#34;default_line_ending&amp;#34;: &amp;#34;unix&amp;#34; &amp;#34;tab_size&amp;#34;: 4 &amp;#34;translate_tabs_to_spaces&amp;#34;: true &amp;#34;save_on_focus_lost&amp;#34;: true &amp;#34;highlight_line&amp;#34;: true &amp;#34;trim_trailing_white_space_on_save&amp;#34;: true &amp;#34;rulers&amp;#34;: [80, 120] &amp;#34;highlight_modified_tabs&amp;#34;: true choose &amp;#34;ensure_newline_at_eof_on_save&amp;#34;: true &amp;#34;use_simple_full_screen&amp;#34;: true if want change font size Preferences-&amp;gt;Settings-User { &amp;#34;default_encoding&amp;#34;: &amp;#34;UTF-8&amp;#34;, &amp;#34;default_line_ending&amp;#34;: &amp;#34;unix&amp;#34;, &amp;#34;tab_size&amp;#34;: 4, &amp;#34;translate_tabs_to_spaces&amp;#34;: true, &amp;#34;save_on_focus_lost&amp;#34;: true, &amp;#34;highlight_line&amp;#34;: true, &amp;#34;trim_trailing_white_space_on_save&amp;#34;: true, &amp;#34;rulers&amp;#34;: [80, 120], &amp;#34;highlight_modified_tabs&amp;#34;: true, &amp;#34;font_size&amp;#34;: 18.0, &amp;#34;ignored_packages&amp;#34;: [ &amp;#34;Vintage&amp;#34; ] }</description>
+    </item>
+    
+    <item>
+      <title>‎Sublime Text - Hot Key</title>
+      <link>http://blog.tedshd.io/posts/2013-09-01-sublime-text-hot-key/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-09-01-sublime-text-hot-key/</guid>
+      <description>Hot Key Document Mac OS X Windows Ctrl+Shift+p 開啟指令列 Tab 自動完成字詞 ctrl + d 選單字 alt + F3 選相同的字 ctrl + f 搜尋 ctrl + 0 focus 到 siderbar Ctrl + Shift + &amp;lt;- or -&amp;gt; Alt + &amp;lt;- or -&amp;gt; 單字 or 符號間移動 Ctrl + Alt + up</description>
+    </item>
+    
+  </channel>
+</rss>

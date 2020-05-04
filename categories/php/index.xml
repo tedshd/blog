@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>php on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/php/</link>
+    <description>Recent content in php on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PHP -  check HTTP protocol</title>
+      <link>http://blog.tedshd.io/posts/2019-12-02-php-check-http-protocol/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2019-12-02-php-check-http-protocol/</guid>
+      <description>PHP - check HTTP protocol
+Use
+$protocol = (isset($_SERVER[&amp;#39;HTTPS&amp;#39;]) &amp;amp;&amp;amp; ($_SERVER[&amp;#39;HTTPS&amp;#39;] == &amp;#39;on&amp;#39; || $_SERVER[&amp;#39;HTTPS&amp;#39;] == 1) || isset($_SERVER[&amp;#39;HTTP_X_FORWARDED_PROTO&amp;#39;]) &amp;amp;&amp;amp; $_SERVER[&amp;#39;HTTP_X_FORWARDED_PROTO&amp;#39;] == &amp;#39;https&amp;#39;) ? &amp;#39;https&amp;#39; : &amp;#39;http&amp;#39;; </description>
+    </item>
+    
+    <item>
+      <title>php - float 浮點數科學記號轉換</title>
+      <link>http://blog.tedshd.io/posts/2019-10-29-php-float-float-ingress-scientific-marker-conversion/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2019-10-29-php-float-float-ingress-scientific-marker-conversion/</guid>
+      <description>php - float 浮點數科學記號轉換 php - float php 的浮點數大小受限於系統, 且會自動轉換成科學記號呈現, 但是一般人不會去看科學記號 echo 0.0000234; // 2.34E-5 在呈現上希望轉換回小數</description>
+    </item>
+    
+    <item>
+      <title>Mac - php redis install</title>
+      <link>http://blog.tedshd.io/posts/2019-06-19-mac-php-redis-install/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2019-06-19-mac-php-redis-install/</guid>
+      <description>Mac - php redis install Mac Env Mac OSX 10.14.5 Step git clone https://www.github.com/phpredis/phpredis.git cd phpredis phpize &amp;amp;&amp;amp; ./configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; sudo make install test php -r &amp;#34;if (new Redis() == true){ echo \&amp;#34;\r\n OK \r\n\&amp;#34;; }&amp;#34; Troubleshooting phpize 1. $ phpize grep: /usr/include/php/main/php.h: No such file or directory grep: /usr/include/php/Zend/zend_modules.h: No such file or directory grep: /usr/include/php/Zend/zend_extensions.h: No such file or directory Configuring for: PHP Api Version: Zend</description>
+    </item>
+    
+    <item>
+      <title>php - loop directory</title>
+      <link>http://blog.tedshd.io/posts/2017-12-13-php-loop-directory/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2017-12-13-php-loop-directory/</guid>
+      <description>php - loop directory Sometime need use php loop directory list all file in this directory
+$directory = scandir(&amp;#39;./js&amp;#39;);foreach($directory as $file) {if ($file === &amp;#39;.&amp;#39; || $file === &amp;#39;..&amp;#39;) {continue;}echo $file;echo &amp;#34;\n&amp;#34;;}</description>
+    </item>
+    
+    <item>
+      <title>php - 比對時間</title>
+      <link>http://blog.tedshd.io/posts/2017-12-04-php-compared-to-time/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2017-12-04-php-compared-to-time/</guid>
+      <description>php - 比對時間 記錄一下比對時間的方式(利用 timestamp) time() &amp;gt; strtotime(&amp;#39;2017-11-13 23:59:59&amp;#39;);</description>
+    </item>
+    
+    <item>
+      <title>Something about XSS(Cross-site scripting)</title>
+      <link>http://blog.tedshd.io/posts/2015-11-01-something-about-xsscross-site-scripting/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2015-11-01-something-about-xsscross-site-scripting/</guid>
+      <description>Something about XSS(Cross-site scripting) If not set anything Use like &amp;lt;?php echo $_GET[&amp;#39;name&amp;#39;];?&amp;gt; and querystring name = &amp;lt;script&amp;gt;alert(document.cookie)&amp;lt;/script&amp;gt; And not defence XSS In Firefox In Chrome In Safari Result Chrome &amp;amp; Safari browser has handle XSS default Defence Set header X-XSS-Protection: 1 if use PHP, can use htmlspecialchars() // or htmlentities() Important! Finally We must know it is handle encode to avoid run JavaScript on page JavaScript ver htmlspecialchars Refer</description>
+    </item>
+    
+    <item>
+      <title>php - Ubuntu 14 PHP 5.6 or to upgrade from PHP 5.5</title>
+      <link>http://blog.tedshd.io/posts/2015-10-31-php-ubuntu-14-php-56-or-to-upgrade-from-php-55/</link>
+      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2015-10-31-php-ubuntu-14-php-56-or-to-upgrade-from-php-55/</guid>
+      <description>php - Ubuntu 14 PHP 5.6 or to upgrade from PHP 5.5 sudo apt-get -y updatesudo add-apt-repository ppa:ondrej/php5-5.6sudo apt-get -y updatesudo apt-get -y install php5 php5-mhash php5-mcrypt php5-curl php5-cli php5-mysql php5-gd php5-intl php5-xsl php5-bcmathif use php -v check version is 5.5.x
+I use
+sudo apt-get -u install php5-cliRefer - PHP 5.5 or 5.6—Ubuntu</description>
+    </item>
+    
+    <item>
+      <title>PHP - Auto update static files cache</title>
+      <link>http://blog.tedshd.io/posts/2015-08-16-php-auto-update-static-files-cache/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2015-08-16-php-auto-update-static-files-cache/</guid>
+      <description>PHP - Auto update static files cache We can cache static files(CSS, JavaScript) to client
+When Server update static code.
+We want to update cache then we can modify file or add query string update version.
+We have some choice like modify url ?v=1 to ?v=2
+But I want to auto modify version.
+This is a way i use
+&amp;lt;?phpfunction autoversion($url) {$ver = stat($_SERVER[&amp;#39;DOCUMENT_ROOT&amp;#39;] . $url)[mtime];return $url .</description>
+    </item>
+    
+    <item>
+      <title>PHP - install phpcs(PHP CodeSniffer)</title>
+      <link>http://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/</link>
+      <pubDate>Thu, 18 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/</guid>
+      <description>PHP - install phpcs(PHP CodeSniffer) Use pear install phpcs
+in Linux(Ubuntu 14.04) sudo pear install --alldeps php_codesnifferin Mac(Mac OS X 10.10.1 Yosemite) install pear sudo curl -O http://pear.php.net/go-pear.pharthen
+sudo php -d detect_unicode=0 go-pear.pharUpdate
+pear upgrade pearpear upgradeinstall codesniffer sudo pear install --alldeps php_codesniffercheck
+phpcs -ireturn
+The installed coding standards are MySource, PEAR, PHPCS, PSR1, PSR2, Squiz and Zendif return
+Warning: include_once(PHP/CodeSniffer/CLI.php): failed to open stream: No such file or directory in /usr/bin/phpcs on line 22Warning: include_once(): Failed opening &amp;#39;PHP/CodeSniffer/CLI.</description>
+    </item>
+    
+    <item>
+      <title>Detect mobile device</title>
+      <link>http://blog.tedshd.io/posts/2013-12-07-detect-mobile-device/</link>
+      <pubDate>Sat, 07 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-12-07-detect-mobile-device/</guid>
+      <description>Detect mobile device Use PHP or JavaScript detect mobile device like iPhone, iPad, iPod or Android&amp;hellip;
+Android PHP &amp;lt;?php$ua = strtolower($_SERVER[&amp;#39;HTTP_USER_AGENT&amp;#39;]);if(stripos($ua, &amp;#39;android&amp;#39;) !== false) {echo &amp;#39;Android!!&amp;#39;;exit;}?&amp;gt;JavaScript var ua = navigator.userAgent.toLowerCase();if(ua.indexOf(&amp;#34;android&amp;#34;) &amp;gt; -1) {document.write(&amp;#39;Android!!&amp;#39;);}Refer - Android Detection with JavaScript or PHP
+Apple mobile device Refer - How to detect iPhone, iPod and iPad with PHP Refer - How to Identify an Apple iPhone, iPod or iPad Visitor to Your Website</description>
+    </item>
+    
+    <item>
+      <title>PHP Note</title>
+      <link>http://blog.tedshd.io/posts/2013-08-30-php-note/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-08-30-php-note/</guid>
+      <description>PHP Note Notice 處理 db 的部分放到 model 處理來增強可用性 減少邏輯判斷 以錯誤為優先處裡 array to string &amp;lt;?php $arr = array( &amp;#39;val&amp;#39; =&amp;gt; 1, &amp;#39;str&amp;#39; =&amp;gt; &amp;#39;string&amp;#39;, ); $to_string = serialize($arr); echo $to_string; // a:2:{s:3:&amp;#34;val&amp;#34;;i:1;s:3:&amp;#34;str&amp;#34;;s:6:&amp;#34;string&amp;#34;;} $to_array = unserialize($to_string); var_dump($to_array); /* not better * if $to_string can&amp;#39;t unserialize, it has PHP</description>
+    </item>
+    
+  </channel>
+</rss>

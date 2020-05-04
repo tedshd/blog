@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>file_upload on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/file_upload/</link>
+    <description>Recent content in file_upload on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sun, 20 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/file_upload/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>javascript - file upload</title>
+      <link>http://blog.tedshd.io/posts/2013-10-20-javascript-file-upload/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-10-20-javascript-file-upload/</guid>
+      <description>javascript - file upload Introduction 利用 javascript 達到檔案上傳的功能 顯示上傳進度 多檔上傳 取消上傳 拖拉上傳 斷點續傳?? chrome 上傳資料夾 盡可能跨 browser(for IE8) 不依攋任一 javascript library 自幹上傳 iframe upload in IE Skill files</description>
+    </item>
+    
+    <item>
+      <title>file upload show progress bar</title>
+      <link>http://blog.tedshd.io/posts/2013-10-06-file-upload-show-progress-bar/</link>
+      <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-10-06-file-upload-show-progress-bar/</guid>
+      <description>file upload show progress bar If you want show upload progress, you must use AJAX method. And you upload files use FormData object. XMLHttpRequest object has upload properties XMLHttpRequest nsIXMLHttpRequestEventTarget
+sample code
+xmlHttpRequest.upload.onprogress = function (e) {console.log(&amp;#39;onprogress&amp;#39;, e);console.log(e.loaded);// progress console.log(Math.ceil((e.loaded/e.total) * 100) + &amp;#39;%&amp;#39;);};Refer</description>
+    </item>
+    
+    <item>
+      <title>file upload using ajax</title>
+      <link>http://blog.tedshd.io/posts/2013-09-29-file-upload-using-ajax/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-09-29-file-upload-using-ajax/</guid>
+      <description>File upload using ajax Use FormData objects Using FormData Objects
+FormData object only IE 10 up if IE use ajax upload, only use iframe method.
+sample HTML
+&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt;&amp;lt;title&amp;gt;upload_AJAX&amp;lt;/title&amp;gt;&amp;lt;/head&amp;gt;&amp;lt;body&amp;gt;&amp;lt;form action=&amp;#34;upload_one.php&amp;#34; method=&amp;#34;post&amp;#34; enctype=&amp;#34;multipart/form-data&amp;#34;&amp;gt;&amp;lt;label for=&amp;#34;file&amp;#34;&amp;gt;File:&amp;lt;/label&amp;gt;&amp;lt;input type=&amp;#34;file&amp;#34; name=&amp;#34;Upfile&amp;#34; id=&amp;#34;select&amp;#34;&amp;gt;&amp;lt;br&amp;gt;&amp;lt;input type=&amp;#34;submit&amp;#34;&amp;gt;&amp;lt;/form&amp;gt;&amp;lt;a href=&amp;#34;javascript:upload()&amp;#34;&amp;gt;AJAX_upload&amp;lt;/a&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;JavaScript
+function upload () {// init FormData object var formData = new FormData();// use append method append upload file formData.</description>
+    </item>
+    
+    <item>
+      <title>file upload 123</title>
+      <link>http://blog.tedshd.io/posts/2013-08-20-file-upload-notice-issue/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-08-20-file-upload-notice-issue/</guid>
+      <description>File Upload Server side setting php.ini in Mac /etc/php.ini file_uploads = On upload_max_filesize = 10M post_max_size = 10M file_uploads # 預設為on,允許用HTTP協定上傳 upload_tmp_dir # 上傳檔案暫存目錄,wamp5中,c:/wamp/tmp upload_max_filesize # 上傳</description>
+    </item>
+    
+    <item>
+      <title>fileUpload by yui library</title>
+      <link>http://blog.tedshd.io/posts/2013-08-02-fileupload-by-yui-library/</link>
+      <pubDate>Fri, 02 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-08-02-fileupload-by-yui-library/</guid>
+      <description>fileUpload by yui library init upload button JavaScript bind click event in IE use JavaScript move CSS position
+ uploader : Upload file uploaderOut : handle not drag area  event  fileSelect select file &amp;amp; render upload list check file status handle fileList _upload
+uploadprogress upload file progress
+uploadcomplete upload complete check ok or fail _upload
+uploaderror cancel &amp;amp; upload next
+_upload check file status &amp;amp; upload status upload upload fileList[uploadfile]</description>
+    </item>
+    
+  </channel>
+</rss>

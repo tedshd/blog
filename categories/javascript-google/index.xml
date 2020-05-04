@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript Google on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/javascript-google/</link>
+    <description>Recent content in JavaScript Google on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Fri, 12 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/javascript-google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript - web call native app</title>
+      <link>http://blog.tedshd.io/posts/2017-05-12-1822543/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2017-05-12-1822543/</guid>
+      <description>web call native app 緣由 因為一些原因要 mobile web 可以 call native 的一些東西來分享當前頁面或幹啥事(其實最常用的是聯絡資訊點了直接 call native app) 眾所皆知 HTML5 預設有 mailto: tel: sms: 但每個都要</description>
+    </item>
+    
+  </channel>
+</rss>

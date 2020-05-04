@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ad on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/ad/</link>
+    <description>Recent content in ad on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Fri, 15 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/ad/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Adsense domain 設置</title>
+      <link>http://blog.tedshd.io/posts/2016-04-15-google-adsense-domain-settings/</link>
+      <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2016-04-15-google-adsense-domain-settings/</guid>
+      <description>Google Adsense domain 設置 一點設定 Google adsense 的心得 因為有時會寫一寫筆記或部落格記錄人生 然後因為工作進到跟廣告有點關係的公司, 遇到裡面的一些專家 有人提議說, 既然我有</description>
+    </item>
+    
+  </channel>
+</rss>
