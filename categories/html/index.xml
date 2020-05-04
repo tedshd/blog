@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/html/</link>
+    <description>Recent content in html on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Thu, 15 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Something about favicon on website</title>
+      <link>http://blog.tedshd.io/posts/2018-03-15-something-about-favicon-on-website/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2018-03-15-something-about-favicon-on-website/</guid>
+      <description>Something about favicon on website Favicon is a icon on browser tab.
+But now we must do more thing on mobile device handle favicon.
+2 way add browser favicon   Put icon in url path &amp;lt;example.com&amp;gt;/favicon.png
+  Add meta tag &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/png&amp;quot; href=&amp;quot;favicon.png&amp;quot; /&amp;gt;
+  Notice: I like use png as my favicon, because i can reuse this file.
+Icon format case
+&amp;lt;!--IE --&amp;gt;&amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; type=&amp;#34;image/x-icon&amp;#34; href=&amp;#34;favicon.</description>
+    </item>
+    
+    <item>
+      <title>HTML - dns-prefetch, preconnect, prefetch, prerender 研究筆記</title>
+      <link>http://blog.tedshd.io/posts/2017-09-11-html-dns-prefetch-preconnect-prefetch-and-prerender-research-notes/</link>
+      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2017-09-11-html-dns-prefetch-preconnect-prefetch-and-prerender-research-notes/</guid>
+      <description>HTML - dns-prefetch, preconnect, prefetch, prerender 研究筆記 Intro 這幾個 meta 屬性早在幾年前就有不少外國文章和少部分的國內大神介紹過了 但當時我一直抱持這它還在 W3C 草案, 所以不急著用的心態, 且</description>
+    </item>
+    
+    <item>
+      <title>HTML - redirect page from http-equiv</title>
+      <link>http://blog.tedshd.io/posts/2016-01-31-466975/</link>
+      <pubDate>Sun, 31 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2016-01-31-466975/</guid>
+      <description>HTML - redirect page from http-equiv Intro We can use JavaScript or PHP redirect page, we also can only use HTML redirect page But not suggest use this way Note: The value &amp;ldquo;refresh&amp;rdquo; should be used carefully, as it takes the control of a page away from the user. Using &amp;ldquo;refresh&amp;rdquo; will cause a failure in W3C&#39;s Web Content Accessibility Guidelines. 使用 標籤進行重新導</description>
+    </item>
+    
+    <item>
+      <title>Web Develop - Flexible Footer</title>
+      <link>http://blog.tedshd.io/posts/2014-08-27-web-develop-flexible-footer/</link>
+      <pubDate>Wed, 27 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-08-27-web-develop-flexible-footer/</guid>
+      <description>Web Develop - Flexible Footer Sometimes we think footer must fixed in website bottom or put it in last of content.
+I provide a idea may be a good way. Content less browser view height, footer fixed in bottom. When content too much over browser view height, footer be put last of content.
+Feature  flexible only use CSS  Usage min-height: calc(100% - &amp;lt;footer height&amp;gt;);
+#hd {height: 50px;background: #aaa;/*display: none;*/}#bd {text-align: center;min-height: calc(100% - 50px); /* important */background: #ccc;}#content {padding-bottom: 60px;}#footer {position: relative;bottom: 50px;text-align: center;height: 50px;background: #999;}50px is footer height</description>
+    </item>
+    
+    <item>
+      <title>HTML5 - Video Introduction</title>
+      <link>http://blog.tedshd.io/posts/2014-07-02-html5-video-introduction/</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-07-02-html5-video-introduction/</guid>
+      <description>HTML5 - Video Introduction 這是一篇關於如何用 web 建置一個 video player 的文章, 這裡使用 HTML5 video 與一些 open source library 來建立 player Some Function Main video pause video play video autoPlay or no-autoPlay show current video time show total video time time jump full screen Other keyboard control mute control volume up</description>
+    </item>
+    
+    <item>
+      <title>HTML Design Pattern</title>
+      <link>http://blog.tedshd.io/posts/2013-08-21-html-design-pattern/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-08-21-html-design-pattern/</guid>
+      <description>HTML Design Pattern 語意化(影響 SEO) 去 CSS 還可維持可讀性 去 JavaScript 頁面還能 work -&amp;gt; 現在較不適用 避免樣式標籤 &amp;lt;!--not recommended --&amp;gt; &amp;lt;b&amp;gt;&amp;lt;/b&amp;gt; &amp;lt;i&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;!--use --&amp;gt; &amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt; &amp;lt;em&amp;gt;&amp;lt;/em&amp;gt; 避免將 style 寫在 HTML tag 上 善用標籤以維持可讀性與語意</description>
+    </item>
+    
+  </channel>
+</rss>

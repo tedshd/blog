@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node.js on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/node.js/</link>
+    <description>Recent content in Node.js on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Fri, 04 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/node.js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Node.js - install</title>
+      <link>http://blog.tedshd.io/posts/2014-04-04-nodejs-install/</link>
+      <pubDate>Fri, 04 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-04-04-nodejs-install/</guid>
+      <description>Node.js - install Mac 利用 homebrew 安裝 brew install node node.js Refer - Install Node.js and npm using Homebrew on OS X Ubuntu sudo apt-get install nodejs-legacy sudo apt-get install npm Refer - Can not install packages using node package manager in Ubuntu Update Now node merge iojs and version update to v4 But now homebrew not updgrade to v4 So i use nvm Refer - Node.js 安</description>
+    </item>
+    
+  </channel>
+</rss>

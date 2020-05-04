@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>postcss on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/postcss/</link>
+    <description>Recent content in postcss on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Fri, 20 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/postcss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS4 - 關於 css4 and postcss 的一些想法</title>
+      <link>http://blog.tedshd.io/posts/2015-11-20-css4-css4-thoughts-and-postcss/</link>
+      <pubDate>Fri, 20 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2015-11-20-css4-css4-thoughts-and-postcss/</guid>
+      <description>CSS4 - 關於 css4 and postcss 的一些想法 前言 在年末才來發這篇文&amp;hellip; 在今年大家開始瘋 react(咦? AngularJS 勒&amp;hellip;), Babel, postcss 好像沒聽過上述這幾</description>
+    </item>
+    
+  </channel>
+</rss>

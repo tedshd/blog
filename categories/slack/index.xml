@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>slack on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/slack/</link>
+    <description>Recent content in slack on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sat, 28 May 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/slack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Slack - bot 研究雜記</title>
+      <link>http://blog.tedshd.io/posts/2016-05-28-slack-bot-research-notes/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2016-05-28-slack-bot-research-notes/</guid>
+      <description>Slack - bot 研究雜記 最近 bot 很夯 再加上公司需要一些自動部署與指令化的一些流程要改善, 所以就來研究一下 剛好我們是用 Slack 所以就先來試試 Slack bot 了 Intro 先說明下最簡</description>
+    </item>
+    
+  </channel>
+</rss>

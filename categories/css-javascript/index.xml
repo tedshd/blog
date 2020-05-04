@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css javascript on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/css-javascript/</link>
+    <description>Recent content in css javascript on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Thu, 12 Sep 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/css-javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>瀑布流(Pinterest-style) layout</title>
+      <link>http://blog.tedshd.io/posts/2013-09-12-waterfall-stream-pinterest-style-layout/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-09-12-waterfall-stream-pinterest-style-layout/</guid>
+      <description>瀑布流(Pinterest-style) layout 目前看見 3 種作法 jquery plug in salvattore.js CSS3 column jquery plug in Masonry 一款較多人使用的 jQuery plug in, 可向下相容到 IE8 Masonry Grid-A-Licious jQuery plug in, 向下相容到 IE9 Grid-A-Licious salvattore</description>
+    </item>
+    
+  </channel>
+</rss>

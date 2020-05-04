@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DOM on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/dom/</link>
+    <description>Recent content in DOM on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Fri, 28 Aug 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/dom/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript - something about childNodes and nextSibling why they get DOM is not as you imagine</title>
+      <link>http://blog.tedshd.io/posts/2015-08-28-javascript-something-about-childnodes-and-nextsibling-why-they-get-dom-is-not-as-you-imagine/</link>
+      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2015-08-28-javascript-something-about-childnodes-and-nextsibling-why-they-get-dom-is-not-as-you-imagine/</guid>
+      <description>JavaScript - something about childNodes and nextSibling why they get DOM is not as you imagine childNodes MDN nextSibling - MDN Sometimes we use childNodes HTML &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;item3&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;item4&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; JavaScript console.log(document.querySelector(&amp;#39;ul&amp;#39;).childNodes); // output [text, li, text, li, text, li, text, li, text] Why? Then HTML &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;item3&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;item4&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt; JavaScript console.log(document.querySelector(&amp;#39;ul&amp;#39;).childNodes); // output [li, li, li, li] If you log text object, you can find it is wrap. Browser get</description>
+    </item>
+    
+  </channel>
+</rss>

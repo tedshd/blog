@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/docker/</link>
+    <description>Recent content in docker on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Fri, 15 May 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker - Mac research log</title>
+      <link>http://blog.tedshd.io/posts/2015-05-15-docker-mac-research-log/</link>
+      <pubDate>Fri, 15 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2015-05-15-docker-mac-research-log/</guid>
+      <description>Docker - Mac research log Install by Mac Register Docker Hub Docker Hub Use Kitematic kitematic Install Ubuntu Search ubuntu on docker hub Run command docker pull ubuntu Use docker images docker images REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE ubuntu latest 07f8e8c5e660 3 weeks ago 188.3 MB build dockerfile docker build . -t ubuntu_dev:16.04 -f local.Dockerfile run container docker run -t -i ubuntu /bin/bash docker run -t -i ubuntu</description>
+    </item>
+    
+  </channel>
+</rss>

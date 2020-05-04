@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samsung on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/samsung/</link>
+    <description>Recent content in Samsung on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Mon, 28 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/samsung/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Samsung Samrt TV - Network Error Handle</title>
+      <link>http://blog.tedshd.io/posts/2014-04-28-samsung-samrt-tv-network-error-handle/</link>
+      <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-04-28-samsung-samrt-tv-network-error-handle/</guid>
+      <description>Samsung Samrt TV - Network Error Handle Example Watch network connect status
+ Add web api in HTML  &amp;lt;script type=&amp;#34;text/javascript&amp;#34; language=&amp;#34;javascript&amp;#34; src=&amp;#34;$MANAGER_WIDGET/Common/webapi/1.0/webapis.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;Add JavaScript code  var watchCB = {onconnect : function (type) {// (1) connected alert(type + &amp;#34; is connected successfully&amp;#34;);},ondisconnect : function(type) {// (0) disconnected alert(type + &amp;#34; is disconnected&amp;#34;);}};function successCB(networks) {for (var i = 0; networks.</description>
+    </item>
+    
+    <item>
+      <title>Develop Samsung Smart TV Apps - Update(SDK 5.0)</title>
+      <link>http://blog.tedshd.io/posts/2014-03-07-develop-samsung-smart-tv-apps-updatesdk-50/</link>
+      <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-03-07-develop-samsung-smart-tv-apps-updatesdk-50/</guid>
+      <description>SDK 5.0 Update diff SDK 5.0 改變了 IDE UI 打包到 Server 設定 package app</description>
+    </item>
+    
+    <item>
+      <title>Samsung Samrt TV - volume OSD</title>
+      <link>http://blog.tedshd.io/posts/2014-01-23-samsung-samrt-tv-volume-osd/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-01-23-samsung-samrt-tv-volume-osd/</guid>
+      <description>Samsung Samrt TV - volume OSD 假如要做影片類的 App, 音量控制算是重要的一環 建議維持 Samsung Samrt TV 預設的 OSD(On Screen Display), 假如自己刻 UI, 會有許多要顧及的地方, 會較費時 How to add code to show volume OSD HTML &amp;lt;!--for</description>
+    </item>
+    
+    <item>
+      <title>Samsung Samrt TV - save / load data</title>
+      <link>http://blog.tedshd.io/posts/2014-01-18-samsung-samrt-tv-save-load-data/</link>
+      <pubDate>Sat, 18 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-01-18-samsung-samrt-tv-save-load-data/</guid>
+      <description>Samsung Samrt TV - save / load data 如果要儲存資料(ex: 使用者資訊&amp;hellip;)建議使用 Samsung 的 file API 使用 HTML5 的 localStorage 在電視關機後會被清掉 File API Refer - Can I access a local file from JavaScript code? Refer</description>
+    </item>
+    
+    <item>
+      <title>Develop Samsung Smart TV Apps</title>
+      <link>http://blog.tedshd.io/posts/2013-12-16-develop-samsung-smart-tv-apps/</link>
+      <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-12-16-develop-samsung-smart-tv-apps/</guid>
+      <description>Develop Samsung Smart TV Apps 由於最近應公司需求而開始要開發 Samsung 的 Smart TV 上的 App 身為一個前端攻城獅要去開發電視的 App? 沒想到 Smart TV 的 App 竟然是用前端技術寫的(HTML, JavaScript, CSS) Smart</description>
+    </item>
+    
+  </channel>
+</rss>

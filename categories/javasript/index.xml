@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaSript on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/javasript/</link>
+    <description>Recent content in JavaSript on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sun, 02 Mar 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/javasript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript - Scroll Progress</title>
+      <link>http://blog.tedshd.io/posts/2014-03-02-javascript-scroll-progress/</link>
+      <pubDate>Sun, 02 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2014-03-02-javascript-scroll-progress/</guid>
+      <description>JavaScript - Scroll Progress Show a progress bar about page scroll position.
+This used scroll event Progress bar must handle scroll position and scroll total height, and show it for percent View MDN document can find it can&#39;t use scrollHeight, because when scroll bar scroll to bottom, scrollTop not equal scrollHeight
+dom = document.querySelector(&amp;#39;body&amp;#39;);percent = (dom.scrollTop/(dom.scrollHeight - document.documentElement.clientHeight))*100 + &amp;#39;%&amp;#39;;Then find scrollTop didn&#39;t work in firefox
+if (dom.scrollTop) {percent = (dom.</description>
+    </item>
+    
+  </channel>
+</rss>

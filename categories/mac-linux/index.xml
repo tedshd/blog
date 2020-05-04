@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac Linux on tedshd&#39;s DevNote</title>
+    <link>http://blog.tedshd.io/categories/mac-linux/</link>
+    <description>Recent content in mac Linux on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Wed, 14 Aug 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.tedshd.io/categories/mac-linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux/unix command</title>
+      <link>http://blog.tedshd.io/posts/2013-08-14-linux-unix-command/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.tedshd.io/posts/2013-08-14-linux-unix-command/</guid>
+      <description>command User su / sudo # 最高權限使用者 su -u &amp;lt;user name&amp;gt; bash # 切換使用者 exit # 跳出最高權限使用者 shutdown # 關機 shutdown -h now 立即關機 shutdown -h +m m分鐘後關機 shutdown -h hh:mm 幾點幾分關機 reboot # 重開機 login</description>
+    </item>
+    
+  </channel>
+</rss>
