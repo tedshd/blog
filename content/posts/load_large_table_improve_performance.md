@@ -52,7 +52,7 @@ categories: []
 
 整個頁面花了 1 分鐘多...
 
-[screenshot image](/images/螢幕快照_2020-05-21_下午1.49.36.png)
+![screenshot image](/images/螢幕快照_2020-05-21_下午1.49.36.png)
 
 ## 解決方案
 
@@ -62,7 +62,7 @@ categories: []
 
 但是 DOMContentLoaded 還是要 12s 左右啊~~
 
-[screenshot image](/images/螢幕快照_2020-05-21_下午3.01.21.png)
+![screenshot image](/images/螢幕快照_2020-05-21_下午3.01.21.png)
 
 ### 解決 DOMContentLoaded 問題
 
@@ -118,15 +118,21 @@ categories: []
 
 當上述的東西處理完後
 
-[screenshot image](/images/螢幕快照_2020-05-21_下午2.55.41.png)
+![screenshot image](/images/螢幕快照_2020-05-21_下午2.55.41.png)
 
 DOMContentLoaded 因為改成 AJAX 所以會少很多(12s -> 2s)
 
 因為資料改成 AJAX 產生, 這速度比 SSR 快多了
 
-再不看畫面 render 的情況下 loading 速度已經提高很多了
+再不看畫面 render 的情況下整個 loading 速度已經也提高很多
 
-基本上上述這些只會動用到前端的程式即可達到成效不錯的優化了
+至於 render 時間不太好測試比較所以這邊就不比較了
+
+基本上上述這些只會動用到前端的程式即可達到成效不錯的優化
+
+也可以在 chrome 裝上 [lighthouse](https://developers.google.com/web/tools/lighthouse) 來檢測
+
+因為光是這樣改在體感上就提升許多了, 也就沒有再用 lighthouse 測試
 
 ## 額外補充
 
