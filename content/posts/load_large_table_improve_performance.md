@@ -166,3 +166,11 @@ DataTables 有 page 的 event 可以監聽分頁切換
 [Refer - page](https://datatables.net/reference/event/page)
 
 這邊圖片延遲載入是使用自己參照 Google 的開發文件寫的 code [simpleImgLazyLoad](https://github.com/tedshd/simpleImgLazyLoad)
+
+### DataTables 版面寬度問題
+
+因為 DataTables 處理完後有時會自動加上寬度
+
+所以可以直接先使用 `width: 100%` 處理
+
+[Refer - DataTables example - Flexible table width](https://datatables.net/examples/basic_init/flexible_width.html)
