@@ -165,7 +165,21 @@ DataTables 有 page 的 event 可以監聽分頁切換
 
 [Refer - page](https://datatables.net/reference/event/page)
 
+但是當使用 搜尋 , 排序等會造成畫面重新出現的情況的話
+
+要有效地處理就是使用 datatable 的 draw event
+
+[Refer - page](https://datatables.net/reference/event/draw)
+
+只要表單重繪就會觸發
+
 這邊圖片延遲載入是使用自己參照 Google 的開發文件寫的 code [simpleImgLazyLoad](https://github.com/tedshd/simpleImgLazyLoad)
+
+這邊 image lazy 只要圖片載完後 observer 物件就會回收
+
+不過沒有載到的圖片還是會持續觀察
+
+只是應該是不會有太大的影響
 
 ### DataTables 版面寬度問題
 
@@ -174,3 +188,11 @@ DataTables 有 page 的 event 可以監聽分頁切換
 所以可以直接先使用 `width: 100%` 處理
 
 [Refer - DataTables example - Flexible table width](https://datatables.net/examples/basic_init/flexible_width.html)
+
+因為 datatable 預設的 table 是固定的
+
+如果有 responsive 的需求
+
+要額外用 responsive 的套件來協助
+
+[Refer - responsive](https://datatables.net/extensions/responsive/)
