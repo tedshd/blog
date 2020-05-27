@@ -124,6 +124,16 @@ categories: []
 
 ![image](/images/螢幕快照_2020-05-26_下午4.22.39.png)
 
+額外補充一下
+
+因為大部分會是用 opentype 的字型
+
+opentype 是微軟和 Adobe 共同開發的, 所以微軟的文件有詳細的介紹
+
+所以這裡也貼一下 metadata 裡面的 table format 介紹
+
+[OpenType™ Layout Common Table Formats](https://docs.microsoft.com/en-us/typography/opentype/spec/chapter2)
+
 ### 語言
 
 [ISO 639](https://en.wikipedia.org/wiki/ISO_639)
