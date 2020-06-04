@@ -167,7 +167,7 @@ opentype 是微軟和 Adobe 共同開發的, 所以微軟的文件有詳細的�
 * language - 語言
 * extlang - 地方語言擴充
 * script - 文字
-* region - 國家
+* region - 地區
 * variant - 方言 [IANA](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority) 定義
 * extension
 * privateuse
