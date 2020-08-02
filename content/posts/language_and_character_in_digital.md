@@ -167,7 +167,7 @@ opentype 是微軟和 Adobe 共同開發的, 所以微軟的文件有詳細的�
 * language - 語言
 * extlang - 地方語言擴充
 * script - 文字
-* region - 國家
+* region - 地區
 * variant - 方言 [IANA](https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority) 定義
 * extension
 * privateuse
@@ -251,7 +251,7 @@ locale
 
 ### Linux
 
-沒有標準的定義格式
+走 POSIX 平台所定義的標準 [ISO/IEC 15897](https://en.wikipedia.org/wiki/ISO/IEC_15897)
 
 [地區設定](https://zh.wikipedia.org/wiki/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE)
 
@@ -260,6 +260,10 @@ locale
 language 用 ISO 639-1
 
 territory 用 ISO 3166-1
+
+### Mac OS
+
+一樣走 POSIX 平台所定義的標準 [ISO/IEC 15897](https://en.wikipedia.org/wiki/ISO/IEC_15897)
 
 ### Windows
 
