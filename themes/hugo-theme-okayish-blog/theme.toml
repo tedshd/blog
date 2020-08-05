@@ -1,0 +1,12 @@
+name = "Okayish Blog Hugo Theme"
+license = "MIT"
+licenselink = "https://github.com/kongdivin/hugo-theme-okayish-blog/blob/master/LICENSE"
+description = "An ok-ish blog theme based on Vanilla"
+homepage = "https://github.com/kongdivin/hugo-theme-okayish-blog#readme"
+tags = ["blog", "responsive", "i18n"]
+features = ["responsive", "i18n"]
+min_version = "0.62.2"
+
+[author]
+  name = "Divin Kong"
+  homepage = "https://twitter.com/kongdivin"
