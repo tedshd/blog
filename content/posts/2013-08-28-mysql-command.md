@@ -81,6 +81,12 @@ sql TYPE timestamp
 $timestamp = date("Y-m-d H:i:s");
 ```
 
+## 修改欄位名稱
+
+```mysql
+ALTER TABLE <table name> CHANGE <old> <new> <varchar(255)>;
+```
+
 ### 修改 table 裡 column 的編碼改成 utf8mb4
 
 ```mysql
