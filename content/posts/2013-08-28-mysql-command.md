@@ -93,6 +93,12 @@ ALTER TABLE <table name> CHANGE <old> <new> <varchar(255)>;
 alter table <table name> modify <column> varchar(255) CHARACTER SET utf8mb4
 ```
 
+### where 多筆資料
+
+```mysql
+SELECT * FROM users where id in (1,2,3,4,5);
+```
+
 ### troubleshooting
 
 On Mac
