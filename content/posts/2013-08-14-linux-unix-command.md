@@ -170,7 +170,9 @@ tar -zxvf <archive-name>.tar.gz <directory-name>
 # 解壓縮資料夾
 
 sudo lsof -i -P -n | grep LISTEN
+netstat -tulpn | grep LISTEN
 # 確認開啟的port
+lsof -n -i | grep LISTEN **(for Mac)**
 
 ### apt
 
