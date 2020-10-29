@@ -26,6 +26,7 @@ create table 資料表名稱(欄位名稱1 資料型別1,欄位名稱2 資料型
 create table 資料表名稱(欄位名稱1 資料型別1,欄位名稱2 資料型別2) charset=utf8;
 show tables;
 確認資料表的欄位結構
+drop table 資料表名稱;
 desc 資料表名稱;
 show create table <table name>
 ```
@@ -80,7 +81,23 @@ sql TYPE timestamp
 $timestamp = date("Y-m-d H:i:s");
 ```
 
+## 修改欄位名稱
 
+```mysql
+ALTER TABLE <table name> CHANGE <old> <new> <varchar(255)>;
+```
+
+### 修改 table 裡 column 的編碼改成 utf8mb4
+
+```mysql
+alter table <table name> modify <column> varchar(255) CHARACTER SET utf8mb4
+```
+
+### where 多筆資料
+
+```mysql
+SELECT * FROM users where id in (1,2,3,4,5);
+```
 
 ### troubleshooting
 
@@ -94,4 +111,15 @@ mysql 沒啟動
 
 ```
 mysql.server start
+```
+
+or 設定沒有設定 socket 的路徑
+
+for mac brew 安裝的 mysql 在 `/usr/local/var/mysql` 所以設定就設定該路徑(底下不必有 mysql.sock)
+
+```
+[client]
+socket=/usr/local/var/mysql/mysql.sock
+[mysqld]
+socket=/usr/local/var/mysql/mysql.sock
 ```
