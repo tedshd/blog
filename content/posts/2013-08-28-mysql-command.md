@@ -151,6 +151,18 @@ alter table <table_name> modify <column> varchar(255) CHARACTER SET utf8mb4
 SELECT * FROM users where id in (1,2,3,4,5);
 ```
 
+### dump table
+
+```shell
+mysqldump -A --ssl-mode=DISABLED -u <user> -p<password> -h <host> <database> <table> | mysql -u root -h <host> -P <post> <database>
+```
+
+### 直接把 query 出來的一筆資料新增(複製)
+
+```sql
+insert into <table> (欄位1, 欄位2, 欄位3) select 欄位1, 欄位2, 欄位3 from <table> where id=10;
+```
+
 ### troubleshooting
 
 On Mac
