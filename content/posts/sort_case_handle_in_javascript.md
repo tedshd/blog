@@ -259,6 +259,20 @@ function topNine(data) {
 
 第一個迴圈依照 **liked** 跑了一個降冪的氣泡排序(一般情況都是跑升冪)
 
+```javascript
+temp = data[j];
+data[j] = data[j + 1];
+data[j + 1] = temp;
+```
+
+這邊使用 variable swap 的技巧來做前後兩個值的交換
+
+```javascript
+c = a;
+a = b;
+b = c;
+```
+
 第二個迴圈就是取出前 9 筆的 **liked** 數
 
 一樣是在 `data.length >= 9 ? 9 : data.length` 確認未滿 9 筆的話就有多少取多少
