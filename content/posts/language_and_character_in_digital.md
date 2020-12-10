@@ -134,9 +134,11 @@ opentype 是微軟和 Adobe 共同開發的, 所以微軟的文件有詳細的�
 
 [OpenType™ Layout Common Table Formats](https://docs.microsoft.com/en-us/typography/opentype/spec/chapter2)
 
-這裡有個網站可以上傳字型檔(必須是 opentype 格式, 即 `.otf`, `.ttf`, `.ttc`) 確認該字型的資訊
+可以用以下網站上傳字型檔(必須是 opentype 格式, 即 `.otf`, `.ttf`, `.ttc`) 確認該字型的資訊
 
 [font-inspector](https://opentype.js.org/font-inspector.html)
+
+[fontdrop](https://fontdrop.info/)
 
 ### 語言
 
