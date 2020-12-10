@@ -234,6 +234,8 @@ var data = [
 
 ### 處理方式
 
+#### 第一種解法
+
 ```javascript
 function topNine(data) {
   var arr = [];
@@ -276,3 +278,33 @@ b = c;
 第二個迴圈就是取出前 9 筆的 **liked** 數
 
 一樣是在 `data.length >= 9 ? 9 : data.length` 確認未滿 9 筆的話就有多少取多少
+
+#### 第二種解法
+
+因為資料是 Array
+
+所以可以使用 `sort` 來處理
+
+```javascript
+function topNine(data) {
+  var arr = [];
+  data = data.sort(function (a, b) {
+    return b.liked - a.liked;
+  });
+  var l = data.length >= 9 ? 9 : data.length;
+  for (var n = 0; n < l; n++) {
+    arr.push(data[n]);
+  }
+  return arr;
+}
+```
+
+`sort` 可以帶入 function 處理回傳的比較的參數
+
+所以可以回傳物件的值得比較結果
+
+如果預設升冪排序就用 **a - b**
+
+降冪排序就用 **b - a**
+
+[refer - Array.prototype.sort()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
