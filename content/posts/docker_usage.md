@@ -82,11 +82,25 @@ CMD ["./app"]
 
 都是放在一起 build, build 完之後可以把結果複製到會後再使用的 image 裡面
 
+大致上就是
+
+```dockerfile
+FROM image_a AS a
+
+# dosomething...
+
+FROM image_b
+
+COPY --from=a path ./
+
+# dosomething...
+```
+
 多用於要先編譯的情況
 
 先在其他 image 編譯完
 
-最後在把執行環境包成 image
+最後在之前在其他 image 編譯完的結果和要執行的環境包成 image
 
 [Refer](https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds)
 
