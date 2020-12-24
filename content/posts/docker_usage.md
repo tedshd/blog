@@ -90,6 +90,14 @@ CMD ["./app"]
 
 [Refer](https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds)
 
+但是 build 完之後會有個問題, 就是之前 stage build 出來的 image 基本上沒有必要保留
+
+所以可以用 `docker image prune f` 移除掉之前 stage 建立的 image
+
+[Refer - How to remove intermediate images from a build after the build?](https://stackoverflow.com/questions/50126741/how-to-remove-intermediate-images-from-a-build-after-the-build)
+
+[Refer - Prune unused Docker objects](https://docs.docker.com/config/pruning/)
+
 ## 建立 container `docker run`
 
 `docker run -t -i ubuntu /bin/bash`
