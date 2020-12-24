@@ -133,3 +133,4 @@ docker run -idt --name <container name> -v <mount absolute path or ~ path>:<dock
 
 ## `docker logs <container_id>`
 
+查看 docker 處理的紀錄
