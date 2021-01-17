@@ -132,6 +132,8 @@ php > echo rawurlencode(' ');
 
 因為大多數都是這個問題
 
+所以我比較偏好 ` ` 轉成 `%20`
+
 ## 遇到的問題
 
 扯了那麼多廢話
@@ -194,6 +196,20 @@ function url_update_query($url = '', $query_string = [])
 
 就開始收到 error 了...
 
+一開始以為是處理的 function 有問題
+
+這邊我的作法是把 `$_SERVER['QUERY_STRING']` 接近來這個 function 處理
+
+`$_SERVER['QUERY_STRING']` 進來的 query string 是以 STRING 呈現的全部 query string
+
+沒有處理 urldecode
+
+但是 `parse_str` 會處理 url encode(這邊 PHP 會自動把 `+` 和 `%20` 轉成空白)
+
+然後 `http_build_query` 會再組成 query string 時做 url encode
+
+所以這過程是沒有 url decode 和 encode 的問題
+
 雖然使用情境不是上述的例子就是了(但也是一樣是 query string 相關的)
 
 那為啥會寫一大串是因為我都照了上面的情況排查了一遍發現都不是上述的問題...
@@ -206,8 +222,12 @@ function url_update_query($url = '', $query_string = [])
 
 而且也不是 100% 的 log 都是沒處理的...
 
-又因為不是重要的頁面所以 log 沒有加 User Agent(因為我們有做 log filter, 為了可以倒進去 elasticsearch 去用 kibana 看, 所以只有 filter 重要的值出來)
+又因為不是重要的頁面所以當初 log 沒有加 User Agent(因為我們有做 log filter, 為了可以倒進去 elasticsearch 去用 kibana 看, 所以只有 filter 重要的值出來)
 
-更新添加 User Agent 後再繼續觀察
+但是為了良好的解決問題
+
+這邊就採用了另一個處理方式
+
+就是
 
 [Refer - 百分號編碼](https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81)
