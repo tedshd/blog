@@ -163,6 +163,7 @@ redirect 有個重要的要點就是要處理 query string 決定要留哪些 qu
 太棒了
 
 ```PHP
+<?php
 function url_update_query($url = '', $query_string = [])
   {
     $url_data = parse_url($url);
