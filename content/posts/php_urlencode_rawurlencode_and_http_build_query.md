@@ -228,6 +228,44 @@ function url_update_query($url = '', $query_string = [])
 
 這邊就採用了另一個處理方式
 
-就是
+## 解決方案
+
+我們遇到的問題在於因為有部分的 query string 的值是使用 base64
+
+在使用 base64 可能會產生 `+` 等需要進行百分號編碼處理的字元
+
+但正常來說我們在使用時會有 url encode 處理 query string 然後是給使用者這樣的連結
+
+但是就是遇到部分的情況造成在 request 過來時是沒有 url encode 的情況
+
+就產生問題了...
+
+所以就採用 base64url
+
+base64url 是基於 [RFC 4648](https://tools.ietf.org/html/rfc4648#section-4) 裡面有提到針對部分情況例如 URL 或是某些系統的檔案名稱無法有效處理需要做百分號編碼的情況額外會再做一次編碼解碼
+
+主要的處理有
+
+`+` => `-`
+
+`/` => `_`
+
+還有基於長度編碼
+
+用 `=` 填滿長度
+
+這樣就解決掉一些 request 進來時沒有被有效的 url encode 的問題
+
+算是一個有趣的經歷
+
+因為這在 QA 和 RD 測試時都沒有遇到
+
+真的上線後才遇到...
+
+還好不是百分之百發生的情況...
+
+[Refer - String based data encoding: Base64 vs Base64url](https://stackoverflow.com/questions/55389211/string-based-data-encoding-base64-vs-base64url)
+
+[Refer - Base64的介绍以及Base64URL介绍](https://blog.csdn.net/qq_35725321/article/details/52126402)
 
 [Refer - 百分號編碼](https://zh.wikipedia.org/wiki/%E7%99%BE%E5%88%86%E5%8F%B7%E7%BC%96%E7%A0%81)
