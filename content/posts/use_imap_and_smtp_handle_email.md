@@ -137,3 +137,20 @@ for i in id_list:
 [Refer - Python's imaplib (Example)](https://coderwall.com/p/gorteg/python-s-imaplib)
 
 #### 回信
+
+幾本上回信也是寄信的一種
+
+寄信的部分就是得用到 SMTP
+
+幾本上的流程就是
+
+1. 連接 Gmail 的 SMTP server
+
+2. 寫信
+
+3. 寄信
+
+4. 關閉連接
+
+以下為範例
+
