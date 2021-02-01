@@ -22,6 +22,24 @@
     </item>
     
     <item>
+      <title>imap</title>
+      <link>https://blog.tedshd.io/categories/imap/</link>
+      <pubDate>Tue, 12 Jan 2021 10:18:11 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/categories/imap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>smtp</title>
+      <link>https://blog.tedshd.io/categories/smtp/</link>
+      <pubDate>Tue, 12 Jan 2021 10:18:11 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/categories/smtp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>docker</title>
       <link>https://blog.tedshd.io/categories/docker/</link>
       <pubDate>Thu, 24 Dec 2020 10:12:17 +0800</pubDate>
