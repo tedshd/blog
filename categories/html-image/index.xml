@@ -1,26 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>HTML image on tedshd&#39;s DevNote</title>
-    <link>https://blog.tedshd.io/categories/html-image/</link>
-    <description>Recent content in HTML image on tedshd&#39;s DevNote</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© 2020 Tedshd</copyright>
-    <lastBuildDate>Wed, 18 Apr 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://blog.tedshd.io/categories/html-image/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>HTML - image load error handle</title>
-      <link>https://blog.tedshd.io/posts/2018-04-18-image-load-error-handle/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.tedshd.io/posts/2018-04-18-image-load-error-handle/</guid>
-      <description>HTML - image load error handle 2 way
-Use onerror &amp;lt;img src=&amp;#34;&amp;lt;image url&amp;gt;&amp;#34; onerror=&amp;#34;this.src=&amp;#39;&amp;lt;d4 image url&amp;gt;&amp;#39;&amp;#34; /&amp;gt; Use Magic Image Pseudo Element img.imgd4 {position: relative;display: block;}img.imgd4:after {display: block;position: absolute;top: 0;left: 0;background: url(&amp;lt;d4 image url&amp;gt;) no-repeat;background-size: contain;width: 100%;height: 100%;content: &#39;&#39;;}</description>
-    </item>
-    
-  </channel>
-</rss>
