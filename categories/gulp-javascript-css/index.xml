@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gulp JavaScript CSS on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/gulp-javascript-css/</link>
+    <description>Recent content in gulp JavaScript CSS on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Wed, 31 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/gulp-javascript-css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gulp - One problem i found when i use CSS minify with some CSS library</title>
+      <link>https://blog.tedshd.io/posts/2016-08-31-gulp-one-problem-i-found-when-i-use-css-minify-with-some-css-library/</link>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-08-31-gulp-one-problem-i-found-when-i-use-css-minify-with-some-css-library/</guid>
+      <description>gulp - One problem i found when i use CSS minify with some CSS library When i use pure. And i use gulp as my front-end build tool. I used cssmin as my CSS minify tool. By default it can extreme compress CSS file. The one problem happen! display not match Because use CSS minify can remove inherited CSS property. So in webkit browser doesn&amp;rsquo;t has display: -webkit-flex; and layout</description>
+    </item>
+    
+  </channel>
+</rss>

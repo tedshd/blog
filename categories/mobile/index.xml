@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/mobile/</link>
+    <description>Recent content in mobile on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sun, 16 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/mobile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Develop on mobile web &amp; WebView</title>
+      <link>https://blog.tedshd.io/posts/2018-09-16-web-develop-on-mobile-web/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-09-16-web-develop-on-mobile-web/</guid>
+      <description>Web Develop on mobile web &amp;amp; WebView 因為某些原因必須把這些東西紀錄一下 其實實在太多東西要寫但實在是太忙且有點沒動力寫文章&amp;hellip; 會分成兩個 mobile OS 與 mobile browser 加上 WebView</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/golang/</link>
+    <description>Recent content in golang on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sat, 24 Oct 2020 15:39:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML form submit same name in php, nodejs, golang</title>
+      <link>https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/</link>
+      <pubDate>Sat, 24 Oct 2020 15:39:19 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/</guid>
+      <description>一直以來大部分時間都在用 PHP 開發 所以也用 PHP 來處理 HTML Form 所以都下意識地認為 &amp;lt;input type=&amp;quot;checkbox&amp;quot; name=&amp;quot;game[]&amp;quot; value=&amp;quot;FGO&amp;quot;&amp;gt; 這樣的 name=&amp;quot;game[]&amp;quot; 的處理方式是正規的處理 HTML Form 的多選的方式 也疑惑為何大多的 HTML</description>
+    </item>
+    
+    <item>
+      <title>golang - note</title>
+      <link>https://blog.tedshd.io/posts/2019-09-03-golang-note/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-09-03-golang-note/</guid>
+      <description>golang - note log 時間格式的雷 2006-01-02 15:04:05 https://golang.org/pkg/time/#Time.Format Golang 时间格式化的奇怪设定 —— 为什么你一直出错 Array Array 確認 type import &amp;#34;reflect&amp;#34; x := 7 reflect.TypeOf(x).Kind(); Convert interface to string var x interface{} = &amp;#34;abc&amp;#34; str := fmt.Sprintf(&amp;#34;%v&amp;#34;, x) Print statuct fmt.Printf(&amp;#34;%+v\n&amp;#34;, struct)</description>
+    </item>
+    
+    <item>
+      <title>Golang - gvm Golang version manger</title>
+      <link>https://blog.tedshd.io/posts/2019-06-14-golang-gvm-golang-version-manger/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-06-14-golang-gvm-golang-version-manger/</guid>
+      <description>gvm Intro gvm Golang version manger Usage Install bash &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) Add to .bashrc or .zshrc # added gvm command to shell source &amp;#34;$HOME/.gvm/scripts/gvm&amp;#34; # directory path for GO export GOPATH=$HOME/gopath export GOROOT=$HOME/go export PATH=$PATH:$GOROOT/bin Install go gvm install go1.4 -B gvm use go1.4 export GOROOT_BOOTSTRAP=$GOROOT gvm install go1.9 Finall add command to .bashrc or .zshrc gvm use go1.9 Refer - Go - 在 OSX 安</description>
+    </item>
+    
+  </channel>
+</rss>

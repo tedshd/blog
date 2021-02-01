@@ -1,0 +1,2343 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/</link>
+    <description>Recent content on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Thu, 14 Jan 2021 17:21:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PHP - 使用 urlencode rawurlencode 的差異和使用 http_build_query</title>
+      <link>https://blog.tedshd.io/posts/php_urlencode_rawurlencode_and_http_build_query/</link>
+      <pubDate>Thu, 14 Jan 2021 17:21:53 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/php_urlencode_rawurlencode_and_http_build_query/</guid>
+      <description>最近剛好遇到個問題就順便筆記一下(但是遇到的問題和要寫的內文無關就是了 XD) 前言 基本上在 url query string 的 value 都要做 url encode URL encode 會用到以下標準 RFC 1738 RFC 2396 RFC 3986 主要會</description>
+    </item>
+    
+    <item>
+      <title>使用 IMAP &amp; SMTP 來加強處理 Gmail</title>
+      <link>https://blog.tedshd.io/posts/use_imap_and_smtp_handle_email/</link>
+      <pubDate>Tue, 12 Jan 2021 10:18:11 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/use_imap_and_smtp_handle_email/</guid>
+      <description>Intro Gmail 提供 IMAP &amp;amp; SMTP 的功能 內送郵件 (IMAP) 伺服器 imap.gmail.com 需要安全資料傳輸層 (SSL)：是 通訊埠：993 外寄郵件 (SMTP) 伺服器 smtp.gmail.com 需要安全資料傳輸層 (SSL)：是 需要傳</description>
+    </item>
+    
+    <item>
+      <title>docker 使用紀錄</title>
+      <link>https://blog.tedshd.io/posts/docker_usage/</link>
+      <pubDate>Thu, 24 Dec 2020 10:12:17 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/docker_usage/</guid>
+      <description>docker images 列出所有拉下來的 docker image docker images REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE ubuntu latest 07f8e8c5e660 3 weeks ago 188.3 MB build dockerfile 使用 dockerfile 建立 docker image 直接建立 docker build . 預設會找當前的目錄的 Dockerfile -t 可以設定建立的 image &amp;amp; tag name docker build</description>
+    </item>
+    
+    <item>
+      <title>Puppeteer 安裝在 ubuntu server 使用紀錄</title>
+      <link>https://blog.tedshd.io/posts/puppeteer_on_ubuntu_server/</link>
+      <pubDate>Fri, 20 Nov 2020 10:52:35 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/puppeteer_on_ubuntu_server/</guid>
+      <description>Puppeteer 是 Google 推出的基於 nodejs 的一套工具 可以控制 Chrome 和 Chromium 所以在爬蟲和測試等等需求都很好用 這裡記錄一下在 GCP 上面開一台 Computer Engine 後裝 Puppeteer 的紀錄 1. CE 開一個 instance 之前開 f1-mirco(1vCPU &amp;amp; 0.6G</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - 處理一些排序的方式</title>
+      <link>https://blog.tedshd.io/posts/sort_case_handle_in_javascript/</link>
+      <pubDate>Wed, 18 Nov 2020 03:52:33 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/sort_case_handle_in_javascript/</guid>
+      <description>常常會遇到用 JavaScript 處理一些資料結構的排序 這裡會列舉一些使用情境與案例 取出排名前幾名的資料(排名的值不重複) 資料 var data = { 123: { count: 123, type: &amp;#34;video&amp;#34;, source: &amp;#34;&amp;#34;, }, 345: { count: 345,</description>
+    </item>
+    
+    <item>
+      <title>HTML form submit same name in php, nodejs, golang</title>
+      <link>https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/</link>
+      <pubDate>Sat, 24 Oct 2020 15:39:19 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/</guid>
+      <description>一直以來大部分時間都在用 PHP 開發 所以也用 PHP 來處理 HTML Form 所以都下意識地認為 &amp;lt;input type=&amp;quot;checkbox&amp;quot; name=&amp;quot;game[]&amp;quot; value=&amp;quot;FGO&amp;quot;&amp;gt; 這樣的 name=&amp;quot;game[]&amp;quot; 的處理方式是正規的處理 HTML Form 的多選的方式 也疑惑為何大多的 HTML</description>
+    </item>
+    
+    <item>
+      <title>Html2canvas</title>
+      <link>https://blog.tedshd.io/posts/html2canvas/</link>
+      <pubDate>Thu, 03 Sep 2020 16:05:40 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/html2canvas/</guid>
+      <description>網站直接網頁截圖 基本上就是把要截圖的內容轉成 canvas 物件 再轉成圖片下載即可 現成套件 html2canvas https://html2canvas.hertzen.com/ 但是如果要截圖的內容有用外部 url 載入的圖片需要注意一下 CORS 問題 補</description>
+    </item>
+    
+    <item>
+      <title>如何準備網路資訊業工程師的履歷/簡歷</title>
+      <link>https://blog.tedshd.io/posts/prepare_resume/</link>
+      <pubDate>Mon, 03 Aug 2020 00:44:28 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/prepare_resume/</guid>
+      <description>這邊會以我自己的經驗/經歷 與我是參考哪些東西來準備的部分來說明 為啥會有這篇文章主要是因為這部影片 https://www.youtube.com/watch?v=HIbZ5hH5XW4 因為這部影片在一些 FB 社群上面有貼文 我特地看</description>
+    </item>
+    
+    <item>
+      <title>在數位中所定義與使用語言與文字的規範</title>
+      <link>https://blog.tedshd.io/posts/language_and_character_in_digital/</link>
+      <pubDate>Mon, 25 May 2020 16:56:05 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/language_and_character_in_digital/</guid>
+      <description>前言 因為最近在做一些語系的整理 為了字型的關係 就整理了一下一些在數位資訊上面有關於文字與語言的一些規範 這裡會概括了系統與軟體開發與輸入裝置的處</description>
+    </item>
+    
+    <item>
+      <title>如何在網頁載入比較大量的資料時增加效能?</title>
+      <link>https://blog.tedshd.io/posts/load_large_table_improve_performance/</link>
+      <pubDate>Thu, 21 May 2020 10:13:23 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/load_large_table_improve_performance/</guid>
+      <description>前言 在後台系統會常遇到的問題就是要呈現大量的資料(表單) 通常在這情況下會有兩種方式呈現資料 分頁 無限滾動 但是這都要在 model 額外做不少工 例如: 處理分</description>
+    </item>
+    
+    <item>
+      <title>php - 載入文字轉成圖片</title>
+      <link>https://blog.tedshd.io/posts/php_load_font_to_image/</link>
+      <pubDate>Thu, 14 May 2020 09:50:42 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/php_load_font_to_image/</guid>
+      <description>需求 讀取一段文字後 可以決定字型 最後要轉成圖片 使用的工具 php7.2 freetype 提前說明需要用到 GD(這通常預設就啟動了) freetype 通常會需要另外安裝 如何先檢查有沒有 GD 和</description>
+    </item>
+    
+    <item>
+      <title>Google search result with structured data</title>
+      <link>https://blog.tedshd.io/posts/google_search_result_structure_data_research_log/</link>
+      <pubDate>Mon, 04 May 2020 13:53:19 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/google_search_result_structure_data_research_log/</guid>
+      <description>前言 現在可以確認的是 Google 並不會以單純的 Google structured data 來呈現在 search result 以往驗證過的是 search result 裡的 title 和描述並不完全會採用 meta 中的 title 和 description 現在在線上的頁面也再次驗證了 Google</description>
+    </item>
+    
+    <item>
+      <title>Mobile web remove touch background</title>
+      <link>https://blog.tedshd.io/posts/mobile_web_remove_touch_background/</link>
+      <pubDate>Wed, 04 Mar 2020 17:27:19 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/mobile_web_remove_touch_background/</guid>
+      <description>Intro Mobile web touch fire event or a link can show blue background
+How to remove -webkit-tap-highlight-color: transparent; Refer - How to remove the blue background of button on mobile?</description>
+    </item>
+    
+    <item>
+      <title>Canvas research log</title>
+      <link>https://blog.tedshd.io/posts/canvas_research_log/</link>
+      <pubDate>Tue, 04 Feb 2020 15:20:23 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/canvas_research_log/</guid>
+      <description>Online edit image Use canvas &amp;amp; how to do Upload image -&amp;gt; trans to canvas -&amp;gt; download canvas to png
+upload use files api
+new canvas object
+toDataURL download
+Some tips  toDataURL default to PNG &amp;amp; resolution is 96 dpi  Refer - HTMLCanvasElement.toDataURL() - Web APIs | MDN
+ Need notice device pixelRatio  Use Window.devicePixelRatio as base on canvas width &amp;amp; height
+var canvas = document.getElementById(&amp;#34;canvas&amp;#34;); // Set display size (css pixels).</description>
+    </item>
+    
+    <item>
+      <title>Npm install local</title>
+      <link>https://blog.tedshd.io/posts/npm_install_local/</link>
+      <pubDate>Mon, 03 Feb 2020 17:51:34 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/npm_install_local/</guid>
+      <description>How to install package use local package? If you want install package from other local directory
+npm link &amp;lt;package path&amp;gt; Refer - Installing a local module using npm?</description>
+    </item>
+    
+    <item>
+      <title>SEO - 增強 Youtube video SEO</title>
+      <link>https://blog.tedshd.io/posts/2019-12-23-seo-enhanced-youtube-video-seo/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-12-23-seo-enhanced-youtube-video-seo/</guid>
+      <description>Intro 最近因為公司的需求開始研究這潭深水 剛好看到一篇文章介紹的還不錯 雖然已經是 2016 的文章 但它寫的一些觀點我覺得現在還是適用 雖然這文章有在業配服務 XD</description>
+    </item>
+    
+    <item>
+      <title>Firebase - Firebase functions 使用紀錄</title>
+      <link>https://blog.tedshd.io/posts/2019-12-20-firebase-firebase-functions/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-12-20-firebase-firebase-functions/</guid>
+      <description>Firebase - Firebase functions 使用紀錄 最近想把一些自己在用的小東西丟到 severless 的服務 因為之前發生過一次 server 掛掉過一次的情況 當時是 GCP CE 不知為何 VM 中的網卡設定出問題 整個網卡消</description>
+    </item>
+    
+    <item>
+      <title>Header -  Accept-Language &amp; Content-Language</title>
+      <link>https://blog.tedshd.io/posts/2019-12-02-header-accept-language/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-12-02-header-accept-language/</guid>
+      <description>Header - Accept-Language &amp;amp; Content-Language Intro 多國語系的判定主要靠這兩個來處理 Accept-Language Content-Language 這裡的語言代碼一率遵循 ISO 639-1 codes Accept-Language 系統或是 client 需要帶在 request header 中 表示 client 所使用的語言 有時會帶有 location 資訊(l</description>
+    </item>
+    
+    <item>
+      <title>PHP -  check HTTP protocol</title>
+      <link>https://blog.tedshd.io/posts/2019-12-02-php-check-http-protocol/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-12-02-php-check-http-protocol/</guid>
+      <description>PHP - check HTTP protocol
+Use
+$protocol = (isset($_SERVER[&amp;#39;HTTPS&amp;#39;]) &amp;amp;&amp;amp; ($_SERVER[&amp;#39;HTTPS&amp;#39;] == &amp;#39;on&amp;#39; || $_SERVER[&amp;#39;HTTPS&amp;#39;] == 1) || isset($_SERVER[&amp;#39;HTTP_X_FORWARDED_PROTO&amp;#39;]) &amp;amp;&amp;amp; $_SERVER[&amp;#39;HTTP_X_FORWARDED_PROTO&amp;#39;] == &amp;#39;https&amp;#39;) ? &amp;#39;https&amp;#39; : &amp;#39;http&amp;#39;; </description>
+    </item>
+    
+    <item>
+      <title>Research - 加強在 Web 服務在搜尋引擎與部分社群的呈現</title>
+      <link>https://blog.tedshd.io/posts/2019-11-21-google-enhance-disonion-in-google-search-results/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-11-21-google-enhance-disonion-in-google-search-results/</guid>
+      <description>Research - 加強在 Web 服務在搜尋引擎與部分社群的呈現 這是一份紀錄著如何加強 SEO? 的筆記 參考來源大部分會是 Google 文件或者是 blog 發佈的消息與部分試驗出來的結果 僅供參</description>
+    </item>
+    
+    <item>
+      <title>2019 Mozilla Developer Roadshow Asia Taipei 與會紀錄</title>
+      <link>https://blog.tedshd.io/posts/2019-11-18-2019-mozilla-developer-roadshow-asia-taipei-record/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-11-18-2019-mozilla-developer-roadshow-asia-taipei-record/</guid>
+      <description>2019 Developer Roadshow Asia: Taipei 2019 Developer Roadshow Asia: Taipei 上次在台灣的 Roadshow 應該是 17 年的那場吧 發表 Quantum 的那次 如果之後我沒錯過台灣的場次的話 這次有趣的是竟然是在 2019 Meet Taipei 創新創業嘉年華的展覽</description>
+    </item>
+    
+    <item>
+      <title>youtube-dl - 使用筆記</title>
+      <link>https://blog.tedshd.io/posts/2019-11-04-youtube-dl-using-notes/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-11-04-youtube-dl-using-notes/</guid>
+      <description>youtube-dl - 使用筆記 youtube-dl 是一個跟影音相關方便使用的 cli 工具 這裡筆記一下一些用法 列出該影片可以下載的 format youtube-dl -F &amp;lt;URL&amp;gt; output [youtube] e17Um7wExuQ: Downloading webpage [youtube] e17Um7wExuQ: Downloading video info webpage [info] Available formats for e17Um7wExuQ: format code extension resolution note 249 webm</description>
+    </item>
+    
+    <item>
+      <title>php - float 浮點數科學記號轉換</title>
+      <link>https://blog.tedshd.io/posts/2019-10-29-php-float-float-ingress-scientific-marker-conversion/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-10-29-php-float-float-ingress-scientific-marker-conversion/</guid>
+      <description>php - float 浮點數科學記號轉換 php - float php 的浮點數大小受限於系統, 且會自動轉換成科學記號呈現, 但是一般人不會去看科學記號 echo 0.0000234; // 2.34E-5 在呈現上希望轉換回小數</description>
+    </item>
+    
+    <item>
+      <title>Web - HTML metadata image size with open graph...etc</title>
+      <link>https://blog.tedshd.io/posts/2019-10-03-web-html-metadata-image-size-with-open-graph-etc/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-10-03-web-html-metadata-image-size-with-open-graph-etc/</guid>
+      <description>Web - HTML metadata image size with open graph&amp;hellip;etc HTML use some meta tag for SEO, social media or App link&amp;hellip;
+List some limit with image size or logo size
+Facebook open graph Refers - Images in Link Shares
+  The minimum allowed image dimension is 200 x 200 pixels. The size of the image file must not exceed 8 MB. Use images that are at least 1200 x 630 pixels for the best display on high resolution devices.</description>
+    </item>
+    
+    <item>
+      <title>Google - 知識面板(knowledge panel)</title>
+      <link>https://blog.tedshd.io/posts/2019-09-27-google-knowledge-panel/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-09-27-google-knowledge-panel/</guid>
+      <description>Google - 知識面板(knowledge panel) 什麼是知識面板？ 就是下圖紅框中的東西啦 About knowledge panels 雖然這跟 SEO 沒啥太大的關係 但是對一個企業或者是服務的品牌露出與擴</description>
+    </item>
+    
+    <item>
+      <title>redis - note</title>
+      <link>https://blog.tedshd.io/posts/2019-09-05-redis-note/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-09-05-redis-note/</guid>
+      <description>redis - note doc http://redisdoc.com/index.html php redis https://www.cnblogs.com/ikodota/archive/2012/03/05/php_redis_cn.html go redis https://godoc.org/github.com/go-redis/redis 連到 redis server local server redis-cli remote server redis-cli -h host -p port -a password Get all key KEYS &#39;*&#39; Troubleshooting ERR Operation against a key holding the wrong kind of value 取 Key 的類型不對 用 type &amp;lt;KEY&amp;gt; 來確認存的類型</description>
+    </item>
+    
+    <item>
+      <title>golang - note</title>
+      <link>https://blog.tedshd.io/posts/2019-09-03-golang-note/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-09-03-golang-note/</guid>
+      <description>golang - note log 時間格式的雷 2006-01-02 15:04:05 https://golang.org/pkg/time/#Time.Format Golang 时间格式化的奇怪设定 —— 为什么你一直出错 Array Array 確認 type import &amp;#34;reflect&amp;#34; x := 7 reflect.TypeOf(x).Kind(); Convert interface to string var x interface{} = &amp;#34;abc&amp;#34; str := fmt.Sprintf(&amp;#34;%v&amp;#34;, x) Print statuct fmt.Printf(&amp;#34;%+v\n&amp;#34;, struct)</description>
+    </item>
+    
+    <item>
+      <title>web - favicon 使用筆記</title>
+      <link>https://blog.tedshd.io/posts/2019-07-03-web-icon-use-notes/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-07-03-web-icon-use-notes/</guid>
+      <description>favicon 使用筆記 隨著 web 發展越來越久 所需要準備的 favicon 等 icon 需要用到越來越多地方了 且這也是一個服務重要的依據 有設定 favicon 就是能夠給人對這個服務有個既定的印象 能</description>
+    </item>
+    
+    <item>
+      <title>Vue - 使用 Vue cli 3 開發 SSR 紀錄</title>
+      <link>https://blog.tedshd.io/posts/2019-06-24-vue-develop-ssr-records-with-vue-cli-3/</link>
+      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-06-24-vue-develop-ssr-records-with-vue-cli-3/</guid>
+      <description>Vue - 使用 Vue cli 3 開發 SSR 紀錄 Intro 因為工作需求需要一個能夠 SSR 的工具 由於是接手別的團隊回來的程式也剛好要做大動作的重構(打掉重練 之前的團隊是使用 koot.js 個人</description>
+    </item>
+    
+    <item>
+      <title>Mac - php redis install</title>
+      <link>https://blog.tedshd.io/posts/2019-06-19-mac-php-redis-install/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-06-19-mac-php-redis-install/</guid>
+      <description>Mac - php redis install Mac Env Mac OSX 10.14.5 Step git clone https://www.github.com/phpredis/phpredis.git cd phpredis phpize &amp;amp;&amp;amp; ./configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; sudo make install test php -r &amp;#34;if (new Redis() == true){ echo \&amp;#34;\r\n OK \r\n\&amp;#34;; }&amp;#34; Troubleshooting phpize 1. $ phpize grep: /usr/include/php/main/php.h: No such file or directory grep: /usr/include/php/Zend/zend_modules.h: No such file or directory grep: /usr/include/php/Zend/zend_extensions.h: No such file or directory Configuring for: PHP Api Version: Zend</description>
+    </item>
+    
+    <item>
+      <title>Golang - gvm Golang version manger</title>
+      <link>https://blog.tedshd.io/posts/2019-06-14-golang-gvm-golang-version-manger/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-06-14-golang-gvm-golang-version-manger/</guid>
+      <description>gvm Intro gvm Golang version manger Usage Install bash &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) Add to .bashrc or .zshrc # added gvm command to shell source &amp;#34;$HOME/.gvm/scripts/gvm&amp;#34; # directory path for GO export GOPATH=$HOME/gopath export GOROOT=$HOME/go export PATH=$PATH:$GOROOT/bin Install go gvm install go1.4 -B gvm use go1.4 export GOROOT_BOOTSTRAP=$GOROOT gvm install go1.9 Finall add command to .bashrc or .zshrc gvm use go1.9 Refer - Go - 在 OSX 安</description>
+    </item>
+    
+    <item>
+      <title>Vue - Vue cli note</title>
+      <link>https://blog.tedshd.io/posts/2019-03-25-vue-vue-cli-note/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-03-25-vue-vue-cli-note/</guid>
+      <description>Vue - Vue cli note https://cli.vuejs.org/
+vuetify vue create &amp;lt;project folder name&amp;gt; cd &amp;lt;project folder name&amp;gt; vue add vuetify npm run serve Use SPA App.vue
+&amp;lt;template&amp;gt; &amp;lt;router-view&amp;gt;&amp;lt;/router-view&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; export default { name: &amp;#39;App&amp;#39;, components: { }, data () { return { } } } &amp;lt;/script&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>JavaScript - 半形 全形 轉換</title>
+      <link>https://blog.tedshd.io/posts/2019-01-30-javascript-half-angle-full-angle-conversion/</link>
+      <pubDate>Wed, 30 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-01-30-javascript-half-angle-full-angle-conversion/</guid>
+      <description>JavaScript - 半形 全形 轉換 因為一個奇怪的需求? 需要把使用者輸入的東西轉成可以方便驗證的格式(這應該後端做吧?) 反正因為以前也做過半形轉成全形(痛苦的回</description>
+    </item>
+    
+    <item>
+      <title>Chrome headless 研究筆記</title>
+      <link>https://blog.tedshd.io/posts/2018-12-26-chrome-headless-research-notes/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-12-26-chrome-headless-research-notes/</guid>
+      <description>Chrome headless 研究筆記 最近要用到 chrome headless 的部分功能 且得在 ubuntu or debian server 實踐 所以筆記一下 Intro headless 大致分兩種用法 CLI libary Refer - Getting Started with Headless Chrome CLI 用法簡單但是受限很多且沒有找到具體詳</description>
+    </item>
+    
+    <item>
+      <title>2018 Google cloud 訓練營 筆記</title>
+      <link>https://blog.tedshd.io/posts/2018-12-18-2018-google-cloud-training-camp-notes/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-12-18-2018-google-cloud-training-camp-notes/</guid>
+      <description>2018 Google cloud 訓練營 筆記 Become a Google Cloud Platform expert with hands-on training. GCP Essentials Gcloud cli PROJECT_ID: gcloud auth list gcloud config list project BASIC gcloud -h gcloud config --help || gcloud help config gcloud config list --all Managing Cloud Storage data Try creating a Cloud Storage bucket. Bucket names must be unique, so replace unique-name with something else, or append the name to make</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - 計算網頁元件的曝光</title>
+      <link>https://blog.tedshd.io/posts/2018-11-21-javascript-calculate-exposure-of-web-page-components/</link>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-11-21-javascript-calculate-exposure-of-web-page-components/</guid>
+      <description>JavaScript - 計算網頁元件的曝光 因為某些需求需要精確計算某些網頁上的 UI 元件的曝光 沒錯 就是要像廣告計算 impression 一樣 之前只要確認有該元件的 request 就好了 但是為了精確追</description>
+    </item>
+    
+    <item>
+      <title>Mac - Get file user(owner) name &amp; user id</title>
+      <link>https://blog.tedshd.io/posts/2018-11-16-mac-get-file-user-name/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-11-16-mac-get-file-user-name/</guid>
+      <description>Mac - Get file user name &amp;amp; user id Get file owner name stat -f &amp;#39;%Su&amp;#39; &amp;lt;file or folder name&amp;gt; Get user id show user id // or id &amp;lt;user name&amp;gt; get uid id -u // or id -u &amp;lt;user name&amp;gt; get file owner uid stat -f &amp;lsquo;%Su&amp;rsquo; &amp;lt;file or folder name&amp;gt; | xargs id -u stat -f &#39;%u&#39; &amp;lt;file or folder name&amp;gt; Refer - 将Linu</description>
+    </item>
+    
+    <item>
+      <title>LINE - 2018 1111 分享得 LINE point 研究筆記與分析報告</title>
+      <link>https://blog.tedshd.io/posts/2018-11-06-line-2018-1111-shared-line-point-research-notes/</link>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-11-06-line-2018-1111-shared-line-point-research-notes/</guid>
+      <description>LINE - 2018 1111 分享得 LINE point 研究筆記與分析報告 MGM(member get member) 的模式一直以來都會是一個有規則可循且有時難度也不高的活動模式(因為難度高就不好擴散 這次以 LINE 2018 年 1111 分</description>
+    </item>
+    
+    <item>
+      <title>Mac - shell script check OS</title>
+      <link>https://blog.tedshd.io/posts/2018-10-25-mac-shell-script-check-os/</link>
+      <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-10-25-mac-shell-script-check-os/</guid>
+      <description>Mac - shell script check OS Use shell script check Linux or Mac
+#!/usr/bin/env bash  if [ `uname` == &amp;#39;Linux&amp;#39; ]; then echo &amp;#39;Linux&amp;#39; else echo &amp;#39;Mac&amp;#39; fi </description>
+    </item>
+    
+    <item>
+      <title>Mac - stat get owner name</title>
+      <link>https://blog.tedshd.io/posts/2018-10-25-mac-stat-get-owner-name/</link>
+      <pubDate>Thu, 25 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-10-25-mac-stat-get-owner-name/</guid>
+      <description>Mac - stat get owner name stat -f &amp;lsquo;%Su&amp;rsquo; </description>
+    </item>
+    
+    <item>
+      <title>Mac - Use readlink in Mac OS X</title>
+      <link>https://blog.tedshd.io/posts/2018-10-24-mac-use-readlink-in-mac-os-x/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-10-24-mac-use-readlink-in-mac-os-x/</guid>
+      <description>Mac - Use readlink in Mac OS X  install coreutils  brew install coreutils test greadlink  greadlink -f &amp;lt;file name&amp;gt; alias command line  alias readlink=greadlink refer - How can I get the behavior of GNU&amp;rsquo;s readlink -f on a Mac?;</description>
+    </item>
+    
+    <item>
+      <title>Paypal - 如何取得 API 簽章</title>
+      <link>https://blog.tedshd.io/posts/2018-10-20-paypal-how-to-take-the-api-seal/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-10-20-paypal-how-to-take-the-api-seal/</guid>
+      <description>登入 Payapl account 接下來如下圖步驟即可 這樣就有 API 用戶名稱 API 密碼 API 電子簽章 這樣即可使用在一些第三方串接 Paypal 的服務了 Refer - How to get PayPal API username, password and signature information?</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - 使用與處理正確的時間</title>
+      <link>https://blog.tedshd.io/posts/2018-09-20-javascript-use-the-right-time/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-09-20-javascript-use-the-right-time/</guid>
+      <description>JavaScript - 使用與處理正確的時間 這是個很有趣的議題 舉凡使用倒數計時器或限時開賣等 只要在網頁上牽扯到時間的動態呈現都需要處理這問題 會列舉了幾個情況與介</description>
+    </item>
+    
+    <item>
+      <title>Web Develop on mobile web &amp; WebView</title>
+      <link>https://blog.tedshd.io/posts/2018-09-16-web-develop-on-mobile-web/</link>
+      <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-09-16-web-develop-on-mobile-web/</guid>
+      <description>Web Develop on mobile web &amp;amp; WebView 因為某些原因必須把這些東西紀錄一下 其實實在太多東西要寫但實在是太忙且有點沒動力寫文章&amp;hellip; 會分成兩個 mobile OS 與 mobile browser 加上 WebView</description>
+    </item>
+    
+    <item>
+      <title>Web - viewport 是啥?你真的了解移動裝置的畫面大小處理嗎?來講古了</title>
+      <link>https://blog.tedshd.io/posts/2018-08-23-what-is-web-viewport-do-you-really-understand-the-screen-size-of-the-mobile-device-its-ancient/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-08-23-what-is-web-viewport-do-you-really-understand-the-screen-size-of-the-mobile-device-its-ancient/</guid>
+      <description>Web - viewport 是啥?你真的了解移動裝置的畫面大小處理嗎?來講古了 歷史 早期 viewport 是可以設定跟 device 的 dpi 一樣的(target-densitydpi=device</description>
+    </item>
+    
+    <item>
+      <title>AMP - amp analytics &amp; conversion</title>
+      <link>https://blog.tedshd.io/posts/2018-06-17-amp-amp-analytics/</link>
+      <pubDate>Sun, 17 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-06-17-amp-amp-analytics/</guid>
+      <description>AMP - amp analytics &amp;amp; conversion Use google analytics must use amp-analytics component
+It can use PHP print template function to view
+First include
+&amp;lt;script async custom-element=&amp;#34;amp-analytics&amp;#34; src=&amp;#34;https://cdn.ampproject.org/v0/amp-analytics-0.1.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; ga click event Refer - Adding Analytics to your AMP pages
+function amp_ga_event_click_template($ga_id, $selector, $cate, $action, $label, $non_interaction = &amp;#34;0&amp;#34;) { $template = &amp;lt;&amp;lt;&amp;lt;EOF &amp;lt;amp-analytics type=&amp;#34;googleanalytics&amp;#34;&amp;gt; &amp;lt;script type=&amp;#34;application/json&amp;#34;&amp;gt; { &amp;#34;vars&amp;#34;: { &amp;#34;account&amp;#34;: &amp;#34;%s&amp;#34; }, &amp;#34;triggers&amp;#34;: { &amp;#34;trackClickOnHeader&amp;#34; : { &amp;#34;on&amp;#34;: &amp;#34;click&amp;#34;, &amp;#34;selector&amp;#34;: &amp;#34;%s&amp;#34;, &amp;#34;request&amp;#34;: &amp;#34;event&amp;#34;, &amp;#34;vars&amp;#34;: { &amp;#34;eventCategory&amp;#34;: &amp;#34;%s&amp;#34;, &amp;#34;eventAction&amp;#34;: &amp;#34;%s&amp;#34;, &amp;#34;eventLabel&amp;#34;: &amp;#34;%s&amp;#34; }, &amp;#34;extraUrlParams&amp;#34;: { &amp;#34;ni&amp;#34;: &amp;#34;%s&amp;#34; } } } } &amp;lt;/script&amp;gt; &amp;lt;/amp-analytics&amp;gt; EOF; return printf($template, $ga_id, $selector, $cate, $action, $label, $non_interaction); } google adwords conversion Refer - Using AMP for your AdWords Landing Pages</description>
+    </item>
+    
+    <item>
+      <title>paypal - 利用 paypal 開發一個簡單的 EC</title>
+      <link>https://blog.tedshd.io/posts/2018-05-11-paypal-paypal-ec/</link>
+      <pubDate>Fri, 11 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-05-11-paypal-paypal-ec/</guid>
+      <description>paypal - 利用 paypal 開發一個簡單的 EC Intro Paypal 大致分兩種方式來處理支付功能 api paypal button 這邊大致上會以paypal button 的方式來處理, 相對起來較為簡易</description>
+    </item>
+    
+    <item>
+      <title>webview - handle iOS status bar empty height in webview</title>
+      <link>https://blog.tedshd.io/posts/2018-04-19-webview-handle-ios-status-bar-empty-height-in-webview/</link>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-04-19-webview-handle-ios-status-bar-empty-height-in-webview/</guid>
+      <description>webview - handle iOS status bar empty height in webview in iOS
+If you use fullscreen webview in app and set app size over iOS device navigation bar.
+So need add height to fill status bar height.
+iPhone6/7/8 is 20px
+iPhoneX is 44px
+You can use is sample code
+header.ios { padding-top: 20px; } @media (width: 375px) and (height: 832px) { header.ios { padding-top: 44px; } } iPhoneX fullscreen webview width is 375px, height is 832px</description>
+    </item>
+    
+    <item>
+      <title>HTML - image load error handle</title>
+      <link>https://blog.tedshd.io/posts/2018-04-18-image-load-error-handle/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-04-18-image-load-error-handle/</guid>
+      <description>HTML - image load error handle 2 way
+Use onerror &amp;lt;img src=&amp;#34;&amp;lt;image url&amp;gt;&amp;#34; onerror=&amp;#34;this.src=&amp;#39;&amp;lt;d4 image url&amp;gt;&amp;#39;&amp;#34; /&amp;gt; Use Magic Image Pseudo Element img.imgd4 {position: relative;display: block;}img.imgd4:after {display: block;position: absolute;top: 0;left: 0;background: url(&amp;lt;d4 image url&amp;gt;) no-repeat;background-size: contain;width: 100%;height: 100%;content: &#39;&#39;;}</description>
+    </item>
+    
+    <item>
+      <title>Something about favicon on website</title>
+      <link>https://blog.tedshd.io/posts/2018-03-15-something-about-favicon-on-website/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-03-15-something-about-favicon-on-website/</guid>
+      <description>Something about favicon on website Favicon is a icon on browser tab.
+But now we must do more thing on mobile device handle favicon.
+2 way add browser favicon   Put icon in url path &amp;lt;example.com&amp;gt;/favicon.png
+  Add meta tag &amp;lt;link rel=&amp;quot;icon&amp;quot; type=&amp;quot;image/png&amp;quot; href=&amp;quot;favicon.png&amp;quot; /&amp;gt;
+  Notice: I like use png as my favicon, because i can reuse this file.
+Icon format case
+&amp;lt;!-- IE --&amp;gt; &amp;lt;link rel=&amp;#34;shortcut icon&amp;#34; type=&amp;#34;image/x-icon&amp;#34; href=&amp;#34;favicon.</description>
+    </item>
+    
+    <item>
+      <title>Maker - apws96 winkeyless 96 keyboard</title>
+      <link>https://blog.tedshd.io/posts/2018-01-12-4736834/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-01-12-4736834/</guid>
+      <description>Maker - apws96 winkeyless 96 鍵盤自組紀錄 來源 淘寶 - 比比外設 引言 其實當初對 60% 以外最有興趣的大概就是像 96 鍵盤的 layout 了 因為幾乎所有的常用的按鍵都有因為緊密的配置, 所以</description>
+    </item>
+    
+    <item>
+      <title>PHP - Geoip 設定 隨手紀錄</title>
+      <link>https://blog.tedshd.io/posts/2018-01-09-php-geoip-set-the-record/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-01-09-php-geoip-set-the-record/</guid>
+      <description>PHP - Geoip 設定 隨手紀錄 之前有依照 php.net 中的文章設定 http://php.net/manual/en/book.geoip.php#117240 但在某次 php 升版後有點問題 所以放棄該用法 改採用 GeoIP2-php 這套件來處理 這是一個 MAXMIND 的服務出的套件, 也有其他程式</description>
+    </item>
+    
+    <item>
+      <title>php - loop directory</title>
+      <link>https://blog.tedshd.io/posts/2017-12-13-php-loop-directory/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-12-13-php-loop-directory/</guid>
+      <description>php - loop directory Sometime need use php loop directory list all file in this directory
+$directory = scandir(&amp;#39;./js&amp;#39;); foreach($directory as $file) { if ($file === &amp;#39;.&amp;#39; || $file === &amp;#39;..&amp;#39;) { continue; } echo $file; echo &amp;#34;\n&amp;#34;; } </description>
+    </item>
+    
+    <item>
+      <title>php - 比對時間</title>
+      <link>https://blog.tedshd.io/posts/2017-12-04-php-compared-to-time/</link>
+      <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-12-04-php-compared-to-time/</guid>
+      <description>php - 比對時間 記錄一下比對時間的方式(利用 timestamp) time() &amp;gt; strtotime(&amp;#39;2017-11-13 23:59:59&amp;#39;);</description>
+    </item>
+    
+    <item>
+      <title>web - mobile web on iPhone X first preview</title>
+      <link>https://blog.tedshd.io/posts/2017-10-02-web-mobile-web-on-iphone-x-first-preview/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-10-02-web-mobile-web-on-iphone-x-first-preview/</guid>
+      <description>web - mobile web on iPhone X first preview Intro On 2017 9/12.
+Apple published iPhone X.
+And this device has so special screen.
+So many web &amp;amp; iOS developer worry about some case like.
+(form Apple)
+OMG!
+It can effect app show on full screen.
+So Apple has provide guideline about iPhone X.
+iPhone X - Overview - iOS Human Interface Guidelines
+It is great change for web &amp;amp; iOS developer.</description>
+    </item>
+    
+    <item>
+      <title>ubuntu - apt-get install php repository 403</title>
+      <link>https://blog.tedshd.io/posts/2017-09-17-2472689/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-09-17-2472689/</guid>
+      <description>ubuntu - apt-get install php repository 403 Error: W: Failed to fetch http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu/dists/trusty/main/binary-amd64/Packages 404 Not Found // or Error: W: Failed to fetch http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu/dists/trusty/main/binary-amd64/Packages 403 forbidden Try this
+sudo rm /etc/apt/sources.list.d/ondrej-php5-5_6-trusty.list sudo add-apt-repository -y ppa:ondrej/php sudo apt-get -y update </description>
+    </item>
+    
+    <item>
+      <title>HTML - dns-prefetch, preconnect, prefetch, prerender 研究筆記</title>
+      <link>https://blog.tedshd.io/posts/2017-09-11-html-dns-prefetch-preconnect-prefetch-and-prerender-research-notes/</link>
+      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-09-11-html-dns-prefetch-preconnect-prefetch-and-prerender-research-notes/</guid>
+      <description>HTML - dns-prefetch, preconnect, prefetch, prerender 研究筆記 Intro 這幾個 meta 屬性早在幾年前就有不少外國文章和少部分的國內大神介紹過了 但當時我一直抱持這它還在 W3C 草案, 所以不急著用的心態, 且</description>
+    </item>
+    
+    <item>
+      <title>Node.js - 簡單起一個 local server 進行測試</title>
+      <link>https://blog.tedshd.io/posts/2017-09-05-2262937/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-09-05-2262937/</guid>
+      <description>Node.js - 簡單起一個 local server 進行測試 緣由 如果要臨時起一個 local 的 server 測試前端可以考慮用 Node 的一個套件 http-server 來做 為啥有這需求呢? 可能的情境如下 原本的 localhost(127.0.0.1) 被其他服務佔用</description>
+    </item>
+    
+    <item>
+      <title>AMP - Accelerated Mobile Pages key point</title>
+      <link>https://blog.tedshd.io/posts/2017-08-25-amp-accelerated-mobile-pages-key-point/</link>
+      <pubDate>Fri, 25 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-08-25-amp-accelerated-mobile-pages-key-point/</guid>
+      <description>Intro Provide some key point &amp;amp; something we need notice
+1. meta In normal page
+&amp;lt;link rel=&amp;#34;amphtml&amp;#34; href=&amp;#34;https://www.example.com/url/to/amp/document.html&amp;#34;&amp;gt; In AMP page
+&amp;lt;link rel=&amp;#34;canonical&amp;#34; href=&amp;#34;https://www.example.com/url/to/full/document.html&amp;#34;&amp;gt; 2. Default style(Handle render) &amp;lt;style amp-boilerplate&amp;gt;body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}&amp;lt;/style&amp;gt;&amp;lt;noscript&amp;gt;&amp;lt;style amp-boilerplate&amp;gt;body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}&amp;lt;/style&amp;gt;&amp;lt;/noscript&amp;gt; Format
+&amp;lt;style amp-boilerplate&amp;gt; body { -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both; -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both; -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both; animation: -amp-start 8s steps(1, end) 0s 1 normal both } @-webkit-keyframes -amp-start { from { visibility: hidden } to { visibility: visible } } @-moz-keyframes -amp-start { from { visibility: hidden } to { visibility: visible } } @-ms-keyframes -amp-start { from { visibility: hidden } to { visibility: visible } } @-o-keyframes -amp-start { from { visibility: hidden } to { visibility: visible } } @keyframes -amp-start { from { visibility: hidden } to { visibility: visible } } &amp;lt;/style&amp;gt; &amp;lt;noscript&amp;gt; &amp;lt;style amp-boilerplate&amp;gt; body { -webkit-animation: none; -moz-animation: none; -ms-animation: none; animation: none } &amp;lt;/style&amp;gt; &amp;lt;/noscript&amp;gt; 3.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - web call native app</title>
+      <link>https://blog.tedshd.io/posts/2017-05-12-1822543/</link>
+      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-05-12-1822543/</guid>
+      <description>web call native app 緣由 因為一些原因要 mobile web 可以 call native 的一些東西來分享當前頁面或幹啥事(其實最常用的是聯絡資訊點了直接 call native app) 眾所皆知 HTML5 預設有 mailto: tel: sms: 但每個都要</description>
+    </item>
+    
+    <item>
+      <title>CSS - content property use special char</title>
+      <link>https://blog.tedshd.io/posts/2017-05-04-1790526/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-05-04-1790526/</guid>
+      <description>CSS - content property use special char If you want use special char like ©in CSS content property
+You must use ASCII and show on HEX
+And it is &amp;amp;#169
+So CSS need
+div;before { content: &amp;#34;\00A9&amp;#34;; } Entity Conversion Calculator
+This page can help us trans to hex
+Refer - CSS Content | CSS-Tricks</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - browser zoom detect</title>
+      <link>https://blog.tedshd.io/posts/2017-04-25-1747072/</link>
+      <pubDate>Tue, 25 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-04-25-1747072/</guid>
+      <description>JavaScript - browser zoom detect 強者我朋友身為一個設計師問我一個很奇耙的需求 就是可不可以知道瀏覽器的縮放狀態 因為她的 BOSS 要求縮放不破版, 所以她希望設計在縮放狀態時的</description>
+    </item>
+    
+    <item>
+      <title>Google search develop for SEO - research log</title>
+      <link>https://blog.tedshd.io/posts/2017-04-24-google-search-develop-for-seo-research-log/</link>
+      <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-04-24-google-search-develop-for-seo-research-log/</guid>
+      <description>Google search develop for SEO - research log 對於一個網站上線要讓 Google 容易搜尋到需要做很多事 多到爆炸,而且每年都有新東西出來, 實在看得很煩&amp;hellip; 感覺網路都被 Google 控制</description>
+    </item>
+    
+    <item>
+      <title>AMP - Accelerated Mobile Pages 研究筆記</title>
+      <link>https://blog.tedshd.io/posts/2017-02-24-amp-accelerated-mobile-pages/</link>
+      <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-02-24-amp-accelerated-mobile-pages/</guid>
+      <description>AMP - develop log Intro 這是針對對 AMP 有基本概念的筆記, 基本概念請去 amp project 看就好 知道 AMP 是啥的再來看這文章會較有用 &amp;ndash; 我是分隔線 &amp;mdash; 會被 cache 在 Google domain 下 更新分主動 / 被動 主</description>
+    </item>
+    
+    <item>
+      <title>Firebase - Firebase Cloud Message(FCM) Research Log</title>
+      <link>https://blog.tedshd.io/posts/2016-12-08-1183912/</link>
+      <pubDate>Thu, 08 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-12-08-1183912/</guid>
+      <description>Firebase - Firebase Cloud Message(FCM) Research Log This article is focus on web version
+Intro You can easy to use web notification push notification to your web site.
+Set Up a JavaScript Firebase Cloud Messaging Client App
+Different with use pure web notification Using the Notifications API
+ Browser support  FCM - Chrome(desktop &amp;amp; Android) &amp;amp; Firefox(desktop &amp;amp; Android) pure notification api - Chrome(desktop &amp;amp; Android) &amp;amp; Firefox(desktop &amp;amp; Android) &amp;amp; Opera(desktop) &amp;amp; Safari(desktop)  Android need service worker     Service Worker  FCM - require pure notification api - option    pure web notification only a notification object, you need handle connection push message from server.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - get text from dom object not include wrap html tag in child</title>
+      <link>https://blog.tedshd.io/posts/2016-11-03-javascript-get-text-from-dom-object-not-include-wrap-html-tag-in-child/</link>
+      <pubDate>Thu, 03 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-11-03-javascript-get-text-from-dom-object-not-include-wrap-html-tag-in-child/</guid>
+      <description>JavaScript - get text from dom object not include wrap html tag in child Intro Case 1 &amp;lt;div id=&amp;#34;case_1&amp;#34;&amp;gt; Hi, This is a &amp;lt;em&amp;gt;Apple&amp;lt;/em&amp;gt; &amp;lt;/div&amp;gt; I want to get Hi, This is a 
+Case 2 &amp;lt;div id=&amp;#34;case_2&amp;#34;&amp;gt; &amp;lt;p&amp;gt;I have a pen.&amp;lt;/p&amp;gt;PPAP &amp;lt;/div&amp;gt; I want to get PPAP
+Case 3 &amp;lt;div id=&amp;#34;case_3&amp;#34;&amp;gt; Apple&amp;lt;span&amp;gt; and pen&amp;lt;/span&amp;gt; and pineapple pen &amp;lt;/div&amp;gt; I want to get Apple and  and pineapple pen
+Than you can use this</description>
+    </item>
+    
+    <item>
+      <title>Content Security Policy - 論一般網站放置的可行性</title>
+      <link>https://blog.tedshd.io/posts/2016-09-19-content-security-policy-on-the-feasibility-of-general-site-placed/</link>
+      <pubDate>Mon, 19 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-09-19-content-security-policy-on-the-feasibility-of-general-site-placed/</guid>
+      <description>Content Security Policy - 論一般網站放置的可行性 前言 Content Security Policy 出來也有一段時間了 他的目的是為了從 header 下手去抵禦一些攻擊, 基本上遵循它的rule 就可以避掉一些 XSS 攻擊 但</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - touch and click behavior in mobile browser</title>
+      <link>https://blog.tedshd.io/posts/2016-09-07-javascript-touch-and-click-behavior-in-mobile-browser/</link>
+      <pubDate>Wed, 07 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-09-07-javascript-touch-and-click-behavior-in-mobile-browser/</guid>
+      <description>JavaScript - touch and click behavior in mobile browser On mobile web
+If you click it
+And mobile browser can fire touchstart and click
+Fire touchstart event and then fire click event has the difference in time.
+the step is touchstart -&amp;gt; click
+So if you has a popup and you use touchstart event bind close behavior.
+You can find it fire click event.
+Then some bug happened.
+In this case(suggest use mobile browser)</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text - How to modify font size in sidebar</title>
+      <link>https://blog.tedshd.io/posts/2016-09-01-sublime-text-how-to-modify-font-size-in-sidebar/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-09-01-sublime-text-how-to-modify-font-size-in-sidebar/</guid>
+      <description>Sublime Text - How to modify font size in sidebar In sublime text 3
+If you want modify font size in sidebar
+Follow step
+ Preferences -&amp;gt; Browse Packages Open User directory Create a file File named your theme name  How to get it Preferences -&amp;gt; Settings - User -&amp;gt; theme Or default theme Default.sublime-theme   Add content  [ { &amp;#34;class&amp;#34;: &amp;#34;sidebar_label&amp;#34;, &amp;#34;font.size&amp;#34;: 18 }, ] other in Mac the path is</description>
+    </item>
+    
+    <item>
+      <title>gulp - One problem i found when i use CSS minify with some CSS library</title>
+      <link>https://blog.tedshd.io/posts/2016-08-31-gulp-one-problem-i-found-when-i-use-css-minify-with-some-css-library/</link>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-08-31-gulp-one-problem-i-found-when-i-use-css-minify-with-some-css-library/</guid>
+      <description>gulp - One problem i found when i use CSS minify with some CSS library When i use pure. And i use gulp as my front-end build tool. I used cssmin as my CSS minify tool. By default it can extreme compress CSS file. The one problem happen! display not match Because use CSS minify can remove inherited CSS property. So in webkit browser doesn&amp;rsquo;t has display: -webkit-flex; and layout</description>
+    </item>
+    
+    <item>
+      <title>Linux - install gogole chrome in debian Linux</title>
+      <link>https://blog.tedshd.io/posts/2016-08-03-linux-install-gogole-chrome-in-debian-linux/</link>
+      <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-08-03-linux-install-gogole-chrome-in-debian-linux/</guid>
+      <description>Linux - install gogole chrome in debian Linux wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - sudo sh -c &amp;#39;echo &amp;#34;deb http://dl.google.com/linux/chrome/deb/ stable main&amp;#34; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google.list&amp;#39; sudo apt-get update sudo apt-get install google-chrome-stable refer - How to install Chrome browser properly via command line?</description>
+    </item>
+    
+    <item>
+      <title>webdriver.io - 前端測試入門筆記...</title>
+      <link>https://blog.tedshd.io/posts/2016-07-19-webdriverio-introduction-to-front-end-test-notes/</link>
+      <pubDate>Tue, 19 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-07-19-webdriverio-introduction-to-front-end-test-notes/</guid>
+      <description>webdriver.io - 前端測試入門筆記&amp;hellip; 前端測試工具很多種 我這裡的需求是要做自動化測試 不知為何就選了這套 webdriver.io 可能就只是單純名字很炫(誤 當然一開始要</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Encrypt - Has a certificate problem in Android Chrome</title>
+      <link>https://blog.tedshd.io/posts/2016-07-17-lets-encrypt-has-a-certificate-problem-in-android-chrome/</link>
+      <pubDate>Sun, 17 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-07-17-lets-encrypt-has-a-certificate-problem-in-android-chrome/</guid>
+      <description>Let&amp;rsquo;s Encrypt - Has a certificate problem in Android Chrome If you use Let&amp;rsquo;s Encrypt as SSL certificate
+Then setting this in Nginx
+ssl_certificate /etc/letsencrypt/live/&amp;lt;domain&amp;gt;/cert.pem;You can find it maybe has problem in Android Chrome
+Now you can modify this
+ssl_certificate /etc/letsencrypt/live/&amp;lt;domain&amp;gt;/fullchain.pem;Test your SSL SSL Server Test
+Refer - Let’s encrypt certificate not working for Andriod’s Google Chrome</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Why i from RequireJS to webpack</title>
+      <link>https://blog.tedshd.io/posts/2016-06-28-javascript-why-i-from-requirejs-to-webpack/</link>
+      <pubDate>Tue, 28 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-06-28-javascript-why-i-from-requirejs-to-webpack/</guid>
+      <description>Why i from RequireJS to webpack RequireJS is a Asynchronous Module Definition(AMD) lib
+Its powerful to handle modulize on your page and you can handle all loader on JavaScript, you can focus on JavaScript function and web page.
+But if your module is become complex and more module, you can find JavaScript request become more and more.
+You can find it is a serious performance problem.
+Your network has lot of request of js.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - 動作行為抽象化實例</title>
+      <link>https://blog.tedshd.io/posts/2016-06-10-javascript-the-abstract-an-action-instance/</link>
+      <pubDate>Fri, 10 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-06-10-javascript-the-abstract-an-action-instance/</guid>
+      <description>JavaScript - 動作行為抽象化實例 其實標題真的不知道要怎麼定 因為只是要說明一個實例, 但又不想扯到其他太制式的東西(設計模式), 但這範例又可用於其他地方,</description>
+    </item>
+    
+    <item>
+      <title>Slack - bot 研究雜記</title>
+      <link>https://blog.tedshd.io/posts/2016-05-28-slack-bot-research-notes/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-05-28-slack-bot-research-notes/</guid>
+      <description>Slack - bot 研究雜記 最近 bot 很夯 再加上公司需要一些自動部署與指令化的一些流程要改善, 所以就來研究一下 剛好我們是用 Slack 所以就先來試試 Slack bot 了 Intro 先說明下最簡</description>
+    </item>
+    
+    <item>
+      <title>Node.js - 直接執行指令</title>
+      <link>https://blog.tedshd.io/posts/2016-05-25-nodejs-direct-instruction/</link>
+      <pubDate>Wed, 25 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-05-25-nodejs-direct-instruction/</guid>
+      <description>Node.js - 直接執行指令 因為最近要用 nodejs 做一些事, 所以就趕鴨子上架的先把功能做出來再說 然後就立馬遇到問題了&amp;hellip; 在 PHP 中要直接執行 command line 是使用 exec</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - facebook save to facebook button</title>
+      <link>https://blog.tedshd.io/posts/2016-04-20-javascript-facebook-save-to-facebook-button/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-04-20-javascript-facebook-save-to-facebook-button/</guid>
+      <description>JavaScript - facebook save to facebook button 2016 F8 Facebook release new function - save to facebook Then we can use it now Step 1 Go to facebook developer Save Button - Social Plugins - Documentation - Facebook for Developers Step 2 Build or use facebook application If you had facebook application can skip this step If you build facebook application and you can get this code window.fbAsyncInit = function()</description>
+    </item>
+    
+    <item>
+      <title>Google Adsense domain 設置</title>
+      <link>https://blog.tedshd.io/posts/2016-04-15-google-adsense-domain-settings/</link>
+      <pubDate>Fri, 15 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-04-15-google-adsense-domain-settings/</guid>
+      <description>Google Adsense domain 設置 一點設定 Google adsense 的心得 因為有時會寫一寫筆記或部落格記錄人生 然後因為工作進到跟廣告有點關係的公司, 遇到裡面的一些專家 有人提議說, 既然我有</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - DOM object check array &amp; isArray polyfill</title>
+      <link>https://blog.tedshd.io/posts/2016-03-22-667492/</link>
+      <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-03-22-667492/</guid>
+      <description>JavaScript - DOM object check array &amp;amp; isArray polyfill One day my colleague find a question.
+ECMA script isArray is not work when object is DOM element
+Array.isArray(document.querySelectorAll(&amp;#39;div&amp;#39;)); // false And polyfill for old browser
+Object.prototype.toString.call(arg) === &amp;#39;[object Array]&amp;#39;; Still fail
+Object.prototype.toString.call(document.getElementsByClassName(&amp;#39;product-img&amp;#39;)); // [object HTMLCollection] Object.prototype.toString.call(document.querySelectorAll(&amp;#39;div&amp;#39;)); // [object NodeList] So i try to make a polyfill
+Array.isArray = function(arg) { var type = Object.prototype.toString.call(arg); if (type === &amp;#39;[object Array]&amp;#39; || type === &amp;#39;[object HTMLCollection]&amp;#39; || type === &amp;#39;[object NodeList]&amp;#39;) { return true; } return false; }; </description>
+    </item>
+    
+    <item>
+      <title>Vim - JavaScript auto complete</title>
+      <link>https://blog.tedshd.io/posts/2016-03-08-vim-javascript-auto-complete/</link>
+      <pubDate>Tue, 08 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-03-08-vim-javascript-auto-complete/</guid>
+      <description>Vim - JavaScript auto complete 因為同事幾乎都在用 Vim 但我每次都在看他們一直打字我看了就很痛苦 所以就建議他們用 auto complete 的功能, 但我個人因為很少用 Vim 所以就讓他們自己去找套</description>
+    </item>
+    
+    <item>
+      <title>HTML - redirect page from http-equiv</title>
+      <link>https://blog.tedshd.io/posts/2016-01-31-466975/</link>
+      <pubDate>Sun, 31 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-01-31-466975/</guid>
+      <description>HTML - redirect page from http-equiv Intro We can use JavaScript or PHP redirect page, we also can only use HTML redirect page But not suggest use this way Note: The value &amp;ldquo;refresh&amp;rdquo; should be used carefully, as it takes the control of a page away from the user. Using &amp;ldquo;refresh&amp;rdquo; will cause a failure in W3C&amp;rsquo;s Web Content Accessibility Guidelines. 使用 標籤進行重新導</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - get CSS style</title>
+      <link>https://blog.tedshd.io/posts/2016-01-27-javascript-get-css-style/</link>
+      <pubDate>Wed, 27 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-01-27-javascript-get-css-style/</guid>
+      <description>JavaScript - get CSS style Sometimes i want to use JavaScript get dom CSS style.
+Use DOM.currentStyle and window.getComputedStyle(DOM)
+For IE use DOM.currentStyle
+Other use window.getComputedStyle(DOM)
+var dom = document.getElementById(&amp;#34;target&amp;#34;), style = dom.currentStyle || window.getComputedStyle(dom); console.log(style.marginTop); refer - Window.getComputedStyle() - Web APIs | MDN
+refer - currentStyle object (Internet Explorer)</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Platform - 空間不足, 設定 swap, kernel 升級</title>
+      <link>https://blog.tedshd.io/posts/2015-12-20-google-cloud-platform-not-enough-space-set-the-swap-kernel-upgrades/</link>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-12-20-google-cloud-platform-not-enough-space-set-the-swap-kernel-upgrades/</guid>
+      <description>Google Cloud Platform - 空間不足, 設定 swap, kernel 升級 kernel 升級, 設定 swap 最近強者我朋友在 Google Cloud Platform 上的 computer engine 上的 VM 升級 kernel 時發現升一升就 GG 了 連不進去了 用快照再開一台試驗還是如此</description>
+    </item>
+    
+    <item>
+      <title>CSS4 - 關於 css4 and postcss 的一些想法</title>
+      <link>https://blog.tedshd.io/posts/2015-11-20-css4-css4-thoughts-and-postcss/</link>
+      <pubDate>Fri, 20 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-11-20-css4-css4-thoughts-and-postcss/</guid>
+      <description>CSS4 - 關於 css4 and postcss 的一些想法 前言 在年末才來發這篇文&amp;hellip; 在今年大家開始瘋 react(咦? AngularJS 勒&amp;hellip;), Babel, postcss 好像沒聽過上述這幾</description>
+    </item>
+    
+    <item>
+      <title>Something about XSS(Cross-site scripting)</title>
+      <link>https://blog.tedshd.io/posts/2015-11-01-something-about-xsscross-site-scripting/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-11-01-something-about-xsscross-site-scripting/</guid>
+      <description>Something about XSS(Cross-site scripting) If not set anything Use like &amp;lt;?php echo $_GET[&amp;#39;name&amp;#39;];?&amp;gt; and querystring name = &amp;lt;script&amp;gt;alert(document.cookie)&amp;lt;/script&amp;gt; And not defence XSS In Firefox In Chrome In Safari Result Chrome &amp;amp; Safari browser has handle XSS default Defence Set header X-XSS-Protection: 1 if use PHP, can use htmlspecialchars() // or htmlentities() Important! Finally We must know it is handle encode to avoid run JavaScript on page JavaScript ver htmlspecialchars Refer</description>
+    </item>
+    
+    <item>
+      <title>php - Ubuntu 14 PHP 5.6 or to upgrade from PHP 5.5</title>
+      <link>https://blog.tedshd.io/posts/2015-10-31-php-ubuntu-14-php-56-or-to-upgrade-from-php-55/</link>
+      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-10-31-php-ubuntu-14-php-56-or-to-upgrade-from-php-55/</guid>
+      <description>php - Ubuntu 14 PHP 5.6 or to upgrade from PHP 5.5 sudo apt-get -y update sudo add-apt-repository ppa:ondrej/php5-5.6 sudo apt-get -y update sudo apt-get -y install php5 php5-mhash php5-mcrypt php5-curl php5-cli php5-mysql php5-gd php5-intl php5-xsl php5-bcmath if use php -v check version is 5.5.x
+I use
+sudo apt-get -u install php5-cli Refer - PHP 5.5 or 5.6—Ubuntu</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Get &amp; Set some value about form input type and select</title>
+      <link>https://blog.tedshd.io/posts/2015-10-14-javascript-get-some-value-about-form-input-type-and-select/</link>
+      <pubDate>Wed, 14 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-10-14-javascript-get-some-value-about-form-input-type-and-select/</guid>
+      <description>JavaScript - Get some value about form input type and select Select &amp;lt;select id=&amp;#34;select_data&amp;#34;&amp;gt; &amp;lt;option value=&amp;#34;1&amp;#34;&amp;gt;test1&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;2&amp;#34; selected=&amp;#34;selected&amp;#34;&amp;gt;test2&amp;lt;/option&amp;gt; &amp;lt;option value=&amp;#34;3&amp;#34;&amp;gt;test3&amp;lt;/option&amp;gt; &amp;lt;/select&amp;gt; var e = document.getElementById(&amp;#39;select_data&amp;#39;); var strUser = e.options[e.selectedIndex].value; If want to set selected
+var e = document.getElementById(&amp;#39;select_data&amp;#39;); e.querySelectorAll(&amp;#39;option&amp;#39;)[2].selected = true; Get change option
+document.querySelector(&amp;#39;#select_data&amp;#39;).addEventListener(&amp;#39;change&amp;#39;, function (e) { var _this = this.options[this.selectedIndex]; }); radio &amp;lt;div class=&amp;#34;row&amp;#34;&amp;gt; &amp;lt;p class=&amp;#34;col&amp;#34;&amp;gt;device&amp;lt;/p&amp;gt; &amp;lt;div class=&amp;#34;row col s12 m2&amp;#34;&amp;gt; &amp;lt;input name=&amp;#34;group1&amp;#34; type=&amp;#34;radio&amp;#34; id=&amp;#34;device_water_1&amp;#34; value=&amp;#34;1&amp;#34; checked /&amp;gt; &amp;lt;label for=&amp;#34;device_water_1&amp;#34;&amp;gt;True&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;row col s12 m2&amp;#34;&amp;gt; &amp;lt;input name=&amp;#34;group1&amp;#34; type=&amp;#34;radio&amp;#34; id=&amp;#34;device_water_2&amp;#34; value=&amp;#34;2&amp;#34; /&amp;gt; &amp;lt;label for=&amp;#34;device_water_2&amp;#34;&amp;gt;False&amp;lt;/label&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; // for IE9 up var val = document.</description>
+    </item>
+    
+    <item>
+      <title>Linux / Unix - terminal control</title>
+      <link>https://blog.tedshd.io/posts/2015-09-30-linux-unix-terminal-control/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-09-30-linux-unix-terminal-control/</guid>
+      <description>Linux / Unix - terminal control 終端機指令列的一些操作 Ctrl + a: 回到此行最前面 Ctrl + e: 到此行的最後面 Ctrl + u: 清除一行中游標之前的所有文字 Ctrl + k: 清除一行字游標之後的所有文</description>
+    </item>
+    
+    <item>
+      <title>nginx - study log</title>
+      <link>https://blog.tedshd.io/posts/2015-09-30-nginx-study-log/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-09-30-nginx-study-log/</guid>
+      <description>nginx - Study Log 半調子的紀錄&amp;hellip; Command Line sudo service nginx start sudo service nginx restart sudo service nginx stop # 測試 nginx 設定 sudo nginx -t config # document root root /usr/share/nginx/html; # set page show index index.html index.htm index.php; # 把 lib 目錄打開 location /lib { autoindex on; } refer -</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Platform - Study Log</title>
+      <link>https://blog.tedshd.io/posts/2015-09-28-google-cloud-platform-study-log/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-09-28-google-cloud-platform-study-log/</guid>
+      <description>Google Cloud Platform - Study Log Intro 之前有幸參加亞太區 Google Cloud Platform 發表會, 聽完後就有點心動(因為價錢低於 AWS), 但ㄧ直沒時間研究怎麼用就這樣拖了很久&amp;hellip; 加上之前用</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - something about childNodes and nextSibling why they get DOM is not as you imagine</title>
+      <link>https://blog.tedshd.io/posts/2015-08-28-javascript-something-about-childnodes-and-nextsibling-why-they-get-dom-is-not-as-you-imagine/</link>
+      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-28-javascript-something-about-childnodes-and-nextsibling-why-they-get-dom-is-not-as-you-imagine/</guid>
+      <description>JavaScript - something about childNodes and nextSibling why they get DOM is not as you imagine childNodes MDN nextSibling - MDN Sometimes we use childNodes HTML &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;item3&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;item4&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; JavaScript console.log(document.querySelector(&amp;#39;ul&amp;#39;).childNodes); // output [text, li, text, li, text, li, text, li, text] Why? Then HTML &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;item1&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;item2&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;item3&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;item4&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt; JavaScript console.log(document.querySelector(&amp;#39;ul&amp;#39;).childNodes); // output [li, li, li, li] If you log text object, you can find it is wrap. Browser get</description>
+    </item>
+    
+    <item>
+      <title>PHP - Auto update static files cache</title>
+      <link>https://blog.tedshd.io/posts/2015-08-16-php-auto-update-static-files-cache/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-16-php-auto-update-static-files-cache/</guid>
+      <description>PHP - Auto update static files cache We can cache static files(CSS, JavaScript) to client
+When Server update static code.
+We want to update cache then we can modify file or add query string update version.
+We have some choice like modify url ?v=1 to ?v=2
+But I want to auto modify version.
+This is a way i use
+&amp;lt;?php function autoversion($url) { $ver = stat($_SERVER[&amp;#39;DOCUMENT_ROOT&amp;#39;] . $url)[mtime]; return $url .</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Google Closure Compiler V.S. Gulp uglify</title>
+      <link>https://blog.tedshd.io/posts/2015-08-15-javascript-google-closure-compiler-vs-gulp-uglify/</link>
+      <pubDate>Sat, 15 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-15-javascript-google-closure-compiler-vs-gulp-uglify/</guid>
+      <description>JavaScript - Google Closure Compiler V.S. Gulp uglify Intro I have two choice
+  Google Closure Compiler
+  UglifyJs
+  Google Closure Compiler Google Closure Compiler
+Google Closure Compiler is a tool for minify and uglify js.
+  From Google
+  Java
+  Command Line
+  Slow
+  UglifyJs mishoo/UglifyJS2
+  More option setting
+  Node.js
+  Command Line</description>
+    </item>
+    
+    <item>
+      <title>CSS - web font</title>
+      <link>https://blog.tedshd.io/posts/2015-08-11-css-web-font/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-11-css-web-font/</guid>
+      <description>CSS - web font Use our font
+Put your font file on your server.
+Default font can&amp;rsquo;t cross domain used.
+Suggest use OTF or TTF format.
+@font-face { font-family: playstation; src: url(TRIIYP.otf); } @font-face { font-family: sony; src: url(sony.TTF); } Fonts SONY&amp;rsquo;s Logo Font Download
+Free ps4 fonts - FontSpace
+Demo ps4
+Refer - CSS3 Web Fonts</description>
+    </item>
+    
+    <item>
+      <title>gulp.js - Concatenate File When Gulp Watch</title>
+      <link>https://blog.tedshd.io/posts/2015-08-09-gulpjs-concatenate-file-when-gulp-watch/</link>
+      <pubDate>Sun, 09 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-09-gulpjs-concatenate-file-when-gulp-watch/</guid>
+      <description>gulp.js - Concatenate File When Gulp Watch package.json { &amp;#34;name&amp;#34;: &amp;#34;gulp&amp;#34;, &amp;#34;version&amp;#34;: &amp;#34;3.8.7&amp;#34;, &amp;#34;devDependencies&amp;#34;: { &amp;#34;gulp&amp;#34;: &amp;#34;^3.9.0&amp;#34;, &amp;#34;gulp-concat&amp;#34;: &amp;#34;^2.6.0&amp;#34;, &amp;#34;gulp-watch&amp;#34;: &amp;#34;^4.3.4&amp;#34; } } gulpfile.js var gulp = require(&amp;#39;gulp&amp;#39;), watch = require(&amp;#39;gulp-watch&amp;#39;), concat = require(&amp;#39;gulp-concat&amp;#39;); var js; gulp.task(&amp;#39;concat&amp;#39;, function (cb) { var options = {}; watch(&amp;#39;dev/*.js&amp;#39;, options, function (e) { // console.log(&amp;#39;e:&amp;#39;+JSON.stringify(e));  // console.log(&amp;#39;\n&amp;#39;);  console.log(new Date() + &amp;#39; -- &amp;#39; + e.history[0].replace(e.base, &amp;#39;&amp;#39;)); js = e.history[0].replace(e.base, &amp;#39;&amp;#39;); gulp.src([&amp;#39;util/util.js&amp;#39;, &amp;#39;util/mod.js&amp;#39;, &amp;#39;dev/&amp;#39; + js]) .</description>
+    </item>
+    
+    <item>
+      <title>Apache - Apache Command Line on Mac / Ubuntu</title>
+      <link>https://blog.tedshd.io/posts/2015-08-05-apache-apache-command-line-on-mac-ubuntu/</link>
+      <pubDate>Wed, 05 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-05-apache-apache-command-line-on-mac-ubuntu/</guid>
+      <description>Apache - Apache Command Line on Mac / Ubuntu Mac sudo apachectl start sudo apachectl restart sudo apachectl status sudo apachectl stop Ubuntu sudo /etc/init.d/apache2 start sudo /etc/init.d/apache2 restart sudo /etc/init.d/apache2 status sudo /etc/init.d/apache2 stop sudo service apache2 start sudo service apache2 restart sudo service apache2 status sudo service apache2 stop Refer - Ubuntu Linux: Start / Restart / Stop Apache Web Server</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - scrollTop</title>
+      <link>https://blog.tedshd.io/posts/2015-07-30-javascript-scrolltop/</link>
+      <pubDate>Thu, 30 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-07-30-javascript-scrolltop/</guid>
+      <description>JavaScript - scrollTop scrollTop Element.scrollTop - Web API Interfaces | MDN
+Issue in firefox Normal
+element.scrollTop = intValue; But when I use
+document.body.scrollTop = 0; It doesn&amp;rsquo;t work in firefox.
+Solution
+document.documentElement.scrollTop = 0; // for firefoxRefer - document.body.scrollTop vs document.documentElement.scrollTop</description>
+    </item>
+    
+    <item>
+      <title>Mac - hide desktop icon</title>
+      <link>https://blog.tedshd.io/posts/2015-07-22-mac-hide-desktop-icon/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-07-22-mac-hide-desktop-icon/</guid>
+      <description>Mac - hide desktop icon Hide defaults write com.apple.finder CreateDesktop -bool false Then
+killall Finder Show defaults write com.apple.finder CreateDesktop -bool true Then
+killall Finder Refer - Hide All Desktop Icons in Mac OS X</description>
+    </item>
+    
+    <item>
+      <title>CSS3 - object-fit</title>
+      <link>https://blog.tedshd.io/posts/2015-07-11-css3-object-fit/</link>
+      <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-07-11-css3-object-fit/</guid>
+      <description>CSS3 - object-fit We can use CSS3 property object-fit handle image show area and fit it.
+But only IE no support.
+Example
+Refer - object-fit Refer - object-fit</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - insertBefore &amp; insertAfter</title>
+      <link>https://blog.tedshd.io/posts/2015-06-27-javascript-insertbefore/</link>
+      <pubDate>Sat, 27 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-06-27-javascript-insertbefore/</guid>
+      <description>JavaScript - insertBefore &amp;amp; insertAfter insertBefore This is native JavaScript api
+var insertedElement = parentElement.insertBefore(newElement, referenceElement);
+var vDom = document.createElement(&amp;#39;div&amp;#39;), dom = document.querySelector(&amp;#39;#list&amp;#39;); dom.insertBefore(vDom, dom.childNodes[1]); // or  var vDom = document.createElement(&amp;#39;div&amp;#39;), dom = document.querySelector(&amp;#39;#target&amp;#39;); dom.parentNode.insertBefore(vDom, dom); Refer - Node.insertBefore()
+insertAfter JavaScript doesn&amp;rsquo;t have any api handle insert DOM after reference DOM
+We can use this way
+function insertAfter(newNode, referenceNode) { referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling); } Refer - How to do insert After() in JavaScript without using a library?</description>
+    </item>
+    
+    <item>
+      <title>Linux - Set Encoding In Linux Environment</title>
+      <link>https://blog.tedshd.io/posts/2015-06-16-linux-set-encoding-in-linux-environment/</link>
+      <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-06-16-linux-set-encoding-in-linux-environment/</guid>
+      <description>Linux - Set Encoding In Linux Environment Add
+export LC_ALL=en_US.UTF-8 export LANG=en_US.UTF-8 export LANGUAGE=en_US.UTF-8 in .bashrc or .zshrc
+Refer - How to set up a clean UTF-8 environment in Linux</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Dynamic Load script || JSONP Callback</title>
+      <link>https://blog.tedshd.io/posts/2015-06-08-javascript-dynamic-load-script-jsonp-callback/</link>
+      <pubDate>Mon, 08 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-06-08-javascript-dynamic-load-script-jsonp-callback/</guid>
+      <description>JavaScript - Dynamic Load script || JSONP Callback Intro Sometimes we need dynamic load script or handle jsonp callback And we need handle script onload or jsonp callback onload or something error How to do? Use onload, onerror method Code if (typeof UTIL == &amp;#39;undefined&amp;#39; || !UTIL) { var UTIL = {}; } UTIL.createEl = { get: function(sTag, oAttr, handleOnLoad, handleError) { var el = document.createElement(sTag); for (var i in</description>
+    </item>
+    
+    <item>
+      <title>Docker - Mac research log</title>
+      <link>https://blog.tedshd.io/posts/2015-05-15-docker-mac-research-log/</link>
+      <pubDate>Fri, 15 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-05-15-docker-mac-research-log/</guid>
+      <description>Docker - Mac research log Install by Mac Register Docker Hub Docker Hub Use Kitematic kitematic Install Ubuntu Search ubuntu on docker hub Run command docker pull ubuntu Use docker images docker images REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE ubuntu latest 07f8e8c5e660 3 weeks ago 188.3 MB build dockerfile docker build . -t ubuntu_dev:16.04 -f local.Dockerfile run container docker run -t -i ubuntu /bin/bash docker run -t -i ubuntu</description>
+    </item>
+    
+    <item>
+      <title>Apache - dir permission cnfig</title>
+      <link>https://blog.tedshd.io/posts/2015-05-07-apache-dir-permission-cnfig/</link>
+      <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-05-07-apache-dir-permission-cnfig/</guid>
+      <description>Apache - dir permission cnfig If yooouo want use virtual host
+Yoou can set /etc/apache2/extra/httpd-vhosts.conf this file
+Add
+&amp;lt;Directory /Users/ted/tedadev/local/bomb01&amp;gt; AllowOverride All Options Indexes MultiViews FollowSymLinks Require all granted &amp;lt;/Directory&amp;gt; &amp;lt;VirtualHost *:80&amp;gt; DocumentRoot &amp;#34;/Users/ted/tedadev/local/bomb01&amp;#34; ServerName www.bomb01.com ErrorLog &amp;#34;/Volumes/RamDisk/ysm-error.log&amp;#34; CustomLog &amp;#34;/Volumes/RamDisk/ysm-access.log&amp;#34; common &amp;lt;/VirtualHost&amp;gt; Refer - Forbidden 403, You don’t have permission to access /~username/ on this server</description>
+    </item>
+    
+    <item>
+      <title>Maker - GH60 RevCHN</title>
+      <link>https://blog.tedshd.io/posts/2015-05-02-maker-gh60-revchn/</link>
+      <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-05-02-maker-gh60-revchn/</guid>
+      <description>Maker - GH60 RevCHN 拿了這板子有段時間了 一開始有試著用 Windows 刷 layout 進去, 但一直失敗(應該跟 Windows 不合吧 但直到前一陣子有人分享用 Mac 刷, 這真是太好了, 終於可以開工了 經</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Use createElement or string?</title>
+      <link>https://blog.tedshd.io/posts/2015-04-14-javascript-use-createelement-or-string/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-04-14-javascript-use-createelement-or-string/</guid>
+      <description>JavaScript - Use createElement or string? 常常討論在頁面上塞入新的 DOM 究竟是用哪種方式好 其實在現今是要看 browser 如何解析 JavaScript 所以目前沒一定的答案 以下為效能測試的數據 jsperf - dom-test-string-vs-createelement 雖然樣本數</description>
+    </item>
+    
+    <item>
+      <title>CSS - Modify Pseudo Element Content</title>
+      <link>https://blog.tedshd.io/posts/2015-04-05-css-modify-pseudo-element-content/</link>
+      <pubDate>Sun, 05 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-04-05-css-modify-pseudo-element-content/</guid>
+      <description>CSS - Modify Pseudo Element Content 之前遇到個問題就是偽元素的內容(content)到底可不可以修改, 於是就求助於 Google 最後的答案是可以的, 而且還不少方法 Refer - Modify pseudo element styles with</description>
+    </item>
+    
+    <item>
+      <title>Hubot - Develop log</title>
+      <link>https://blog.tedshd.io/posts/2015-03-23-hubot-develop-log/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-03-23-hubot-develop-log/</guid>
+      <description>Hubot - Develop log HUBOT Develop Environment Mac OS X Require nodejs(install from brew) redis(install from brew) install npm install -g yo generator-hubot 製作資料夾 mkdir myhubot cd myhubot 設定 hubot yo hubot ? Owner: &amp;lt;bot owner&amp;gt; ? Bot name: &amp;lt;bot name&amp;gt; ? Description: &amp;lt;description about this bot&amp;gt; ? Bot adapter: &amp;lt;campfire or shell&amp;gt; 資訊會放在 package.json Refer - Getting Started Use it</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Cross Module Communication</title>
+      <link>https://blog.tedshd.io/posts/2015-01-27-javascript-cross-module-communication/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-01-27-javascript-cross-module-communication/</guid>
+      <description>JavaScript - Cross Module Communication When website modulize, need a better way handle cross module communcation.
+Refer JavaScript design pattern&amp;rsquo;s observer pattern and Android EventBus
+Principle My Implement Example Hub is a array put publish object
+publish object must include action and something want to do
+var funcA = function () { alert(&amp;#39;Red Alarm&amp;#39;); } publish(&amp;#39;alarm&amp;#39;, funcA); If more something to in same action
+var funcA = function () { alert(&amp;#39;Red Alarm&amp;#39;); } var funcB = function () { console.</description>
+    </item>
+    
+    <item>
+      <title>AJAX - REST</title>
+      <link>https://blog.tedshd.io/posts/2015-01-12-ajax-rest/</link>
+      <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-01-12-ajax-rest/</guid>
+      <description>AJAX - REST 在 REST 當道的現在, 不得不了解一下如何實作 CRUD(create, read, update, delete) 本文 server side 以 php 為例子 var xhr = new XMLHttpRequest(); xhr.open(&amp;#39;GET&amp;#39;, &amp;#39;example.html&amp;#39;, true); xhr.onreadystatechange = function() { if (xhr.readyState === 4 &amp;amp;&amp;amp; xhr.status === 200) { document.getElementById(&amp;#39;myDiv&amp;#39;).innerHTML = xhr.responseText; } }; xhr.send(); 上面為一個簡單的</description>
+    </item>
+    
+    <item>
+      <title>AJAX - XMLHttpRequest Introduction</title>
+      <link>https://blog.tedshd.io/posts/2015-01-10-ajax-xmlhttprequest-introduction/</link>
+      <pubDate>Sat, 10 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-01-10-ajax-xmlhttprequest-introduction/</guid>
+      <description>AJAX - XMLHttpRequest Introduction Intro 說到 AJAX 行為就不行不提到 XMLHttpRequest object 不知道現在的前端工程師還有人認識這個東西嗎? 當前 library 眾多(YIU, jQuery, AngularJS, Backbone.js&amp;hellip;) 可能用過 Y.jsonp(url, callback); $.ajax(); $http(); &amp;hellip;&amp;hellip; 這些處理 AJAX 行為的</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - detect CSS3 transitionEnd</title>
+      <link>https://blog.tedshd.io/posts/2014-12-30-javascript-detect-css3-transitionend/</link>
+      <pubDate>Tue, 30 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-12-30-javascript-detect-css3-transitionend/</guid>
+      <description>JavaScript - Detect CSS3 transitionEnd transitionend
+It is a event can fired when CSS3 transition end.
+function transitionEnd() { var el = document.createElement(&amp;#39;div&amp;#39;), //what the hack is bootstrap  transEndEventNames = { WebkitTransition : &amp;#39;webkitTransitionEnd&amp;#39;, MozTransition : &amp;#39;transitionend&amp;#39;, OTransition : &amp;#39;oTransitionEnd otransitionend&amp;#39;, transition : &amp;#39;transitionend&amp;#39; }; for (var name in transEndEventNames) { if (el.style[name] !== undefined) { return transEndEventNames[name]; } } return false; // explicit for ie8 ( ._.) } // Usage document.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Converting a JavaScript string to a html object</title>
+      <link>https://blog.tedshd.io/posts/2014-12-21-javascript-converting-a-javascript-string-to-a-html-object/</link>
+      <pubDate>Sun, 21 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-12-21-javascript-converting-a-javascript-string-to-a-html-object/</guid>
+      <description>JavaScript - Converting a JavaScript string to a html object var str = &amp;#39;&amp;lt;div id=&amp;#34;myDiv&amp;#34;&amp;gt;&amp;lt;/div&amp;gt;&amp;#39;; var htmlObject = document.createElement(&amp;#39;div&amp;#39;); htmlObject.innerHTML = str; /* htnkObject is obj; &amp;lt;div&amp;gt; &amp;lt;div id=&amp;#34;myDiv&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; */ Refer - converting a javascript string to a html object</description>
+    </item>
+    
+    <item>
+      <title>PHP - install phpcs(PHP CodeSniffer)</title>
+      <link>https://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/</link>
+      <pubDate>Thu, 18 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/</guid>
+      <description>PHP - install phpcs(PHP CodeSniffer) Use pear install phpcs
+in Linux(Ubuntu 14.04) sudo pear install --alldeps php_codesniffer in Mac(Mac OS X 10.10.1 Yosemite) install pear sudo curl -O http://pear.php.net/go-pear.phar then
+sudo php -d detect_unicode=0 go-pear.phar Update
+pear upgrade pear pear upgrade install codesniffer sudo pear install --alldeps php_codesniffer check
+phpcs -i return
+The installed coding standards are MySource, PEAR, PHPCS, PSR1, PSR2, Squiz and Zend if return
+Warning: include_once(PHP/CodeSniffer/CLI.php): failed to open stream: No such file or directory in /usr/bin/phpcs on line 22 Warning: include_once(): Failed opening &amp;#39;PHP/CodeSniffer/CLI.</description>
+    </item>
+    
+    <item>
+      <title>git hooks</title>
+      <link>https://blog.tedshd.io/posts/2014-12-09-git-hooks/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-12-09-git-hooks/</guid>
+      <description>git hooks 和其他版本控制系統一樣，當某些重要事件發生時，Git 有方法可以觸發自訂腳本。有兩組掛鉤(hooks)：用戶端和伺服器端。用戶端掛鉤用於用</description>
+    </item>
+    
+    <item>
+      <title>Firefox 10 週年派對</title>
+      <link>https://blog.tedshd.io/posts/2014-11-15-firefox-10-year-anniversary-party/</link>
+      <pubDate>Sat, 15 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-11-15-firefox-10-year-anniversary-party/</guid>
+      <description>Firefox 10 週年歡慶派對 Intro 身為一隻前端攻城獅, 在 Firefox 3 時就開始使用它了 所以在 facebook 上看到這消息就立馬報名了 但最近剛忙完專案, 真的覺得快倒了, 在前一天還在想</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - handle textarea value</title>
+      <link>https://blog.tedshd.io/posts/2014-10-01-javascript-handle-textarea-value/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-10-01-javascript-handle-textarea-value/</guid>
+      <description>JavaScript - handle textarea value Handle textarea string.
+// jQuery var textarea = $(&amp;#39;textarea&amp;#39;).val().replace(/\n/g, &amp;#39;&amp;lt;br&amp;gt;&amp;#39;); // JavaScript var textarea = document.querySelector(&amp;#39;textarea&amp;#39;).value.replace(/\n/g, &amp;#39;&amp;lt;br&amp;gt;&amp;#39;); </description>
+    </item>
+    
+    <item>
+      <title>Compass - Use transform in compass 1.0.1</title>
+      <link>https://blog.tedshd.io/posts/2014-08-29-compass-use-transform-in-compass-101/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-29-compass-use-transform-in-compass-101/</guid>
+      <description>Compass - Use transform in compass 1.0.1 On august 15, 2014 Compass release 1.0.1 Some code in scss change wording. This article provide CSS3 transform wording in scss.
+I use this Mixin
+@import &amp;#34;compass/css3&amp;#34;; /*simple-transform($scale, $rotate, $trans-x, $trans-y, $skew-x, $skew-y, $origin-x, $origin-y)*/ @includesimple-transform(1, 45deg, 5px, -15px, 0, 0, 0, 0); /* Advance Usage */ /*@include create-transform($perspective, $scale-x, $scale-y, $scale-z, $rotate-x, $rotate-y, $rotate-z, $rotate3d, $trans-x, $trans-y, $trans-z, $skew-x, $skew-y, $origin-x, $origin-y, $origin-z, $only3d);*/ Refer - Compass Transform | Compass Documentation</description>
+    </item>
+    
+    <item>
+      <title>Web Develop - Flexible Footer</title>
+      <link>https://blog.tedshd.io/posts/2014-08-27-web-develop-flexible-footer/</link>
+      <pubDate>Wed, 27 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-27-web-develop-flexible-footer/</guid>
+      <description>Web Develop - Flexible Footer Sometimes we think footer must fixed in website bottom or put it in last of content.
+I provide a idea may be a good way. Content less browser view height, footer fixed in bottom. When content too much over browser view height, footer be put last of content.
+Feature  flexible only use CSS  Usage min-height: calc(100% - &amp;lt;footer height&amp;gt;);
+#hd { height: 50px; background: #aaa; /*display: none;*/ } #bd { text-align: center; min-height: calc(100% - 50px); /* important */ background: #ccc; } #content { padding-bottom: 60px; } #footer { position: relative; bottom: 50px; text-align: center; height: 50px; background: #999; } 50px is footer height</description>
+    </item>
+    
+    <item>
+      <title>Mac - SSHFS</title>
+      <link>https://blog.tedshd.io/posts/2014-08-21-mac-sshfs/</link>
+      <pubDate>Thu, 21 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-21-mac-sshfs/</guid>
+      <description>Mac - SSHFS SSHFS can help Mac user mount remote support SSH protocol. Intro
+Usage
+It has problem in oh-my-zsh! </description>
+    </item>
+    
+    <item>
+      <title>Git - GitHub gh-pages</title>
+      <link>https://blog.tedshd.io/posts/2014-08-16-git-github-gh-pages/</link>
+      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-16-git-github-gh-pages/</guid>
+      <description>Git - GitHub gh-pages 有時在 GitHub 上亂晃 常常發現一個問題就是有一些很有趣的前端實作, 或別人寫的一些功能沒有所謂的 demo page(當然有些是不需要 demo page) 我不知道是把 GitHub</description>
+    </item>
+    
+    <item>
+      <title>gulp.js - Use Log</title>
+      <link>https://blog.tedshd.io/posts/2014-08-07-gulpjs-use-log/</link>
+      <pubDate>Thu, 07 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-07-gulpjs-use-log/</guid>
+      <description>gulp.js - Use Log Intro gulp.js
+Getting Started
+Grunt vs Gulp - Beyond the Numbers
+package.json version setting dependencies
+How to pipe to another task in Gulp? gulp.task(&amp;#39;first&amp;#39;, function() { // first task }); gulp.task(&amp;#39;second&amp;#39;, [&amp;#39;first&amp;#39;], function() { // this occurs after &amp;#39;first&amp;#39; finishes }); Refer - How to pipe to another task in Gulp?
+Use Package Compass First, must install compass
+gulp-compass
+var gulp = require(&amp;#39;gulp&amp;#39;); var compass = require(&amp;#39;gulp-compass&amp;#39;); gulp.</description>
+    </item>
+    
+    <item>
+      <title>miiiTV 2.0 - F2E</title>
+      <link>https://blog.tedshd.io/posts/2014-08-06-miiitv-20-f2e/</link>
+      <pubDate>Wed, 06 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-06-miiitv-20-f2e/</guid>
+      <description>miiiTV 2.0 - F2E Dev compress(JS, CSS, IMG) jshint Material Design? SVG replace PNG? Browser support? Tool PURE jQuery jQuery 2.X run IE 9 up jQuery 1.X run IE 6/7/8 gulp.js gulp plugin Base CSS SlidesJS, a responsive slideshow plug-in for jQuery (1.7.1+) with features like touch and CSS3 Backend laravel Laravel 4 PHP Framework Documentation 繁體中文教學文件 1680 1440 1280 1024</description>
+    </item>
+    
+    <item>
+      <title>miiiTV - web player structure</title>
+      <link>https://blog.tedshd.io/posts/2014-07-15-miiitv-web-player-structure/</link>
+      <pubDate>Tue, 15 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-07-15-miiitv-web-player-structure/</guid>
+      <description>miiiTV - web player structure function  loadChannel loadVideo switchChannel switchVideo playLoop initPlayer  </description>
+    </item>
+    
+    <item>
+      <title>Youku Api &amp; player</title>
+      <link>https://blog.tedshd.io/posts/2014-07-14-youku-api/</link>
+      <pubDate>Mon, 14 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-07-14-youku-api/</guid>
+      <description>Youku Api &amp;amp; player Youku is popular video web in China. youku(优酷) Try use youku(优酷) api &amp;amp; javascript player Create a account in 优酷开放平台 Create a application(创建应用) You can get a client_id as</description>
+    </item>
+    
+    <item>
+      <title>CSS - SASS handle index</title>
+      <link>https://blog.tedshd.io/posts/2014-07-10-css-sass-handle-index/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-07-10-css-sass-handle-index/</guid>
+      <description>CSS - SASS handle index Can use var control z-index $elements: con, slider, masthead; .masthead { /* z-index: 3 */ z-index: index($elements, masthead); } .slider { /* z-index: 2 */ z-index: index($elements, slider); } .con { /* z-index: 1 */ z-index: index($elements, con); } Refer - 使用 sass 有效控管 z-index 圖層順序</description>
+    </item>
+    
+    <item>
+      <title>HTML5 - Video Introduction</title>
+      <link>https://blog.tedshd.io/posts/2014-07-02-html5-video-introduction/</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-07-02-html5-video-introduction/</guid>
+      <description>HTML5 - Video Introduction 這是一篇關於如何用 web 建置一個 video player 的文章, 這裡使用 HTML5 video 與一些 open source library 來建立 player Some Function Main video pause video play video autoPlay or no-autoPlay show current video time show total video time time jump full screen Other keyboard control mute control volume up</description>
+    </item>
+    
+    <item>
+      <title>Git -Tip &amp; Note</title>
+      <link>https://blog.tedshd.io/posts/2014-07-01-git-tip/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-07-01-git-tip/</guid>
+      <description>Git -Tip &amp;amp; Note git pull 出現 CONFLICT 要回復到 pull 之前 git reset --hard &amp;lt;commit id&amp;gt; 強制 push 取代 remote git push -f 取消 merage (須知道 merage 前的 commit id) git reset --hard &amp;lt;commit id&amp;gt; 拉 remote 的新 branch 到 local(local 不存在該 branch) git checkout --track -b &amp;lt;local new branch&amp;gt; &amp;lt;remote branch&amp;gt; 不小</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - handle load img fail</title>
+      <link>https://blog.tedshd.io/posts/2014-07-01-javascript-handle-load-img-fail/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-07-01-javascript-handle-load-img-fail/</guid>
+      <description>JavaScript - handle load img fail Sometime load image from server or other place fail(404 not found), we must prepare default image.
+A simple way
+&amp;lt;img src=&amp;#34;avatar.svg&amp;#34; onerror=&amp;#34;this.src=&amp;#39;/static/ico_default_avatar.png&amp;#39;;this.onerror=null;&amp;#34;&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Windows 8.1 app develop - Introduction</title>
+      <link>https://blog.tedshd.io/posts/2014-06-23-windows-81-app-develop-introduction/</link>
+      <pubDate>Mon, 23 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-06-23-windows-81-app-develop-introduction/</guid>
+      <description>Windows 8.1 app - Introduction Develop Win 8.1 app with JavaScript. 死心吧, 請準備一台 Windows 8.1 的電腦(一直以來我都以為生為前端攻城獅只要用 Mac 就可以打天下了) 下載 Visual Studio 2013, 要下載 Visual Studio Express 的版本 開始努</description>
+    </item>
+    
+    <item>
+      <title>CSS - font-family</title>
+      <link>https://blog.tedshd.io/posts/2014-06-02-css-font-family/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-06-02-css-font-family/</guid>
+      <description>CSS - font-family font-family: Microsoft JhengHei, Arial, Tahoma, Geneva, sans-serif; Add use mobile device default font font-family: Microsoft JhengHei, Heiti, Roboto, Helvetica, Arial, monospace, Tahoma, Geneva, sans-serif !important; CSS font-family 字型 - Wibibi Choosing Fonts for Your Mobile Website Common fonts to all versions of Windows &amp;amp; Mac equivalents CSS Web Safe Font Combinations</description>
+    </item>
+    
+    <item>
+      <title>AngularJS - $http</title>
+      <link>https://blog.tedshd.io/posts/2014-06-01-angularjs-http/</link>
+      <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-06-01-angularjs-http/</guid>
+      <description>AngularJS - $http Angular use $http handle AJAX behavior. It support method to handle rest API and basic usage. But its default Content-type is application/json Basic usage $http({ method: &amp;#39;GET&amp;#39;, // support GET, POST, PUT, DELETE url: &amp;#39;../php/response.php&amp;#39;, params: data, // GET method query string data: data, headers: { &amp;#39;Content-Type&amp;#39;: &amp;#39;application/x-www-form-urlencoded; charset=UTF-8&amp;#39; }, timeout: 30000, // timeout abort AJAX cache: false }). success(function(data, status, headers, config) { // this callback</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - 多行文字省略</title>
+      <link>https://blog.tedshd.io/posts/2014-05-30-javascript-multiple-lines-omitted/</link>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-30-javascript-multiple-lines-omitted/</guid>
+      <description>JavaScript - 多行文字省略 Sample code CSS .ellipsis-mult { width: 300px; height: 5em; overflow: hidden; } p { margin: 0; } HTML &amp;lt;div class=&amp;#34;ellipsis-mult&amp;#34;&amp;gt; &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nisi ligula, dapibus a volutpat sit amet, mattis et dui. Nunc porttitor accumsan orci id luctus. Phasellus ipsum metus, tincidunt non rhoncus id, dictum a lectus. Nam sed ipsum a lacus sodales eleifend.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS - do something after ng-repeat</title>
+      <link>https://blog.tedshd.io/posts/2014-05-25-angularjs-do-something-after-ng-repeat/</link>
+      <pubDate>Sun, 25 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-25-angularjs-do-something-after-ng-repeat/</guid>
+      <description>AngularJS - do something after ng-repeat 在學習用 AngularJS 的過程中遇到個問題就是 ng-repeat 好厲害喔, code 變得好少喔 但我想再 ng-repeat 完移掉 loading view 要怎麼移啊? 用 setTimeout 跟白癡一樣, 又不知道時間要設多久 只好</description>
+    </item>
+    
+    <item>
+      <title>AngularJS - routing</title>
+      <link>https://blog.tedshd.io/posts/2014-05-25-angularjs-routing/</link>
+      <pubDate>Sun, 25 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-25-angularjs-routing/</guid>
+      <description>AngularJS - routing 這裡不探究 AngularJS 是如何辦到的 基本上就是用 hash #, 也可用 HTML5 的 history API 這裡只有說有哪些用法 基本 sample 這寫法是 1.2.16 的寫法, 不保證以後會變(因為在舊版的 AngularJS 寫法不</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - custom facebook share button</title>
+      <link>https://blog.tedshd.io/posts/2014-05-23-javascript-custom-facebook-share-button/</link>
+      <pubDate>Fri, 23 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-23-javascript-custom-facebook-share-button/</guid>
+      <description>JavaScript - custom facebook share button Facebook support share API to people and it is easy to use. But sometimes we need customize share button style in our web. We can use 2 way.
+1. Link share api link Simple way
+HTML &amp;lt;a href=&amp;#34;http://www.facebook.com/share.php&amp;#34; class=&amp;#34;custom&amp;#34;&amp;gt;Share&amp;lt;/a&amp;gt; and then you can use CSS custom a style.
+But this only can catch current url to share to facebook.
+2. Use facebook JavaScript SDK This way is powerful</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Random Array Sort</title>
+      <link>https://blog.tedshd.io/posts/2014-05-13-javascript-random-array-sort/</link>
+      <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-13-javascript-random-array-sort/</guid>
+      <description>JavaScript - Random Array Sort function randOrd(){ return (Math.round(Math.random())-0.5); } anyArray = [1, &amp;#39;s&amp;#39;, 3, &amp;#39;arr&amp;#39;, 4]; anyArray.sort( randOrd ); alert(anyArray); Refer - Random Array Sort</description>
+    </item>
+    
+    <item>
+      <title>HTML5 - Full Screen Mode</title>
+      <link>https://blog.tedshd.io/posts/2014-05-08-html5-full-screen-mode/</link>
+      <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-08-html5-full-screen-mode/</guid>
+      <description>HTML5 - Full Screen Mode It can control full screen the browser IE if it is to be more than IE11 Code function toggleFullScreen() { if (!document.fullscreenElement &amp;amp;&amp;amp; // alternative standard method !document.mozFullScreenElement &amp;amp;&amp;amp; !document.webkitFullscreenElement &amp;amp;&amp;amp; !document.msFullscreenElement ) { // current working methods if (document.documentElement.requestFullscreen) { document.documentElement.requestFullscreen(); } else if (document.documentElement.msRequestFullscreen) { document.documentElement.msRequestFullscreen(); } else if (document.documentElement.mozRequestFullScreen) { document.documentElement.mozRequestFullScreen(); } else if (document.documentElement.webkitRequestFullscreen) { document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT); } } else { if</description>
+    </item>
+    
+    <item>
+      <title>MongoDB - Note</title>
+      <link>https://blog.tedshd.io/posts/2014-04-29-mongodb-note/</link>
+      <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-04-29-mongodb-note/</guid>
+      <description>MongoDB - Note MongoDB
+Wiki
+1st. Install It support Linux, Mac OS X, Windows
+Install MongoDB
+2nd. Getting Started Getting Started with MongoDB
+In Mac, if show message
+** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000 input command
+launchctl limit maxfiles 1024 1024 Refer</description>
+    </item>
+    
+    <item>
+      <title>Samsung Samrt TV - Network Error Handle</title>
+      <link>https://blog.tedshd.io/posts/2014-04-28-samsung-samrt-tv-network-error-handle/</link>
+      <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-04-28-samsung-samrt-tv-network-error-handle/</guid>
+      <description>Samsung Samrt TV - Network Error Handle Example Watch network connect status
+ Add web api in HTML  &amp;lt;script type=&amp;#34;text/javascript&amp;#34; language=&amp;#34;javascript&amp;#34; src=&amp;#34;$MANAGER_WIDGET/Common/webapi/1.0/webapis.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; Add JavaScript code  var watchCB = { onconnect : function (type) { // (1) connected  alert(type + &amp;#34; is connected successfully&amp;#34;); }, ondisconnect : function(type) { // (0) disconnected  alert(type + &amp;#34; is disconnected&amp;#34;); } }; function successCB(networks) { for (var i = 0; networks.</description>
+    </item>
+    
+    <item>
+      <title>PgREST - build note</title>
+      <link>https://blog.tedshd.io/posts/2014-04-24-pgrest-build-note/</link>
+      <pubDate>Thu, 24 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-04-24-pgrest-build-note/</guid>
+      <description>PgREST - build note GitHub This is Mac OS X build install PostgreSQL postgres.app PostgreSQL Tutorial
+ set PATH in shell(.bashrc, .zshrc, &amp;hellip;)  PATH=&amp;#34;/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH&amp;#34; create the plv8 extension  -&amp;gt; psql -U Ted_Shiu -c &amp;#34;create extension plv8&amp;#34; CREATE EXTENSION install PgREST(Must install node.js before) npm i -g pgrest Refer - PgREST: Node.js in the Database</description>
+    </item>
+    
+    <item>
+      <title>CSS - 垂直置中</title>
+      <link>https://blog.tedshd.io/posts/2014-04-07-css-vertical-reset/</link>
+      <pubDate>Mon, 07 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-04-07-css-vertical-reset/</guid>
+      <description>CSS - 垂直置中 文字垂直置中 之前 ApplyBOY 在網路上分享了一個 CSS 垂直置中的一個解法 這裡整理出個小小模組出來 假如那一個區域內的東西需做垂直置中, 在該區域的 element</description>
+    </item>
+    
+    <item>
+      <title>Vim - colorscheme</title>
+      <link>https://blog.tedshd.io/posts/2014-04-05-vim-colorscheme/</link>
+      <pubDate>Sat, 05 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-04-05-vim-colorscheme/</guid>
+      <description>Vim - colorscheme Vim 主題 mkdir ~/.vim/colors/ 找到 &amp;lt;colorscheme&amp;gt;.vim 並丟到 ~/.vim/colors/ 即可 在 .vimrc 設定 colorscheme &amp;lt;colorscheme&amp;gt; 就會變成該主題 Some Colorscheme Vim Colorscheme Gallery vimcolorschemetest vim online Newest - Vim Colors Refer - 挑選 Vim 顏色(Color Scheme)</description>
+    </item>
+    
+    <item>
+      <title>Node.js - install</title>
+      <link>https://blog.tedshd.io/posts/2014-04-04-nodejs-install/</link>
+      <pubDate>Fri, 04 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-04-04-nodejs-install/</guid>
+      <description>Node.js - install Mac 利用 homebrew 安裝 brew install node node.js Refer - Install Node.js and npm using Homebrew on OS X Ubuntu sudo apt-get install nodejs-legacy sudo apt-get install npm Refer - Can not install packages using node package manager in Ubuntu Update Now node merge iojs and version update to v4 But now homebrew not updgrade to v4 So i use nvm Refer - Node.js 安</description>
+    </item>
+    
+    <item>
+      <title>Sublime - Command Line</title>
+      <link>https://blog.tedshd.io/posts/2014-04-04-sublime-command-line/</link>
+      <pubDate>Fri, 04 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-04-04-sublime-command-line/</guid>
+      <description>Sublime - Command Line in Mac OS X make a symlink ln -s &amp;#34;/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl&amp;#34; /bin/subl // sublimetext 3 ln -s &amp;#34;/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl&amp;#34; /bin/subl And Use it subl --help Usage: subl [arguments] [files] edit the given files or: subl [arguments] [directories] open the given directories or: subl [arguments] - edit stdin Arguments: --project &amp;lt;project&amp;gt;: Load the given project --command &amp;lt;command&amp;gt;: Run the given command -n or --new-window: Open a</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - delete element</title>
+      <link>https://blog.tedshd.io/posts/2014-03-13-javascript-delete-element/</link>
+      <pubDate>Thu, 13 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-03-13-javascript-delete-element/</guid>
+      <description>JavaScript - delete element I use this way.
+var dom = document.querySelectorAll(&amp;#39;.dom&amp;#39;); for (var i = 0; i &amp;lt; dom.length; i++) { dom[i].outerHTML = &amp;#39;&amp;#39;; delete dom[i]; }; // or  var dom = document.querySelector(&amp;#39;#dom&amp;#39;); var dom = document.querySelector(&amp;#39;h1&amp;#39;); dom.outerHTML = &amp;#39;&amp;#39;; delete dom; If use IE document.querySelector only use IE8 up
+Refer - JavaScript: remove element by id</description>
+    </item>
+    
+    <item>
+      <title>Clean Code(無暇的程式碼) - Note</title>
+      <link>https://blog.tedshd.io/posts/2014-03-08-clean-code-time-code-note/</link>
+      <pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-03-08-clean-code-time-code-note/</guid>
+      <description>Clean Code(無暇的程式碼) - Note 最近跟同事借了這本書, 主要是因為以前沒寫過大專案, 在寫大專案被主管指出有不少的地方邏輯有問題, 變數的命名也有許</description>
+    </item>
+    
+    <item>
+      <title>Develop Samsung Smart TV Apps - Update(SDK 5.0)</title>
+      <link>https://blog.tedshd.io/posts/2014-03-07-develop-samsung-smart-tv-apps-updatesdk-50/</link>
+      <pubDate>Fri, 07 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-03-07-develop-samsung-smart-tv-apps-updatesdk-50/</guid>
+      <description>SDK 5.0 Update diff SDK 5.0 改變了 IDE UI 打包到 Server 設定 package app</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - time seconds to hh:mm:ss</title>
+      <link>https://blog.tedshd.io/posts/2014-03-05-javascript-time-seconds-to-hhmmss/</link>
+      <pubDate>Wed, 05 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-03-05-javascript-time-seconds-to-hhmmss/</guid>
+      <description>JavaScript - time seconds to hh:mm:ss function toHHMMSS(sec_num) { var hours = Math.floor(sec_num / 3600); var minutes = Math.floor((sec_num - (hours * 3600)) / 60); var seconds = Math.floor(sec_num - (hours * 3600) - (minutes * 60)); if (hours &amp;lt; 10) {hours = &amp;#34;0&amp;#34;+hours;} if (minutes &amp;lt; 10) {minutes = &amp;#34;0&amp;#34;+minutes;} if (seconds &amp;lt; 10) {seconds = &amp;#34;0&amp;#34;+seconds;} var time = hours+&amp;#39;:&amp;#39;+minutes+&amp;#39;:&amp;#39;+seconds; return time; } alert(toHHMMSS(1234)); Refer - JavaScript seconds to time with format hh:mm:ss</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Scroll Progress</title>
+      <link>https://blog.tedshd.io/posts/2014-03-02-javascript-scroll-progress/</link>
+      <pubDate>Sun, 02 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-03-02-javascript-scroll-progress/</guid>
+      <description>JavaScript - Scroll Progress Show a progress bar about page scroll position.
+This used scroll event Progress bar must handle scroll position and scroll total height, and show it for percent View MDN document can find it can&amp;rsquo;t use scrollHeight, because when scroll bar scroll to bottom, scrollTop not equal scrollHeight
+dom = document.querySelector(&amp;#34;body&amp;#34;); percent = (dom.scrollTop / (dom.scrollHeight - document.documentElement.clientHeight)) * 100 + &amp;#34;%&amp;#34;; Then find scrollTop didn&amp;rsquo;t work in firefox</description>
+    </item>
+    
+    <item>
+      <title>Sublime - change layout view in 2 columns</title>
+      <link>https://blog.tedshd.io/posts/2014-02-27-sublime-change-layout-view-in-2-columns/</link>
+      <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-02-27-sublime-change-layout-view-in-2-columns/</guid>
+      <description>Sublime - change layout view in 2 columns Video
+Setting Preferences -&amp;gt; Key Bindings - User
+set key to use
+[ { &amp;#34;keys&amp;#34;: [&amp;#34;super+ctrl+left&amp;#34;], &amp;#34;command&amp;#34;: &amp;#34;set_layout&amp;#34;, &amp;#34;args&amp;#34;: { &amp;#34;cols&amp;#34;: [0.0, 0.95, 1.0], &amp;#34;rows&amp;#34;: [0.0, 1.0], &amp;#34;cells&amp;#34;: [[0, 0, 1, 1], [1, 0, 2, 1]] } }, { &amp;#34;keys&amp;#34;: [&amp;#34;super+ctrl+right&amp;#34;], &amp;#34;command&amp;#34;: &amp;#34;set_layout&amp;#34;, &amp;#34;args&amp;#34;: { &amp;#34;cols&amp;#34;: [0.0, 0.05, 1.0], &amp;#34;rows&amp;#34;: [0.0, 1.0], &amp;#34;cells&amp;#34;: [[0, 0, 1, 1], [1, 0, 2, 1]] } } ] Update Add focus If add focus, it need 2 commands so need write a python plugin</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - jQuery index() in JavaScript</title>
+      <link>https://blog.tedshd.io/posts/2014-02-19-javascript-jquery-index-in-javascript/</link>
+      <pubDate>Wed, 19 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-02-19-javascript-jquery-index-in-javascript/</guid>
+      <description>JavaScript - jQuery index() in JavaScript JavaScript function indexInParent(node) { var children = node.parentNode.childNodes; var num = 0; for (var i=0; i&amp;lt;children.length; i++) { if (children[i]==node) return num; if (children[i].nodeType==1) num++; } return -1; } Example &amp;lt;ul&amp;gt; &amp;lt;li id=&amp;#34;foo&amp;#34;&amp;gt;foo&amp;lt;/li&amp;gt; &amp;lt;li id=&amp;#34;bar&amp;#34;&amp;gt;bar&amp;lt;/li&amp;gt; &amp;lt;li id=&amp;#34;baz&amp;#34;&amp;gt;baz&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  jQuery  alert($(&amp;#39;#bar&amp;#39;).index());  javaScript  var el = document.getElementById(&amp;#34;bar&amp;#34;); function indexInParent(node) { var children = node.parentNode.childNodes; var num = 0; for (var i=0; i&amp;lt;children.length; i++) { if (children[i]==node) return num; if (children[i].</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Encryption</title>
+      <link>https://blog.tedshd.io/posts/2014-02-06-javascript-encryption/</link>
+      <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-02-06-javascript-encryption/</guid>
+      <description>JavaScript - Encryption 弱弱的加密 base64 Base64 encoding and decoding sha1(only js to js) Need utf8 encode JavaScript sha1 function utf8(only js to js) JavaScript utf8_encode function JavaScript utf8_decode function decode can handle php utf8_encode() Encrypt(js to php) Use crypto-js HMAC Refer - Javascript: Equivalent of PHP&amp;rsquo;s hash_hmac() with RAW BINARY output?</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - get element height</title>
+      <link>https://blog.tedshd.io/posts/2014-01-31-javascript-get-element-height/</link>
+      <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-01-31-javascript-get-element-height/</guid>
+      <description>JavaScript - get element height If we want get element height use JavaScript We can use clientHeight 、 offsetHeight or scrollHeight
+console.log(document.getElementById(&amp;#39;div&amp;#39;).clientHeight); console.log(document.getElementById(&amp;#39;div&amp;#39;).offsetHeight); console.log(document.getElementById(&amp;#39;div&amp;#39;).scrollHeight); Refer - Element - Web API Interfaces | MDN</description>
+    </item>
+    
+    <item>
+      <title>Mac - Build Front End Developer Environment</title>
+      <link>https://blog.tedshd.io/posts/2014-01-27-mac-build-front-end-developer-environment/</link>
+      <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-01-27-mac-build-front-end-developer-environment/</guid>
+      <description>Mac - Build Front End Developer Environment 趁入手新 Mac 順便重溫一下如何建立給前端攻城獅爽爽用的開發環境 大部分都會涉及 terminal 操作 由於 Mac 是 unix, 基本上 terminal 操作指令都跟 Linux 一樣 常見的指令 Mac</description>
+    </item>
+    
+    <item>
+      <title>Samsung Samrt TV - volume OSD</title>
+      <link>https://blog.tedshd.io/posts/2014-01-23-samsung-samrt-tv-volume-osd/</link>
+      <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-01-23-samsung-samrt-tv-volume-osd/</guid>
+      <description>Samsung Samrt TV - volume OSD 假如要做影片類的 App, 音量控制算是重要的一環 建議維持 Samsung Samrt TV 預設的 OSD(On Screen Display), 假如自己刻 UI, 會有許多要顧及的地方, 會較費時 How to add code to show volume OSD HTML &amp;lt;!--</description>
+    </item>
+    
+    <item>
+      <title>miiiTV for Samsung Smart TV</title>
+      <link>https://blog.tedshd.io/posts/2014-01-21-miiitv-for-samsung-smart-tv/</link>
+      <pubDate>Tue, 21 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-01-21-miiitv-for-samsung-smart-tv/</guid>
+      <description>miiiTV for Samsung Smart TV Time 4~5 week(20 days) TV 註冊(app info(partner, brand, model, language, mac) to server get did) brand TV info data add url post data sha1 encodeJavascript: Equivalent of PHP&amp;rsquo;s hash_hmac() with RAW BINARY output?CryptoJS 3.1 jsonp getChannelList/pid jsonp post {source: tv} User 和 TV 綁定(與取消 User) TV 取 Channel 列表 資料儲存(</description>
+    </item>
+    
+    <item>
+      <title>Samsung Samrt TV - save / load data</title>
+      <link>https://blog.tedshd.io/posts/2014-01-18-samsung-samrt-tv-save-load-data/</link>
+      <pubDate>Sat, 18 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-01-18-samsung-samrt-tv-save-load-data/</guid>
+      <description>Samsung Samrt TV - save / load data 如果要儲存資料(ex: 使用者資訊&amp;hellip;)建議使用 Samsung 的 file API 使用 HTML5 的 localStorage 在電視關機後會被清掉 File API Refer - Can I access a local file from JavaScript code? Refer</description>
+    </item>
+    
+    <item>
+      <title>CSS - 文字圍繞陰影</title>
+      <link>https://blog.tedshd.io/posts/2014-01-10-css-text-around-shadows/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-01-10-css-text-around-shadows/</guid>
+      <description>CSS - 文字圍繞陰影 text-shadow 利用 text-shadow 可達到文字陰影的效果, 但如果要讓陰影圍繞著文字就需要一點技巧了 CSS h1 { text-shadow: #ff0000 1px 2px 3px; /*-- 顏色 x位移 y位移 模糊度 --*/ } 要達到圍繞</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - jsonp</title>
+      <link>https://blog.tedshd.io/posts/2013-12-25-javascript-jsonp/</link>
+      <pubDate>Wed, 25 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-25-javascript-jsonp/</guid>
+      <description>JavaScript - jsonp If only get data(read) Use callback // javascript // build from javascript var scriptEl = document.createElement(&amp;#34;script&amp;#34;); scriptEl.src = &amp;#34;http://tysh310246.blogspot.com/feeds/posts/default?alt=json&amp;amp;callback=myFunction&amp;#34;; document.getElementsByTagName(&amp;#34;head&amp;#34;)[0].appendChild(scriptEl); or &amp;lt;!-- html --&amp;gt; &amp;lt;!-- embed from HTML --&amp;gt; &amp;lt;script src=&amp;#34;http://tysh310246.blogspot.com/feeds/posts/default?alt=json&amp;amp;callback=myFunction&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; myFunction is callback function handle json data // javascript function myFunction(data) { // data is json console.log(data); } example &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Examples&amp;lt;/title&amp;gt; &amp;lt;!-- &amp;lt;script src=&amp;#34;http://tedshd.lionfree.net/demo/php/api_test.php?callback=test&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; --&amp;gt; &amp;lt;script&amp;gt; var scriptEl = document.createElement(&amp;#34;script&amp;#34;); scriptEl.src</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - YouTube API note</title>
+      <link>https://blog.tedshd.io/posts/2013-12-20-javascript-youtube-api-note/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-20-javascript-youtube-api-note/</guid>
+      <description>JavaScript - YouTube API note player demo YouTube JavaScript Player API Reference YouTube 嵌入式播放器参数 YouTube Embedded Players and Player Parameters YouTube Player API Reference for iframe Embeds Use YouTube video must init a youtube player There have 2 player we can use flash player iframe player I suggest use iframe player because it can support flash and HTML5 If use Apple mobile devices,</description>
+    </item>
+    
+    <item>
+      <title>Konami 密技 JavaScript 簡單實作</title>
+      <link>https://blog.tedshd.io/posts/2013-12-19-konami-cheat-simple-javascript-implementation/</link>
+      <pubDate>Thu, 19 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-19-konami-cheat-simple-javascript-implementation/</guid>
+      <description>Konami 密技 JavaScript 簡單實作 最近有一個網站很紅 vogue 上上下下左右左右BA 接下來就狂按 A KONAMI 密技阿 身為一個宅宅前端攻城獅一定要學起來這招(以後就藏一些東西在程式</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Some Articles Collection</title>
+      <link>https://blog.tedshd.io/posts/2013-12-18-javascript-some-articles-collection/</link>
+      <pubDate>Wed, 18 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-18-javascript-some-articles-collection/</guid>
+      <description>JavaScript - Some Articles Collection 给JavaScript初学者的24条最佳实践 全栈式JavaScript 前端工程師必看 JavaScript The Right Way Web 技術中的 Session 是什麼？ A first-person engine in 265 lines JavaScript 語言</description>
+    </item>
+    
+    <item>
+      <title>Develop Samsung Smart TV Apps</title>
+      <link>https://blog.tedshd.io/posts/2013-12-16-develop-samsung-smart-tv-apps/</link>
+      <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-16-develop-samsung-smart-tv-apps/</guid>
+      <description>Develop Samsung Smart TV Apps 由於最近應公司需求而開始要開發 Samsung 的 Smart TV 上的 App 身為一個前端攻城獅要去開發電視的 App? 沒想到 Smart TV 的 App 竟然是用前端技術寫的(HTML, JavaScript, CSS) Smart</description>
+    </item>
+    
+    <item>
+      <title>CSS - Opacity effect child element</title>
+      <link>https://blog.tedshd.io/posts/2013-12-10-css-opacity-effect-child-element/</link>
+      <pubDate>Tue, 10 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-10-css-opacity-effect-child-element/</guid>
+      <description>CSS - Opacity effect child element 在利用 opacity 做背景時常遇到個問題就是子元素也被設置 opacity 這時就可以利用 CSS 的 :before 或 :after &amp;lt;div class=&amp;#34;bg-2&amp;#34;&amp;gt; &amp;lt;h2&amp;gt;Title&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;Content&amp;lt;/p&amp;gt; &amp;lt;img src=&amp;#34;http://blog.soonr.com/wp-content/uploads/2013/03/Google-Play-Badge.png&amp;#34; alt=&amp;#34;google play&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; .bg-2 { position: relative; &amp;amp;:before { content: &amp;#34;&amp;#34;; z-index: -99; position: absolute; top: 0; left: 0; width: 100%;</description>
+    </item>
+    
+    <item>
+      <title>Website switch layout</title>
+      <link>https://blog.tedshd.io/posts/2013-12-08-website-switch-layout/</link>
+      <pubDate>Sun, 08 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-08-website-switch-layout/</guid>
+      <description>Website switch layout 之前看過不少網站有切換 layout 的功能 於是就試著做做看 Demo 主要利用定義在 body 上的 class 去做不同 layout 的切換 Sample code var node; function node(selector) { return document.querySelector(selector); } // set style var layoutList = &amp;#39;layoutList&amp;#39;, layoutGrid = &amp;#39;layoutGrid&amp;#39;, layoutFull = &amp;#39;layoutFull&amp;#39;, layoutCard</description>
+    </item>
+    
+    <item>
+      <title>Detect mobile device</title>
+      <link>https://blog.tedshd.io/posts/2013-12-07-detect-mobile-device/</link>
+      <pubDate>Sat, 07 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-07-detect-mobile-device/</guid>
+      <description>Detect mobile device Use PHP or JavaScript detect mobile device like iPhone, iPad, iPod or Android&amp;hellip;
+Android PHP &amp;lt;?php $ua = strtolower($_SERVER[&amp;#39;HTTP_USER_AGENT&amp;#39;]); if(stripos($ua, &amp;#39;android&amp;#39;) !== false) { echo &amp;#39;Android!!&amp;#39;; exit; } ?&amp;gt; JavaScript var ua = navigator.userAgent.toLowerCase(); if(ua.indexOf(&amp;#34;android&amp;#34;) &amp;gt; -1) { document.write(&amp;#39;Android!!&amp;#39;); } Refer - Android Detection with JavaScript or PHP
+Apple mobile device Refer - How to detect iPhone, iPod and iPad with PHP Refer - How to Identify an Apple iPhone, iPod or iPad Visitor to Your Website</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Easy to get DOM</title>
+      <link>https://blog.tedshd.io/posts/2013-12-07-javascript-easy-to-get-dom/</link>
+      <pubDate>Sat, 07 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-07-javascript-easy-to-get-dom/</guid>
+      <description>JavaScript - Easy to get DOM It is old way to use getElementById, getElementsByTagName &amp;hellip;
+New method is use querySelector and querySelectorAll
+If use IE, it only for IE8 up.
+Make them as a method
+var node; function node(selector) { if (selector.indexOf(&amp;#39;.&amp;#39;) === -1) { if (document.querySelectorAll(selector).length === 1) { return document.querySelector(selector); } return document.querySelectorAll(selector); } return document.querySelectorAll(selector); } And then use it
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;querySelector&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;#34;box&amp;#34; class=&amp;#34;area&amp;#34;&amp;gt; test &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;#34;area&amp;#34;&amp;gt; test2 &amp;lt;/div&amp;gt; &amp;lt;div id=&amp;#34;selector&amp;#34; class=&amp;#34;area&amp;#34;&amp;gt; &amp;lt;p class=&amp;#34;con&amp;#34;&amp;gt; content &amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;script&amp;gt; var node; function node(selector) { if (selector.</description>
+    </item>
+    
+    <item>
+      <title>Google map api - research log</title>
+      <link>https://blog.tedshd.io/posts/2013-12-03-google-map-api-research-log/</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-03-google-map-api-research-log/</guid>
+      <description>Google map api - research log Introduction 使用 Google Maps JavaScript v3 static map 嵌入地圖到網頁中以圖片方式呈現 使用限制 基本上不要一日載超過 25000 次都沒事 區域化 - 語系 Library Init map &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!--使用 &amp;lt;!DOCTYPE</description>
+    </item>
+    
+    <item>
+      <title>Facebook api get UID &amp; AccessToken</title>
+      <link>https://blog.tedshd.io/posts/2013-11-25-facebook-api-get-uid/</link>
+      <pubDate>Mon, 25 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-11-25-facebook-api-get-uid/</guid>
+      <description>Facebook api get UID &amp;amp; AccessToken Build App in facebook APP_ID is a facebook App id Must set facebook App&amp;rsquo;s web url and use code in it&amp;rsquo;s domain &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;fb_oauth&amp;lt;/title&amp;gt; &amp;lt;script src=&amp;#34;http://code.jquery.com/jquery-1.10.2.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;#34;fb-root&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;p&amp;gt; &amp;lt;input id=&amp;#34;FBLogin&amp;#34; type=&amp;#34;button&amp;#34; value=&amp;#34;登入臉書&amp;#34; /&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;span id=&amp;#34;uid&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Sass compile two spaces</title>
+      <link>https://blog.tedshd.io/posts/2013-11-20-sass-compile-two-spaces/</link>
+      <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-11-20-sass-compile-two-spaces/</guid>
+      <description>Sass compile two spaces Use Sass compile to css css lndent is 2 spaces if want 4 spaces Must modify this sass source code
+sass-3.2.10/lib/sass/tree/visitors/to_css.rb # before tab_str = &amp;#39; &amp;#39; * (@tabs + node.tabs) # after tab_str = &amp;#39; &amp;#39; * (@tabs + node.tabs) Refer - Change indentation in Sass</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - Event</title>
+      <link>https://blog.tedshd.io/posts/2013-11-09-javascript-event/</link>
+      <pubDate>Sat, 09 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-11-09-javascript-event/</guid>
+      <description>JavaScript - Event event type 事件名稱 event target 事件發生在哪一個目標上 event handler or listener 處理或回應的 function, 即監聽或註冊事件 event object 與事件關聯的物件 event propagation 氣泡(bubble)現象 default actions 觸發事</description>
+    </item>
+    
+    <item>
+      <title>Android - Note(view)</title>
+      <link>https://blog.tedshd.io/posts/2013-11-07-android-noteview/</link>
+      <pubDate>Thu, 07 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-11-07-android-noteview/</guid>
+      <description>Android - Note(view)   src java
+  res
+ drawable layout values    view
+px2dpi</description>
+    </item>
+    
+    <item>
+      <title>Codeigniter - load data in view for JavaScript</title>
+      <link>https://blog.tedshd.io/posts/2013-10-23-codeigniter-load-data-in-view-for-javascript/</link>
+      <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-10-23-codeigniter-load-data-in-view-for-javascript/</guid>
+      <description>load data in view for JavaScript 如果要從後端帶資料給 JavaScript, 很常用 AJAX 的方式, 但假如是頁面在 load 進來時就需要使用後端的資料, 一開始就把資料帶在頁面上然後再用 JavaScript 取得頁面上的</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - handle JSON</title>
+      <link>https://blog.tedshd.io/posts/2013-10-23-javascript-handle-json/</link>
+      <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-10-23-javascript-handle-json/</guid>
+      <description>handle JSON 先了解 Object &amp;amp; JSON JavaScript 物件導向的寫法 你不可不知的 JSON 基本介紹 // data can get from AJAX or self var data; // init from self // Object Literal data = { &amp;#34;data_01&amp;#34;: { &amp;#34;title&amp;#34;: &amp;#34;title 01&amp;#34;, &amp;#34;num&amp;#34;: 01, &amp;#34;con&amp;#34;: { &amp;#34;con_01&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;news&amp;#34;, &amp;#34;desc&amp;#34;: &amp;#34;about news&amp;#34; } &amp;#34;con_02&amp;#34;: { &amp;#34;name&amp;#34;: &amp;#34;sport&amp;#34;, &amp;#34;desc&amp;#34;: &amp;#34;sport</description>
+    </item>
+    
+    <item>
+      <title>javascript - file upload</title>
+      <link>https://blog.tedshd.io/posts/2013-10-20-javascript-file-upload/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-10-20-javascript-file-upload/</guid>
+      <description>javascript - file upload Introduction 利用 javascript 達到檔案上傳的功能 顯示上傳進度 多檔上傳 取消上傳 拖拉上傳 斷點續傳?? chrome 上傳資料夾 盡可能跨 browser(for IE8) 不依攋任一 javascript library 自幹上傳 iframe upload in IE Skill files</description>
+    </item>
+    
+    <item>
+      <title>Use CSS3 animation in Compass</title>
+      <link>https://blog.tedshd.io/posts/2013-10-12-use-css3-animation-in-compass/</link>
+      <pubDate>Sat, 12 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-10-12-use-css3-animation-in-compass/</guid>
+      <description>Use CSS3 Animation In Compass Compass default dosen&amp;rsquo;t have mixin in CSS3 animation We can use this method in scss
+/* define */ $animation-support: webkit, moz, o, ms, not khtml; /* use */ .animation { @includeexperimental(&amp;#39;animation-name&amp;#39;, move, $animation-support); @includeexperimental(&amp;#39;animation-duration&amp;#39;, 5s, $animation-support); @includeexperimental(&amp;#39;animation-iteration-count&amp;#39;, 1, $animation-support); } and add keyframes
+/* define */ $animation-support: webkit, moz, o, ms, not khtml; @mixinkeyframes($name) { @-webkit-keyframes #{$name} { @content; } @-moz-keyframes #{$name} { @content; } @-ms-keyframes #{$name} { @content; } @keyframes #{$name} { @content; } } /* use */ .</description>
+    </item>
+    
+    <item>
+      <title>file upload show progress bar</title>
+      <link>https://blog.tedshd.io/posts/2013-10-06-file-upload-show-progress-bar/</link>
+      <pubDate>Sun, 06 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-10-06-file-upload-show-progress-bar/</guid>
+      <description>file upload show progress bar If you want show upload progress, you must use AJAX method. And you upload files use FormData object. XMLHttpRequest object has upload properties XMLHttpRequest nsIXMLHttpRequestEventTarget
+sample code
+xmlHttpRequest.upload.onprogress = function (e) { console.log(&amp;#39;onprogress&amp;#39;, e); console.log(e.loaded); // progress  console.log(Math.ceil((e.loaded/e.total) * 100) + &amp;#39;%&amp;#39;); }; Refer</description>
+    </item>
+    
+    <item>
+      <title>AJAX - XMLHttpRequest</title>
+      <link>https://blog.tedshd.io/posts/2013-09-30-ajax-xmlhttprequest/</link>
+      <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-30-ajax-xmlhttprequest/</guid>
+      <description>AJAX - XMLHttpRequest Use XMLHttpRequest object handle AJAX client -&amp;gt; server Front-end - request -&amp;gt; back-end client &amp;lt;- server Front-end &amp;lt;- response - back-end build XMLHttpRequest(old method) JavaScript var httpRequest; if (window.XMLHttpRequest) { //IE7,Mozila,Safari... httpRequest = new XMLHttpRequest(); } else if (window.ActiveXObject) { //IE5,IE6 //找出最新版MSXML剖析器 var msxmls = [&amp;#34;MSXML2.XMLHttp.4.0&amp;#34;,&amp;#34;MSXML2.XMLHttp.3.0&amp;#34;,&amp;#34;MSXML2.XMLHttp&amp;#34;,&amp;#34;Mircosoft.XMLHttp&amp;#34;]; for (i = 0; i &amp;lt; msxmls.length;</description>
+    </item>
+    
+    <item>
+      <title>file upload using ajax</title>
+      <link>https://blog.tedshd.io/posts/2013-09-29-file-upload-using-ajax/</link>
+      <pubDate>Sun, 29 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-29-file-upload-using-ajax/</guid>
+      <description>File upload using ajax Use FormData objects Using FormData Objects
+FormData object only IE 10 up if IE use ajax upload, only use iframe method.
+sample HTML
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;upload_AJAX&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;form action=&amp;#34;upload_one.php&amp;#34; method=&amp;#34;post&amp;#34; enctype=&amp;#34;multipart/form-data&amp;#34;&amp;gt; &amp;lt;label for=&amp;#34;file&amp;#34;&amp;gt;File:&amp;lt;/label&amp;gt; &amp;lt;input type=&amp;#34;file&amp;#34; name=&amp;#34;Upfile&amp;#34; id=&amp;#34;select&amp;#34;&amp;gt;&amp;lt;br&amp;gt; &amp;lt;input type=&amp;#34;submit&amp;#34;&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;a href=&amp;#34;javascript:upload()&amp;#34;&amp;gt;AJAX_upload&amp;lt;/a&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; JavaScript
+function upload () { // init FormData object  var formData = new FormData(); // use append method append upload file  formData.</description>
+    </item>
+    
+    <item>
+      <title>KBtalking pure pro programming</title>
+      <link>https://blog.tedshd.io/posts/2013-09-23-kbtalking-pure-pro-programming/</link>
+      <pubDate>Mon, 23 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-23-kbtalking-pure-pro-programming/</guid>
+      <description>KBtalking pure pro programming Reset Fn + R 這時右邊 Fn LED 會亮一下 再按 Fn + R 不放 這時右邊 Fn LED 會一直閃直到它停止 放開 Fn + R 重設完畢 programming 錄製巨集 按 Fn + right Ctrl 表示進入錄製巨集的模式</description>
+    </item>
+    
+    <item>
+      <title>Git - command</title>
+      <link>https://blog.tedshd.io/posts/2013-09-20-git-command/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-20-git-command/</guid>
+      <description>Git - command git status # 查看修改哪些檔案 git diff # 比對修改了的地方與上一個 commit 有何不同 git diff &amp;lt;file&amp;gt; # 比對修改的檔案與上一個 commit 有何不同 git diff &amp;lt;old commit id&amp;gt;..&amp;lt;new commit id&amp;gt; # 比對不同 commit id 的檔</description>
+    </item>
+    
+    <item>
+      <title>Git - 使用別人的 repository</title>
+      <link>https://blog.tedshd.io/posts/2013-09-18-git-uses-someone-elses-repository/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-18-git-uses-someone-elses-repository/</guid>
+      <description>Git - 使用別人的 repository in GitHub sample use javascript-htmlspecialchars use SSH git clone git@github.com:tedshd/javascript-htmlspecialchars.git // use SSH 單純的 clone 別人的 repository 只是只能使用它 如 commit 之後是無法 push 上去, 因為不是這 repository 的擁有者 只要進去該 repository 的 .git/config 只要看見 [remote</description>
+    </item>
+    
+    <item>
+      <title>Adobe Flash Player 11.8.800.168 upload file issue</title>
+      <link>https://blog.tedshd.io/posts/2013-09-12-adobe-flash-player-118800168-upload-file-issue/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-12-adobe-flash-player-118800168-upload-file-issue/</guid>
+      <description>Adobe Flash Player 11.8.800.168 upload file issue 筆記一下 在 IE 中 當 Flash Player 更新到 11.8.800.168 時, 發現一個問題 就是用 flash 上傳檔案時, 中文的檔名會用 Big5 去解, 所以就造成亂碼 測試的 OS Windows 7 繁體中文語系 在</description>
+    </item>
+    
+    <item>
+      <title>瀑布流(Pinterest-style) layout</title>
+      <link>https://blog.tedshd.io/posts/2013-09-12-waterfall-stream-pinterest-style-layout/</link>
+      <pubDate>Thu, 12 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-12-waterfall-stream-pinterest-style-layout/</guid>
+      <description>瀑布流(Pinterest-style) layout 目前看見 3 種作法 jquery plug in salvattore.js CSS3 column jquery plug in Masonry 一款較多人使用的 jQuery plug in, 可向下相容到 IE8 Masonry Grid-A-Licious jQuery plug in, 向下相容到 IE9 Grid-A-Licious salvattore</description>
+    </item>
+    
+    <item>
+      <title>Coding Style</title>
+      <link>https://blog.tedshd.io/posts/2013-09-10-coding-style/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-10-coding-style/</guid>
+      <description>Coding Style 條件判斷 在 PHP &amp;amp; JavaScript 中有許多邏輯判斷 當有許多條件要去檢查時, 一般來說就是用 if 一直寫下去 最後就造成下面的情況(以 PHP 為例) if ($a === $b) { if ($c) { if ($c &amp;gt;=</description>
+    </item>
+    
+    <item>
+      <title>Place on and embed code from internet</title>
+      <link>https://blog.tedshd.io/posts/2013-09-10-place-on-and-embed-code-from-internet/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-10-place-on-and-embed-code-from-internet/</guid>
+      <description>Place on and embed code from internet We can use cdnjs or some library sites embed js or css. But How can we embed our code from internet? I have 2 ways.
+GitHub If you can use GitHub Push your code to GitHub Wtach code on GitHub Find Raw and click it. open code like
+https://raw.github.com/tedshd/jQuery_scroll_to_top/master/javascripts/scroll_to_top.jsand then delete . after raw like
+https://rawgithub.com/tedshd/jQuery_scroll_to_top/master/javascripts/scroll_to_top.jsEmbed it finally.
+Dropbox Place on code in dropbox.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - design pattern</title>
+      <link>https://blog.tedshd.io/posts/2013-09-08-javascript-design-pattern/</link>
+      <pubDate>Sun, 08 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-08-javascript-design-pattern/</guid>
+      <description>JavaScript - design pattern 避免與減少全域變數(global variable) 全域變數非常方遍使用, 但使用的不好會使 JavaScript 有問題 因為有可能重複使用且有可能別的 library 也有用到該名稱 在 JavaScript: 優</description>
+    </item>
+    
+    <item>
+      <title>Git - Note</title>
+      <link>https://blog.tedshd.io/posts/2013-09-06-git-note/</link>
+      <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-06-git-note/</guid>
+      <description>Git Doc 中文導讀 LearnGitBranching</description>
+    </item>
+    
+    <item>
+      <title>Effeckt.css - Note</title>
+      <link>https://blog.tedshd.io/posts/2013-09-05-effecktcss-note/</link>
+      <pubDate>Thu, 05 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-05-effecktcss-note/</guid>
+      <description>Effeckt.css demo 上面頁面都是利用 CSS3 的 Animations 與 Transitions 效果做出來的 GitHub 使用該 library 須載入 Modernizr 這個 library Modernizr 是用來判斷 browser 是否支援 HTML5 or CSS3 所用的 library, 並能把相同功能但在不同 browser 實作的 API 或 CSS3 property</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - onbeforeunload</title>
+      <link>https://blog.tedshd.io/posts/2013-09-03-javascript-onbeforeunload/</link>
+      <pubDate>Tue, 03 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-03-javascript-onbeforeunload/</guid>
+      <description>onbeforeunload onbeforeunload 是在 browser 在轉換頁面時會觸發的事件 當有 return 值時, 會出現 confirm 視窗, 並停住觸發的行為 目前試過會觸發的行為有 上一頁 / 下一頁 重新整理 關閉視窗 前往其它 URL submit</description>
+    </item>
+    
+    <item>
+      <title>Codeigniter - Note</title>
+      <link>https://blog.tedshd.io/posts/2013-09-02-codeigniter-note/</link>
+      <pubDate>Mon, 02 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-02-codeigniter-note/</guid>
+      <description>Something about CI note user guide
+redirect $this-&amp;gt;load-&amp;gt;helper(&amp;#39;url&amp;#39;); </description>
+    </item>
+    
+    <item>
+      <title>‎Sublime Text - Plug-In</title>
+      <link>https://blog.tedshd.io/posts/2013-09-02-sublime-text-plug-in/</link>
+      <pubDate>Mon, 02 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-02-sublime-text-plug-in/</guid>
+      <description>Plug-In Install by Package Control Fisrt use sublime need install Package Control Ctrl + ~ show command line enter import urllib2,os; pf=&amp;#39;Package Control.sublime-package&amp;#39;; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),&amp;#39;wb&amp;#39;).write(urllib2.urlopen(&amp;#39;http://sublime.wbond.net/&amp;#39;+pf.replace(&amp;#39; &amp;#39;,&amp;#39;%20&amp;#39;)).read()); print &amp;#39;Please restart Sublime Text to finish installation&amp;#39; restart sublime finish ZenCoding jsFormat 讓 js 整齊 ctrl + alt + f GitHub SublimeTmpl 載入預設的樣板 Emmet 快速輸入 Gist</description>
+    </item>
+    
+    <item>
+      <title>Sublime Text - initial setting</title>
+      <link>https://blog.tedshd.io/posts/2013-09-01-sublime-text-initial-setting/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-01-sublime-text-initial-setting/</guid>
+      <description>Initial Setting Sublime Text 手冊 Preferences-&amp;gt;Settings-Default &amp;#34;default_encoding&amp;#34;: &amp;#34;UTF-8&amp;#34; &amp;#34;default_line_ending&amp;#34;: &amp;#34;unix&amp;#34; &amp;#34;tab_size&amp;#34;: 4 &amp;#34;translate_tabs_to_spaces&amp;#34;: true &amp;#34;save_on_focus_lost&amp;#34;: true &amp;#34;highlight_line&amp;#34;: true &amp;#34;trim_trailing_white_space_on_save&amp;#34;: true &amp;#34;rulers&amp;#34;: [80, 120] &amp;#34;highlight_modified_tabs&amp;#34;: true choose &amp;#34;ensure_newline_at_eof_on_save&amp;#34;: true &amp;#34;use_simple_full_screen&amp;#34;: true if want change font size Preferences-&amp;gt;Settings-User { &amp;#34;default_encoding&amp;#34;: &amp;#34;UTF-8&amp;#34;, &amp;#34;default_line_ending&amp;#34;: &amp;#34;unix&amp;#34;, &amp;#34;tab_size&amp;#34;: 4, &amp;#34;translate_tabs_to_spaces&amp;#34;: true, &amp;#34;save_on_focus_lost&amp;#34;: true, &amp;#34;highlight_line&amp;#34;: true, &amp;#34;trim_trailing_white_space_on_save&amp;#34;: true, &amp;#34;rulers&amp;#34;: [80, 120], &amp;#34;highlight_modified_tabs&amp;#34;: true, &amp;#34;font_size&amp;#34;: 18.0, &amp;#34;ignored_packages&amp;#34;: [ &amp;#34;Vintage&amp;#34; ] }</description>
+    </item>
+    
+    <item>
+      <title>‎Sublime Text - Hot Key</title>
+      <link>https://blog.tedshd.io/posts/2013-09-01-sublime-text-hot-key/</link>
+      <pubDate>Sun, 01 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-01-sublime-text-hot-key/</guid>
+      <description>Hot Key Document Mac OS X Windows Ctrl+Shift+p 開啟指令列 Tab 自動完成字詞 ctrl + d 選單字 alt + F3 選相同的字 ctrl + f 搜尋 ctrl + 0 focus 到 siderbar Ctrl + Shift + &amp;lt;- or -&amp;gt; Alt + &amp;lt;- or -&amp;gt; 單字 or 符號間移動 Ctrl + Alt + up</description>
+    </item>
+    
+    <item>
+      <title>PHP Note</title>
+      <link>https://blog.tedshd.io/posts/2013-08-30-php-note/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-30-php-note/</guid>
+      <description>PHP Note Notice 處理 db 的部分放到 model 處理來增強可用性 減少邏輯判斷 以錯誤為優先處裡 array to string &amp;lt;?php $arr = array( &amp;#39;val&amp;#39; =&amp;gt; 1, &amp;#39;str&amp;#39; =&amp;gt; &amp;#39;string&amp;#39;, ); $to_string = serialize($arr); echo $to_string; // a:2:{s:3:&amp;#34;val&amp;#34;;i:1;s:3:&amp;#34;str&amp;#34;;s:6:&amp;#34;string&amp;#34;;} $to_array = unserialize($to_string); var_dump($to_array); /* not better * if $to_string can&amp;#39;t unserialize, it has PHP</description>
+    </item>
+    
+    <item>
+      <title>Codeigniter - AJAX(post)</title>
+      <link>https://blog.tedshd.io/posts/2013-08-29-codeigniter-ajaxpost/</link>
+      <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-29-codeigniter-ajaxpost/</guid>
+      <description>CI AJAX(Post) Usage JavaScript(jQuery)
+$.post( &amp;#39;/api/post&amp;#39;, { val: &amp;#39;string&amp;#39;, val2: 1 }, function(data) { console.log(data); if(data.status === &amp;#39;ok&amp;#39;) { // dosomething  } else { // alert fail  } }, &amp;#39;json&amp;#39; ); $.ajax({ url: &amp;#39;/login/signup&amp;#39;, type: &amp;#39;POST&amp;#39;, data: { account: $(&amp;#39;input[name=&amp;#34;account&amp;#34;]&amp;#39;).val() }, success: function(data) { console.log(data); } }); PHP
+&amp;lt;?php // api.php public function post() { $val = $this-&amp;gt;input-&amp;gt;post(&amp;#39;val&amp;#39;); $val2 = $this-&amp;gt;input-&amp;gt;post(&amp;#39;val2&amp;#39;); if ($val) { // dosomething  //response  $output = array( &amp;#39;status&amp;#39; =&amp;gt; &amp;#39;ok&amp;#39;, &amp;#39;msg&amp;#39; =&amp;gt; &amp;#39;success&amp;#39; ); echo json_encode($output); exit; } $output = array( &amp;#39;status&amp;#39; =&amp;gt; &amp;#39;fail&amp;#39;, &amp;#39;msg&amp;#39; =&amp;gt; &amp;#39;error&amp;#39; ); echo json_encode($output); exit; } ?</description>
+    </item>
+    
+    <item>
+      <title>MySQL command</title>
+      <link>https://blog.tedshd.io/posts/2013-08-28-mysql-command/</link>
+      <pubDate>Wed, 28 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-28-mysql-command/</guid>
+      <description>MySQL Monitor Setting mysql -u root -h &amp;lt;HOST&amp;gt; -P &amp;lt;PORT&amp;gt; &amp;lt;DATABASE_NAME&amp;gt; -p -A database 每一個 command 最後都要加 ; status; create database database_name; drop database database_name; show databases; show tables; use database_name; table create table table_name( column1 type1, column2 type2); create table table_name( column1 type1, column2 type2) charset=utf8; desc table_name; show create table &amp;lt;table_name&amp;gt; MySQL 8.0 Reference Manual :: 3.3.2 Creating a Table - MySQL</description>
+    </item>
+    
+    <item>
+      <title>Computer Science</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science/</guid>
+      <description>電腦的本質 從計算機發展到現今的電腦,從機械到電子,從簡單到複雜,都脫離不了三個基本性質. 功能分離(function abstraction) 許多不同的階層在獨立運作</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 亂數</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-random-number-science/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-random-number-science/</guid>
+      <description>亂數 數位電腦如何產生隨機訊號?項電腦這樣的決定性系統(deterministic system)可以產生一串真正的隨機數列嗎?嚴格說起來,答案</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 位元和邏輯區組</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-and-logical-block/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-and-logical-block/</guid>
+      <description>位元和邏輯區組 任何可以表示兩種不同訊息的信號就叫二元(binary)信號,或稱為位元. And Or Invert 函數稱為邏輯區組,把他們依序組合還可以得到其他函</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 作業系統</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-operating-system/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-operating-system/</guid>
+      <description>作業系統 指令集複雜度之所以不重要,是因為有副程式.副程式可以讓一串指令在程式中被無限使用.事實上,程式設計師可以用呼叫副程式的方式將原有的指</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 布林邏輯</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-boolean-logic/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-boolean-logic/</guid>
+      <description>布林邏輯 思維規律的研究(an investigation of the laws of thought)-布耳(George Boole) 布林代數(Boolean algebra) 布林代數很像高中所學的的代數,不同的是</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 有限狀態機</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-of-finite-state-machine/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-of-finite-state-machine/</guid>
+      <description>有限狀態機 它可以執行隨時間而改變的函數,也就是不但與目前的輸入值有關,也受之前輸入值影響的函數. 有限狀態機的基本構想是將一個對照表與記憶元件</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 杜林機</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-du-linji/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-du-linji/</guid>
+      <description>杜林機 計算理論的中心觀念在於通用電腦(universal computer)的概念,所謂的通用電腦是一步功能超強,能夠模擬任何計算裝置的電腦.</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 流體電腦</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-fluid-machine/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-fluid-machine/</guid>
+      <description>流體電腦 管路以水壓來表示兩種不同的訊號.在液壓活門中,控制端的水流可以操作輸出端水流,但輸出端的水流並不會影響控制端的水流,這限制了訊息的傳</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 演算法</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-algorithm/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-algorithm/</guid>
+      <description>演算法 演算法與啟發式解法 不論是不是用來處理數字,演算法(algorithm)是一種萬全的程序,保證能達成特定的目的.[演算法]一詞源自阿拉伯</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 與硬體對話</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-hardware-and-science-dialogue/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-hardware-and-science-dialogue/</guid>
+      <description>與硬體對話 就像布林邏輯和有限狀態機是電腦硬體的建構區組一樣,程式語言等於是組成電腦軟體的建構區組.和人類的語言一樣,程式語言也有字彙和文法,</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 計算能力</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-capable/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-capable/</guid>
+      <description>計算能力 雖然通用電腦可以做任何計算裝置所能計算的事物,但還是有它無法計算的東西,像是定義含糊籠統的問題,實際上我們很少遇到不可計算的問題,因</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 語言轉譯</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-translation-of-science-language/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-translation-of-science-language/</guid>
+      <description>語言轉譯 目前已將技術和指令兩者串連起來,但語言是以文字撰寫的,而指令是一些位元組合,電腦本身必須自己將程式轉換成位元組合. 電腦翻譯程式語言的</description>
+    </item>
+    
+    <item>
+      <title>Computer Science - 量子計算</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-computer-science-of-quantum-computation/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-computer-science-of-quantum-computation/</guid>
+      <description>量子計算 電腦所產生的假隨機數列看起來是雜亂的,但它仍是靠某種潛在的演算法計算出來,若知道序列產生的方式,就可以預測它,而它就不再是隨機.而唯</description>
+    </item>
+    
+    <item>
+      <title>logdown Tab test</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-logdown-tab-test/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-logdown-tab-test/</guid>
+      <description>Tab problem Problem Mac 的 function 中 console.log(&amp;lsquo;hihi&amp;rsquo;) 是按一次 Tab 有 4 個空白 but alert(&amp;lsquo;hihi&amp;rsquo;) 這一行在按 Tab 縮排就有問題，再接續上一行按 enter 下來之後縮排剩 2 個空白，之後再按 Tab 縮排會變成只有 2 個空白 在</description>
+    </item>
+    
+    <item>
+      <title>Vim config in Mac</title>
+      <link>https://blog.tedshd.io/posts/2013-08-27-vim-config-in-mac/</link>
+      <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-27-vim-config-in-mac/</guid>
+      <description>Some different in Mac PageDown, PageUp, Home, End It is not useful in setting vimrc.
+Solution Terminal-&amp;gt;Preference-&amp;gt;KeyBoard
+Home: \033[1~End: \033[4~PageUp: \033[5~PageDown: \033[6~</description>
+    </item>
+    
+    <item>
+      <title>JavaScript type</title>
+      <link>https://blog.tedshd.io/posts/2013-08-25-javascript-type/</link>
+      <pubDate>Sun, 25 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-25-javascript-type/</guid>
+      <description>JavaScript Type number string boolean null undefind 減少 type 轉換以加快執行速度 Object var 宣告後即擁有物件的屬性 宣告之後無法刪除 區域變數 function 內宣告 全域變數 小心使用 property 建立在物件中 可刪除 Array method 1 var</description>
+    </item>
+    
+    <item>
+      <title>gitconfig</title>
+      <link>https://blog.tedshd.io/posts/2013-08-23-gitconfig/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-23-gitconfig/</guid>
+      <description>gitconfig Mac gitconfig path
+~/.gitconfig[user] name = tedshd email = tedshd@gmail.com [alias] st = status co = checkout br = branch d = difftool [color] diff = auto status = auto branch = auto ui = auto [credential] helper = osxkeychain [push] default = simple [core] editor = vim [diff] tool = vimdiff [difftool] prompt = false vim diff
+git d terminal
+git diff </description>
+    </item>
+    
+    <item>
+      <title>CSS attribute</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-css-attribute/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-css-attribute/</guid>
+      <description>CSS attribute 顏色與背景 color: background-color: background-images: background-repeat: no-repeat repeat-x repeat-y repeat background-position: center background-attachment: fixed scroll; background: url() left center no-repeat; 文字 text-align: left right center vertical-align: top bottom text-top text-bottom middle baseline super sub line-height: letter-spacing: (字距) word-spacing: (單字間距) text-indent: (首行縮排) font-family: font-size: font-weight: 100~900 font-style: italic oblique text-decoration: underline overline</description>
+    </item>
+    
+    <item>
+      <title>CSS Note</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-css-note/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-css-note/</guid>
+      <description>Tip about CSS clearfix 為了清除浮動 .clearfix { *zoom: 1; } .clearfix:after { display: table; content: &amp;#34;&amp;#34;; line-height: 0; clear: both; } padding-right or bottom &amp;amp; margin-right or bottom 如遇 model box 問題盡可能在右或下做修正(因為 XY 是朝右下發展) 避免用到 top 盡量用 bottom scroll</description>
+    </item>
+    
+    <item>
+      <title>HTML Design Pattern</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-html-design-pattern/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-html-design-pattern/</guid>
+      <description>HTML Design Pattern 語意化(影響 SEO) 去 CSS 還可維持可讀性 去 JavaScript 頁面還能 work -&amp;gt; 現在較不適用 避免樣式標籤 &amp;lt;!-- not recommended --&amp;gt; &amp;lt;b&amp;gt;&amp;lt;/b&amp;gt; &amp;lt;i&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;!-- use --&amp;gt; &amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt; &amp;lt;em&amp;gt;&amp;lt;/em&amp;gt; 避免將 style 寫在 HTML tag 上 善用標籤以維持可讀性與</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-vim/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-vim/</guid>
+      <description>Vim More a 輸入文字 i 插入字元 o 新增一行 :wq 儲存後離開 :w 儲存 :q 離開 :q! 離開不存檔 :w! 儲存 readonly Esc 離開編輯模式 h 左 j 下 k 上 l 右 v 選擇 yy 複製整行 nyy 複製n行 yw 複製</description>
+    </item>
+    
+    <item>
+      <title>文字過多時省略(ellipsis)</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-text-overflow-ellipsis/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-text-overflow-ellipsis/</guid>
+      <description>text ellipsis div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 240px; } Tip 上述為必要 element 必須為 block 如用在 span 等行內元素，需用 display: inline-block; 多行會變一行顯示</description>
+    </item>
+    
+    <item>
+      <title>file upload 123</title>
+      <link>https://blog.tedshd.io/posts/2013-08-20-file-upload-notice-issue/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-20-file-upload-notice-issue/</guid>
+      <description>File Upload Server side setting php.ini in Mac /etc/php.ini file_uploads = On upload_max_filesize = 10M post_max_size = 10M file_uploads # 預設為on,允許用HTTP協定上傳 upload_tmp_dir # 上傳檔案暫存目錄,wamp5中,c:/wamp/tmp upload_max_filesize # 上傳</description>
+    </item>
+    
+    <item>
+      <title>Linux/unix command</title>
+      <link>https://blog.tedshd.io/posts/2013-08-14-linux-unix-command/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-14-linux-unix-command/</guid>
+      <description>command User su / sudo # 最高權限使用者 su -u &amp;lt;user name&amp;gt; bash # 切換使用者 exit # 跳出最高權限使用者 shutdown # 關機 shutdown -h now 立即關機 shutdown -h +m m分鐘後關機 shutdown -h hh:mm 幾點幾分關機 reboot # 重開機 login</description>
+    </item>
+    
+    <item>
+      <title>Login forget pwd</title>
+      <link>https://blog.tedshd.io/posts/2013-08-13-login-forget-pwd/</link>
+      <pubDate>Tue, 13 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-13-login-forget-pwd/</guid>
+      <description>function account captcha validation use bootatrap model result captcha fail captcha ok backend check account success fail(not exist) method ajax mockup link flow click forget password show model enter account &amp;amp; captcha(validation from js not null) submit(ajax) account fail(from backend) -&amp;gt; show message captcha fail(from backend) -&amp;gt; show message success -&amp;gt; show message flow(detail) 點擊忘記密碼 秀 bootstrap model 輸入帳號與驗證</description>
+    </item>
+    
+    <item>
+      <title>jQuery-design pattern</title>
+      <link>https://blog.tedshd.io/posts/2013-08-08-jquery-design-pattern/</link>
+      <pubDate>Thu, 08 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-08-jquery-design-pattern/</guid>
+      <description>modulize  modulize selector  var module = $(&amp;#39;body&amp;#39;); module.on(&amp;#39;click&amp;#39;, &amp;#39;a&amp;#39;, function() { // dosomething... });  initialize  if ($(&amp;#39;body&amp;#39;).length) { // dosomething } selector id is better than tag and class
+HTML
+&amp;lt;div&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li id=&amp;#34;id&amp;#34; class=&amp;#34;class&amp;#34;&amp;gt;text&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;/div&amp;gt; JavaScript
+$(&amp;#39;#id&amp;#39;).html(); $(&amp;#39;body&amp;#39;).find(&amp;#39;#id&amp;#39;); jsperf
+##bind event use on bind on parent selector
+$(&amp;#39;ul&amp;#39;).on(&amp;#39;click&amp;#39;, &amp;#39;li&amp;#39;, function () { // dosomething }); js Bin</description>
+    </item>
+    
+    <item>
+      <title>innerHeight &amp; innerWidth</title>
+      <link>https://blog.tedshd.io/posts/2013-08-03-innerheight-innerwidth/</link>
+      <pubDate>Sat, 03 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-03-innerheight-innerwidth/</guid>
+      <description>innerHeight &amp;amp; innerWidth 抓取瀏覽器目前顯示高度與寬度 一般都用 window.innerHeight 與 window.innerWidth 但唯獨IE6~IE8不行 Google了一下 發現用 window.document.documentElement.clientHeight 與 window.document.documentElement.clientWidth 便兼容所有瀏覽器 scrollHeight 如要抓 document 的高可用 document.body.scrollHeight Refer</description>
+    </item>
+    
+    <item>
+      <title>jQuery selector</title>
+      <link>https://blog.tedshd.io/posts/2013-08-03-jquery-selector/</link>
+      <pubDate>Sat, 03 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-03-jquery-selector/</guid>
+      <description>* 所有元素 E 所有E元素， E:nth-child(n) 傳回在所屬父元素下，排行第 n 的元素 E。(注意: 從 1 開始算，而非從 0) E:first-child 傳回在所屬父元素下，排行第一的元素(老大) E:last-child 傳</description>
+    </item>
+    
+    <item>
+      <title>performance-test</title>
+      <link>https://blog.tedshd.io/posts/2013-08-03-performance-test-javascript/</link>
+      <pubDate>Sat, 03 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-03-performance-test-javascript/</guid>
+      <description>performance jsPerf — JavaScript performance playground http://jsperf.com/
+HTML5 test http://html5test.com/
+JavaScript Benchmark http://www.webkit.org/perf/sunspider/sunspider.html
+var perf = function (testName, fn) { var startTime = new Date().getTime(); fn(); var endTime = new Date().getTime(); console.log(testName + &amp;#34;: &amp;#34; + (endTime - startTime) + &amp;#34;ms&amp;#34;); } jQuery console.time(&amp;#34;timerName&amp;#34;); // javascript console.timeEnd(&amp;#34;timerName&amp;#34;); </description>
+    </item>
+    
+    <item>
+      <title>Browser 判斷</title>
+      <link>https://blog.tedshd.io/posts/2013-08-02-check-browser/</link>
+      <pubDate>Fri, 02 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-02-check-browser/</guid>
+      <description>Browser Browser detect 由於各大瀏覽器都有部分CSS或Javascript相容問題,所以找了判斷各家瀏覽器的語法 在github 上更新 github</description>
+    </item>
+    
+    <item>
+      <title>fileUpload by yui library</title>
+      <link>https://blog.tedshd.io/posts/2013-08-02-fileupload-by-yui-library/</link>
+      <pubDate>Fri, 02 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-02-fileupload-by-yui-library/</guid>
+      <description>fileUpload by yui library init upload button JavaScript bind click event in IE use JavaScript move CSS position
+ uploader : Upload file uploaderOut : handle not drag area  event  fileSelect select file &amp;amp; render upload list check file status handle fileList _upload
+uploadprogress upload file progress
+uploadcomplete upload complete check ok or fail _upload
+uploaderror cancel &amp;amp; upload next
+_upload check file status &amp;amp; upload status upload upload fileList[uploadfile]</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://blog.tedshd.io/posts/2013-08-02-hello-world/</link>
+      <pubDate>Fri, 02 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-02-hello-world/</guid>
+      <description>Hi, This a demo post of Logdown.
+Logdown use Markdown as main syntax, you can find more example by reading this document on Wikipedia
+Logdown also support drag &amp;amp; drop image uploading ( required Beta / Premium membership). The picture syntax is like this:
+Bloging with code snippet: inline code
+Plain Code puts &amp;quot;Hello World!&amp;quot;Code with Language puts &amp;#34;Hello World!&amp;#34; Code with Title puts &amp;#34;Hello World!&amp;#34; MathJax Example Mathjax x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}Inline Mathjax The answser is $a^2 + b^2 = c^2$.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript function</title>
+      <link>https://blog.tedshd.io/posts/2013-08-02-javascript-function/</link>
+      <pubDate>Fri, 02 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-02-javascript-function/</guid>
+      <description>function function fun() { // do something } fun(); var fun = function () { // do something }; fun(); 立即函數(建立後立即執行，只執行此次) var fun = (function () { // do something }());</description>
+    </item>
+    
+  </channel>
+</rss>

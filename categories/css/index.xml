@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/css/</link>
+    <description>Recent content in css on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Thu, 04 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS - content property use special char</title>
+      <link>https://blog.tedshd.io/posts/2017-05-04-1790526/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-05-04-1790526/</guid>
+      <description>CSS - content property use special char If you want use special char like ©in CSS content property
+You must use ASCII and show on HEX
+And it is &amp;amp;#169
+So CSS need
+div;before { content: &amp;#34;\00A9&amp;#34;; } Entity Conversion Calculator
+This page can help us trans to hex
+Refer - CSS Content | CSS-Tricks</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - get CSS style</title>
+      <link>https://blog.tedshd.io/posts/2016-01-27-javascript-get-css-style/</link>
+      <pubDate>Wed, 27 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-01-27-javascript-get-css-style/</guid>
+      <description>JavaScript - get CSS style Sometimes i want to use JavaScript get dom CSS style.
+Use DOM.currentStyle and window.getComputedStyle(DOM)
+For IE use DOM.currentStyle
+Other use window.getComputedStyle(DOM)
+var dom = document.getElementById(&amp;#34;target&amp;#34;), style = dom.currentStyle || window.getComputedStyle(dom); console.log(style.marginTop); refer - Window.getComputedStyle() - Web APIs | MDN
+refer - currentStyle object (Internet Explorer)</description>
+    </item>
+    
+    <item>
+      <title>CSS4 - 關於 css4 and postcss 的一些想法</title>
+      <link>https://blog.tedshd.io/posts/2015-11-20-css4-css4-thoughts-and-postcss/</link>
+      <pubDate>Fri, 20 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-11-20-css4-css4-thoughts-and-postcss/</guid>
+      <description>CSS4 - 關於 css4 and postcss 的一些想法 前言 在年末才來發這篇文&amp;hellip; 在今年大家開始瘋 react(咦? AngularJS 勒&amp;hellip;), Babel, postcss 好像沒聽過上述這幾</description>
+    </item>
+    
+    <item>
+      <title>PHP - Auto update static files cache</title>
+      <link>https://blog.tedshd.io/posts/2015-08-16-php-auto-update-static-files-cache/</link>
+      <pubDate>Sun, 16 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-16-php-auto-update-static-files-cache/</guid>
+      <description>PHP - Auto update static files cache We can cache static files(CSS, JavaScript) to client
+When Server update static code.
+We want to update cache then we can modify file or add query string update version.
+We have some choice like modify url ?v=1 to ?v=2
+But I want to auto modify version.
+This is a way i use
+&amp;lt;?php function autoversion($url) { $ver = stat($_SERVER[&amp;#39;DOCUMENT_ROOT&amp;#39;] . $url)[mtime]; return $url .</description>
+    </item>
+    
+    <item>
+      <title>CSS - web font</title>
+      <link>https://blog.tedshd.io/posts/2015-08-11-css-web-font/</link>
+      <pubDate>Tue, 11 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-11-css-web-font/</guid>
+      <description>CSS - web font Use our font
+Put your font file on your server.
+Default font can&amp;rsquo;t cross domain used.
+Suggest use OTF or TTF format.
+@font-face { font-family: playstation; src: url(TRIIYP.otf); } @font-face { font-family: sony; src: url(sony.TTF); } Fonts SONY&amp;rsquo;s Logo Font Download
+Free ps4 fonts - FontSpace
+Demo ps4
+Refer - CSS3 Web Fonts</description>
+    </item>
+    
+    <item>
+      <title>CSS3 - object-fit</title>
+      <link>https://blog.tedshd.io/posts/2015-07-11-css3-object-fit/</link>
+      <pubDate>Sat, 11 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-07-11-css3-object-fit/</guid>
+      <description>CSS3 - object-fit We can use CSS3 property object-fit handle image show area and fit it.
+But only IE no support.
+Example
+Refer - object-fit Refer - object-fit</description>
+    </item>
+    
+    <item>
+      <title>CSS - Modify Pseudo Element Content</title>
+      <link>https://blog.tedshd.io/posts/2015-04-05-css-modify-pseudo-element-content/</link>
+      <pubDate>Sun, 05 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-04-05-css-modify-pseudo-element-content/</guid>
+      <description>CSS - Modify Pseudo Element Content 之前遇到個問題就是偽元素的內容(content)到底可不可以修改, 於是就求助於 Google 最後的答案是可以的, 而且還不少方法 Refer - Modify pseudo element styles with</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - detect CSS3 transitionEnd</title>
+      <link>https://blog.tedshd.io/posts/2014-12-30-javascript-detect-css3-transitionend/</link>
+      <pubDate>Tue, 30 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-12-30-javascript-detect-css3-transitionend/</guid>
+      <description>JavaScript - Detect CSS3 transitionEnd transitionend
+It is a event can fired when CSS3 transition end.
+function transitionEnd() { var el = document.createElement(&amp;#39;div&amp;#39;), //what the hack is bootstrap  transEndEventNames = { WebkitTransition : &amp;#39;webkitTransitionEnd&amp;#39;, MozTransition : &amp;#39;transitionend&amp;#39;, OTransition : &amp;#39;oTransitionEnd otransitionend&amp;#39;, transition : &amp;#39;transitionend&amp;#39; }; for (var name in transEndEventNames) { if (el.style[name] !== undefined) { return transEndEventNames[name]; } } return false; // explicit for ie8 ( ._.) } // Usage document.</description>
+    </item>
+    
+    <item>
+      <title>Compass - Use transform in compass 1.0.1</title>
+      <link>https://blog.tedshd.io/posts/2014-08-29-compass-use-transform-in-compass-101/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-29-compass-use-transform-in-compass-101/</guid>
+      <description>Compass - Use transform in compass 1.0.1 On august 15, 2014 Compass release 1.0.1 Some code in scss change wording. This article provide CSS3 transform wording in scss.
+I use this Mixin
+@import &amp;#34;compass/css3&amp;#34;; /*simple-transform($scale, $rotate, $trans-x, $trans-y, $skew-x, $skew-y, $origin-x, $origin-y)*/ @includesimple-transform(1, 45deg, 5px, -15px, 0, 0, 0, 0); /* Advance Usage */ /*@include create-transform($perspective, $scale-x, $scale-y, $scale-z, $rotate-x, $rotate-y, $rotate-z, $rotate3d, $trans-x, $trans-y, $trans-z, $skew-x, $skew-y, $origin-x, $origin-y, $origin-z, $only3d);*/ Refer - Compass Transform | Compass Documentation</description>
+    </item>
+    
+    <item>
+      <title>Web Develop - Flexible Footer</title>
+      <link>https://blog.tedshd.io/posts/2014-08-27-web-develop-flexible-footer/</link>
+      <pubDate>Wed, 27 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-27-web-develop-flexible-footer/</guid>
+      <description>Web Develop - Flexible Footer Sometimes we think footer must fixed in website bottom or put it in last of content.
+I provide a idea may be a good way. Content less browser view height, footer fixed in bottom. When content too much over browser view height, footer be put last of content.
+Feature  flexible only use CSS  Usage min-height: calc(100% - &amp;lt;footer height&amp;gt;);
+#hd { height: 50px; background: #aaa; /*display: none;*/ } #bd { text-align: center; min-height: calc(100% - 50px); /* important */ background: #ccc; } #content { padding-bottom: 60px; } #footer { position: relative; bottom: 50px; text-align: center; height: 50px; background: #999; } 50px is footer height</description>
+    </item>
+    
+    <item>
+      <title>CSS - SASS handle index</title>
+      <link>https://blog.tedshd.io/posts/2014-07-10-css-sass-handle-index/</link>
+      <pubDate>Thu, 10 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-07-10-css-sass-handle-index/</guid>
+      <description>CSS - SASS handle index Can use var control z-index $elements: con, slider, masthead; .masthead { /* z-index: 3 */ z-index: index($elements, masthead); } .slider { /* z-index: 2 */ z-index: index($elements, slider); } .con { /* z-index: 1 */ z-index: index($elements, con); } Refer - 使用 sass 有效控管 z-index 圖層順序</description>
+    </item>
+    
+    <item>
+      <title>CSS - font-family</title>
+      <link>https://blog.tedshd.io/posts/2014-06-02-css-font-family/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-06-02-css-font-family/</guid>
+      <description>CSS - font-family font-family: Microsoft JhengHei, Arial, Tahoma, Geneva, sans-serif; Add use mobile device default font font-family: Microsoft JhengHei, Heiti, Roboto, Helvetica, Arial, monospace, Tahoma, Geneva, sans-serif !important; CSS font-family 字型 - Wibibi Choosing Fonts for Your Mobile Website Common fonts to all versions of Windows &amp;amp; Mac equivalents CSS Web Safe Font Combinations</description>
+    </item>
+    
+    <item>
+      <title>CSS - 垂直置中</title>
+      <link>https://blog.tedshd.io/posts/2014-04-07-css-vertical-reset/</link>
+      <pubDate>Mon, 07 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-04-07-css-vertical-reset/</guid>
+      <description>CSS - 垂直置中 文字垂直置中 之前 ApplyBOY 在網路上分享了一個 CSS 垂直置中的一個解法 這裡整理出個小小模組出來 假如那一個區域內的東西需做垂直置中, 在該區域的 element</description>
+    </item>
+    
+    <item>
+      <title>CSS - 文字圍繞陰影</title>
+      <link>https://blog.tedshd.io/posts/2014-01-10-css-text-around-shadows/</link>
+      <pubDate>Fri, 10 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-01-10-css-text-around-shadows/</guid>
+      <description>CSS - 文字圍繞陰影 text-shadow 利用 text-shadow 可達到文字陰影的效果, 但如果要讓陰影圍繞著文字就需要一點技巧了 CSS h1 { text-shadow: #ff0000 1px 2px 3px; /*-- 顏色 x位移 y位移 模糊度 --*/ } 要達到圍繞</description>
+    </item>
+    
+    <item>
+      <title>CSS - Opacity effect child element</title>
+      <link>https://blog.tedshd.io/posts/2013-12-10-css-opacity-effect-child-element/</link>
+      <pubDate>Tue, 10 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-10-css-opacity-effect-child-element/</guid>
+      <description>CSS - Opacity effect child element 在利用 opacity 做背景時常遇到個問題就是子元素也被設置 opacity 這時就可以利用 CSS 的 :before 或 :after &amp;lt;div class=&amp;#34;bg-2&amp;#34;&amp;gt; &amp;lt;h2&amp;gt;Title&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;Content&amp;lt;/p&amp;gt; &amp;lt;img src=&amp;#34;http://blog.soonr.com/wp-content/uploads/2013/03/Google-Play-Badge.png&amp;#34; alt=&amp;#34;google play&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; .bg-2 { position: relative; &amp;amp;:before { content: &amp;#34;&amp;#34;; z-index: -99; position: absolute; top: 0; left: 0; width: 100%;</description>
+    </item>
+    
+    <item>
+      <title>Website switch layout</title>
+      <link>https://blog.tedshd.io/posts/2013-12-08-website-switch-layout/</link>
+      <pubDate>Sun, 08 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-08-website-switch-layout/</guid>
+      <description>Website switch layout 之前看過不少網站有切換 layout 的功能 於是就試著做做看 Demo 主要利用定義在 body 上的 class 去做不同 layout 的切換 Sample code var node; function node(selector) { return document.querySelector(selector); } // set style var layoutList = &amp;#39;layoutList&amp;#39;, layoutGrid = &amp;#39;layoutGrid&amp;#39;, layoutFull = &amp;#39;layoutFull&amp;#39;, layoutCard</description>
+    </item>
+    
+    <item>
+      <title>Use CSS3 animation in Compass</title>
+      <link>https://blog.tedshd.io/posts/2013-10-12-use-css3-animation-in-compass/</link>
+      <pubDate>Sat, 12 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-10-12-use-css3-animation-in-compass/</guid>
+      <description>Use CSS3 Animation In Compass Compass default dosen&amp;rsquo;t have mixin in CSS3 animation We can use this method in scss
+/* define */ $animation-support: webkit, moz, o, ms, not khtml; /* use */ .animation { @includeexperimental(&amp;#39;animation-name&amp;#39;, move, $animation-support); @includeexperimental(&amp;#39;animation-duration&amp;#39;, 5s, $animation-support); @includeexperimental(&amp;#39;animation-iteration-count&amp;#39;, 1, $animation-support); } and add keyframes
+/* define */ $animation-support: webkit, moz, o, ms, not khtml; @mixinkeyframes($name) { @-webkit-keyframes #{$name} { @content; } @-moz-keyframes #{$name} { @content; } @-ms-keyframes #{$name} { @content; } @keyframes #{$name} { @content; } } /* use */ .</description>
+    </item>
+    
+    <item>
+      <title>Place on and embed code from internet</title>
+      <link>https://blog.tedshd.io/posts/2013-09-10-place-on-and-embed-code-from-internet/</link>
+      <pubDate>Tue, 10 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-10-place-on-and-embed-code-from-internet/</guid>
+      <description>Place on and embed code from internet We can use cdnjs or some library sites embed js or css. But How can we embed our code from internet? I have 2 ways.
+GitHub If you can use GitHub Push your code to GitHub Wtach code on GitHub Find Raw and click it. open code like
+https://raw.github.com/tedshd/jQuery_scroll_to_top/master/javascripts/scroll_to_top.jsand then delete . after raw like
+https://rawgithub.com/tedshd/jQuery_scroll_to_top/master/javascripts/scroll_to_top.jsEmbed it finally.
+Dropbox Place on code in dropbox.</description>
+    </item>
+    
+    <item>
+      <title>Effeckt.css - Note</title>
+      <link>https://blog.tedshd.io/posts/2013-09-05-effecktcss-note/</link>
+      <pubDate>Thu, 05 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-05-effecktcss-note/</guid>
+      <description>Effeckt.css demo 上面頁面都是利用 CSS3 的 Animations 與 Transitions 效果做出來的 GitHub 使用該 library 須載入 Modernizr 這個 library Modernizr 是用來判斷 browser 是否支援 HTML5 or CSS3 所用的 library, 並能把相同功能但在不同 browser 實作的 API 或 CSS3 property</description>
+    </item>
+    
+    <item>
+      <title>CSS attribute</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-css-attribute/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-css-attribute/</guid>
+      <description>CSS attribute 顏色與背景 color: background-color: background-images: background-repeat: no-repeat repeat-x repeat-y repeat background-position: center background-attachment: fixed scroll; background: url() left center no-repeat; 文字 text-align: left right center vertical-align: top bottom text-top text-bottom middle baseline super sub line-height: letter-spacing: (字距) word-spacing: (單字間距) text-indent: (首行縮排) font-family: font-size: font-weight: 100~900 font-style: italic oblique text-decoration: underline overline</description>
+    </item>
+    
+    <item>
+      <title>CSS Note</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-css-note/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-css-note/</guid>
+      <description>Tip about CSS clearfix 為了清除浮動 .clearfix { *zoom: 1; } .clearfix:after { display: table; content: &amp;#34;&amp;#34;; line-height: 0; clear: both; } padding-right or bottom &amp;amp; margin-right or bottom 如遇 model box 問題盡可能在右或下做修正(因為 XY 是朝右下發展) 避免用到 top 盡量用 bottom scroll</description>
+    </item>
+    
+    <item>
+      <title>文字過多時省略(ellipsis)</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-text-overflow-ellipsis/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-text-overflow-ellipsis/</guid>
+      <description>text ellipsis div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 240px; } Tip 上述為必要 element 必須為 block 如用在 span 等行內元素，需用 display: inline-block; 多行會變一行顯示</description>
+    </item>
+    
+  </channel>
+</rss>

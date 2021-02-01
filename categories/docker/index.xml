@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/docker/</link>
+    <description>Recent content in docker on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Thu, 24 Dec 2020 10:12:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>docker 使用紀錄</title>
+      <link>https://blog.tedshd.io/posts/docker_usage/</link>
+      <pubDate>Thu, 24 Dec 2020 10:12:17 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/docker_usage/</guid>
+      <description>docker images 列出所有拉下來的 docker image docker images REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE ubuntu latest 07f8e8c5e660 3 weeks ago 188.3 MB build dockerfile 使用 dockerfile 建立 docker image 直接建立 docker build . 預設會找當前的目錄的 Dockerfile -t 可以設定建立的 image &amp;amp; tag name docker build</description>
+    </item>
+    
+    <item>
+      <title>Docker - Mac research log</title>
+      <link>https://blog.tedshd.io/posts/2015-05-15-docker-mac-research-log/</link>
+      <pubDate>Fri, 15 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-05-15-docker-mac-research-log/</guid>
+      <description>Docker - Mac research log Install by Mac Register Docker Hub Docker Hub Use Kitematic kitematic Install Ubuntu Search ubuntu on docker hub Run command docker pull ubuntu Use docker images docker images REPOSITORY TAG IMAGE ID CREATED VIRTUAL SIZE ubuntu latest 07f8e8c5e660 3 weeks ago 188.3 MB build dockerfile docker build . -t ubuntu_dev:16.04 -f local.Dockerfile run container docker run -t -i ubuntu /bin/bash docker run -t -i ubuntu</description>
+    </item>
+    
+  </channel>
+</rss>

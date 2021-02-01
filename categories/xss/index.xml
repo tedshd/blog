@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xss on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/xss/</link>
+    <description>Recent content in xss on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sun, 01 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/xss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Something about XSS(Cross-site scripting)</title>
+      <link>https://blog.tedshd.io/posts/2015-11-01-something-about-xsscross-site-scripting/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-11-01-something-about-xsscross-site-scripting/</guid>
+      <description>Something about XSS(Cross-site scripting) If not set anything Use like &amp;lt;?php echo $_GET[&amp;#39;name&amp;#39;];?&amp;gt; and querystring name = &amp;lt;script&amp;gt;alert(document.cookie)&amp;lt;/script&amp;gt; And not defence XSS In Firefox In Chrome In Safari Result Chrome &amp;amp; Safari browser has handle XSS default Defence Set header X-XSS-Protection: 1 if use PHP, can use htmlspecialchars() // or htmlentities() Important! Finally We must know it is handle encode to avoid run JavaScript on page JavaScript ver htmlspecialchars Refer</description>
+    </item>
+    
+  </channel>
+</rss>

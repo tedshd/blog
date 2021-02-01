@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firefox mozilla on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/firefox-mozilla/</link>
+    <description>Recent content in firefox mozilla on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Mon, 18 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/firefox-mozilla/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019 Mozilla Developer Roadshow Asia Taipei 與會紀錄</title>
+      <link>https://blog.tedshd.io/posts/2019-11-18-2019-mozilla-developer-roadshow-asia-taipei-record/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-11-18-2019-mozilla-developer-roadshow-asia-taipei-record/</guid>
+      <description>2019 Developer Roadshow Asia: Taipei 2019 Developer Roadshow Asia: Taipei 上次在台灣的 Roadshow 應該是 17 年的那場吧 發表 Quantum 的那次 如果之後我沒錯過台灣的場次的話 這次有趣的是竟然是在 2019 Meet Taipei 創新創業嘉年華的展覽</description>
+    </item>
+    
+  </channel>
+</rss>

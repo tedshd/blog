@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gcp on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/gcp/</link>
+    <description>Recent content in gcp on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Fri, 20 Nov 2020 10:52:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/gcp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Puppeteer 安裝在 ubuntu server 使用紀錄</title>
+      <link>https://blog.tedshd.io/posts/puppeteer_on_ubuntu_server/</link>
+      <pubDate>Fri, 20 Nov 2020 10:52:35 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/puppeteer_on_ubuntu_server/</guid>
+      <description>Puppeteer 是 Google 推出的基於 nodejs 的一套工具 可以控制 Chrome 和 Chromium 所以在爬蟲和測試等等需求都很好用 這裡記錄一下在 GCP 上面開一台 Computer Engine 後裝 Puppeteer 的紀錄 1. CE 開一個 instance 之前開 f1-mirco(1vCPU &amp;amp; 0.6G</description>
+    </item>
+    
+  </channel>
+</rss>

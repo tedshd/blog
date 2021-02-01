@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>YouTube on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/youtube/</link>
+    <description>Recent content in YouTube on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Mon, 23 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/youtube/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SEO - 增強 Youtube video SEO</title>
+      <link>https://blog.tedshd.io/posts/2019-12-23-seo-enhanced-youtube-video-seo/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-12-23-seo-enhanced-youtube-video-seo/</guid>
+      <description>Intro 最近因為公司的需求開始研究這潭深水 剛好看到一篇文章介紹的還不錯 雖然已經是 2016 的文章 但它寫的一些觀點我覺得現在還是適用 雖然這文章有在業配服務 XD</description>
+    </item>
+    
+    <item>
+      <title>youtube-dl - 使用筆記</title>
+      <link>https://blog.tedshd.io/posts/2019-11-04-youtube-dl-using-notes/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-11-04-youtube-dl-using-notes/</guid>
+      <description>youtube-dl - 使用筆記 youtube-dl 是一個跟影音相關方便使用的 cli 工具 這裡筆記一下一些用法 列出該影片可以下載的 format youtube-dl -F &amp;lt;URL&amp;gt; output [youtube] e17Um7wExuQ: Downloading webpage [youtube] e17Um7wExuQ: Downloading video info webpage [info] Available formats for e17Um7wExuQ: format code extension resolution note 249 webm</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - YouTube API note</title>
+      <link>https://blog.tedshd.io/posts/2013-12-20-javascript-youtube-api-note/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-12-20-javascript-youtube-api-note/</guid>
+      <description>JavaScript - YouTube API note player demo YouTube JavaScript Player API Reference YouTube 嵌入式播放器参数 YouTube Embedded Players and Player Parameters YouTube Player API Reference for iframe Embeds Use YouTube video must init a youtube player There have 2 player we can use flash player iframe player I suggest use iframe player because it can support flash and HTML5 If use Apple mobile devices,</description>
+    </item>
+    
+  </channel>
+</rss>

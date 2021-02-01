@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+
+
+
+
+<title>CSP Security | tedshd&#39;s DevNote</title>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content='Develop &amp; Design Note by Ted'>
+<meta name="keywords" content=''>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://blog.tedshd.io/categories/csp-security/">
+<link rel="alternate" media="handheld" href="https://blog.tedshd.io/categories/csp-security/" />
+
+<link rel="canonical" href="https://blog.tedshd.io/categories/csp-security/" />
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aa6">
+<meta name="theme-color" content="">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Tedshd">
+
+<meta property="og:title" content="CSP Security" />
+<meta property="og:description" content="Develop &amp; Design Note by Ted" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.tedshd.io/categories/csp-security/" />
+<meta property="og:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+<meta property="og:updated_time" content="2020-01-29T17:42:46+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+
+<meta name="twitter:title" content="CSP Security"/>
+<meta name="twitter:description" content="Develop &amp; Design Note by Ted"/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+<script data-ad-client="ca-pub-0553186380244641" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    
+    <link href="/categories/csp-security/index.xml" rel="alternate" type="application/rss+xml" title="tedshd&#39;s DevNote" />
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://blog.tedshd.io/css/style.css'>
+
+    
+<link>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Hanuman:400,700|Inconsolata|Roboto:400,400i,700,700i&display=swap&subset=khmer"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
+
+</head><body><header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+        <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+                <a class="p-navigation__link u-vertically-center p-link--logo" href="https://blog.tedshd.io/">
+                    tedshd&#39;s DevNote
+                </a>
+            </div>
+            
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+                <i class="p-icon--menu"></i>
+            </a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
+                <i class="p-icon--close"></i>
+            </a>
+        </div>
+
+        <nav class="p-navigation__nav">
+            <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+
+            <ul class="p-navigation__links" role="menu">
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/categories">Categories</a>
+                </li>
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/tags">tags</a>
+                </li>
+                
+            </ul>
+
+            
+            <form class="p-search-box" action="https://www.google.com/search" target="_blank">
+    <input type="search" class="p-search-box__input" name="q" placeholder='Search'
+        required="" aria-label="Query">
+    <input type="hidden" name="sitesearch" value="https://blog.tedshd.io/">
+    <button type="reset" class="p-search-box__reset" alt="reset" aria-label="Reset">
+        <i class="p-icon--close"></i>
+    </button>
+    <button type="submit" class="p-search-box__button" alt="search" aria-label="Search">
+        <i class="p-icon--search"></i>
+    </button>
+</form>
+            
+        </nav>
+    </div>
+</header><div id="main-content">
+
+
+
+<div class="page-banner">
+    <div class="row">
+        <h1>
+            <span class="u-capitalized">category</span>:
+            CSP Security
+        </h1>
+        
+    </div>
+</div>
+
+
+
+<ul class="p-navigation__links sub_menu" role="menu">
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tedshd.github.io/resume/">About</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tysh310246.blogspot.tw/">Blog</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://www.facebook.com/chander.shiu">Facebook</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://github.com/tedshd">Github</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://tw.linkedin.com/in/tedshd">Linkedin</a>
+    </li>
+    
+</ul>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;text-align: center;" data-ad-client="ca-pub-0553186380244641"
+    data-ad-slot="1505807492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div class="p-strip is-wrapper posts">
+    <div class="row">
+        
+
+        
+
+        <div class="col-12">
+            <div class="p-card">
+                <h3><a href="https://blog.tedshd.io/posts/2016-09-19-content-security-policy-on-the-feasibility-of-general-site-placed/">Content Security Policy - 論一般網站放置的可行性</a></h3>
+
+                
+                
+                <p>
+
+
+<span class=" u-capitalized ">
+    on
+</span>
+2016-09-19
+</p>
+                
+
+                
+                <p><h2 id="content-security-policy---論一般網站放置的可行性">Content Security Policy - 論一般網站放置的可行性</h2>
+<h3 id="前言">前言</h3>
+<p>Content Security Policy 出來也有一段時間了</p>
+<p>他的目的是為了從 <code>header</code> 下手去抵禦一些攻擊, 基本上遵循它的rule 就可以避掉一些 XSS 攻擊</p>
+<p>但有時加入這功能會需要變動程式的架構或者某些性質的服務是根本就是設定到可以動的話安全係數會降低許多</p>
+<p>這裏會稍微舉一些例子來說明</p>
+<p>關於 Content Security Policy 以下有一些連結可以幫助瞭解這個 header</p>
+<p><a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">Refer - An Introduction to Content Security Policy</a></p>
+<p><a href="http://www.ruanyifeng.com/blog/2016/09/csp.html">Refer - Content Security Policy 入门教程</a></p>
+<p><a href="http://devco.re/blog/2014/04/08/security-issues-of-http-headers-2-content-security-policy/">Refer - Content-Security-Policy - HTTP Headers 的資安議題 (2)</a></p>
+<p><a href="https://content-security-policy.com/">Refer - Content Security Policy Reference</a></p>
+<p>目前有只用的知名服務有 <strong>github</strong> 和 <strong>dropbox</strong></p>
+<h3 id="簡介">簡介</h3>
+<p>簡單說就是會限制頁面上出現的東西</p>
+<ul>
+<li>domain</li>
+<li>inline style</li>
+<li>inline script</li>
+<li>iframe, frame</li>
+<li>object</li>
+<li>https</li>
+</ul>
+<p>可以用 html <code>&lt;meta&gt;</code> 或用 http header 的方式使用, 所以純靜態網頁也是可以用的</p>
+<p>但有個限制是用 <code>&lt;meta&gt;</code> 的方式就不能用 <code>frame-ancestors</code> 了</p>
+<p>還有需注意的是 <code>&lt;body onload=&quot;console.log('load')&quot;&gt;&lt;/div&gt;</code> 或 <code>&lt;a href=&quot;javascript:void(0);&quot;&gt;&lt;/a&gt;</code> 這種也是 inline script</p>
+<p>但 <code>a</code> 的例子可以在 <code>click</code> 時用 <code>e.preventDefault();</code> 避掉</p>
+<p>這裏會著重在 iframe 的限制, 因為其他的部分上面參考文章都有詳細的說明, 但關於 iframe 卻沒有較詳細的說明</p>
+<p>且發現在實作上跟限制 iframe 有關的設定, 在不同 browser 也有差, 甚至與 <a href="https://content-security-policy.com/">Content Security Policy Reference</a> 都還有差異</p>
+<p>以下是用 chrome 52, safari 9.1.3, firefox 48.0.2 測試的結果</p>
+<ol>
+<li>
+<p><code>frame-src</code> 雖然被捨棄建議用 <code>child-src</code> 但 safari 不支援, 所以還是得用(把他跟 child-src 設定一樣即可)</p>
+</li>
+<li>
+<p><code>frame-ancestors</code> 還沒支援很多 browser, 建議還是加上 <code>X-Frame-Options</code> 的方式來達到兼容(<a href="https://developer.mozilla.org/zh-TW/docs/HTTP/X-Frame-Options">什麼是 X-Frame-Options?</a>)</p>
+</li>
+<li>
+<p>每個頁面是吃該頁面的 header 的 CSP 設定, 所以 iframe 是吃 iframe 自己 header 的設定</p>
+</li>
+<li>
+<p>基本上放 Google 廣告聯播網的要另外處理因為程式碼如下圖, 但可以把它放到 iframe 隔離獨自處理(<del>但曝光和點擊需測試一下</del> 經測試是有計算到的</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<p>以下是範例可以玩玩看</p>
+<p><a href="https://github.com/tedshd/content-security-policy-example">github demo code</a></p>
+<p>最後可能有人有疑問那用 browser 的 devtool 去操作 js 改動頁面或執行 js, CSP 可以擋得住嗎?</p>
+<p>擋不住啊, 因為 CSP 是 header, 它在 response 時檢查 header 去了解之後進來的 content 必須符合 CSP 的設定, 不然就擋掉 ,當然沒辦法管已經載完的頁面你要怎麼用 devtool 玩頁面都無法阻擋</p>
+</p>
+                
+
+                
+
+                
+                <p><a href="https://blog.tedshd.io/posts/2016-09-19-content-security-policy-on-the-feasibility-of-general-site-placed/">Read more</a></p>
+                
+            </div>
+        </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        
+        
+        
+    </div>
+</div>
+
+<div class="p-strip is-wrapper">
+    <div class="row">
+        <footer class="p-article-pagination">
+    
+
+    
+</footer>
+    </div>
+</div>
+
+
+        </div><footer class="p-strip is-shallow page-footer">
+    <div class="row">
+        <div class="col-12  u-align--center">
+            <p>
+                © 2020 Tedshd
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SEO on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/seo/</link>
+    <description>Recent content in SEO on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Mon, 23 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/seo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SEO - 增強 Youtube video SEO</title>
+      <link>https://blog.tedshd.io/posts/2019-12-23-seo-enhanced-youtube-video-seo/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-12-23-seo-enhanced-youtube-video-seo/</guid>
+      <description>Intro 最近因為公司的需求開始研究這潭深水 剛好看到一篇文章介紹的還不錯 雖然已經是 2016 的文章 但它寫的一些觀點我覺得現在還是適用 雖然這文章有在業配服務 XD</description>
+    </item>
+    
+    <item>
+      <title>Web - HTML metadata image size with open graph...etc</title>
+      <link>https://blog.tedshd.io/posts/2019-10-03-web-html-metadata-image-size-with-open-graph-etc/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-10-03-web-html-metadata-image-size-with-open-graph-etc/</guid>
+      <description>Web - HTML metadata image size with open graph&amp;hellip;etc HTML use some meta tag for SEO, social media or App link&amp;hellip;
+List some limit with image size or logo size
+Facebook open graph Refers - Images in Link Shares
+  The minimum allowed image dimension is 200 x 200 pixels. The size of the image file must not exceed 8 MB. Use images that are at least 1200 x 630 pixels for the best display on high resolution devices.</description>
+    </item>
+    
+  </channel>
+</rss>

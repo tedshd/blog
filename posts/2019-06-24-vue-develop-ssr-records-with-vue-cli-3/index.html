@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+
+
+
+
+<title>Vue - 使用 Vue cli 3 開發 SSR 紀錄 | tedshd&#39;s DevNote</title>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content='Vue - 使用 Vue cli 3 開發 SSR 紀錄 Intro 因為工作需求需要一個能夠 SSR 的工具 由於是接手別的團隊回來的程式也剛好要做大動作的重構(打掉重練 之前的團隊是使用 koot.js 個人'>
+<meta name="keywords" content=''>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://blog.tedshd.io/posts/2019-06-24-vue-develop-ssr-records-with-vue-cli-3/">
+<link rel="alternate" media="handheld" href="https://blog.tedshd.io/posts/2019-06-24-vue-develop-ssr-records-with-vue-cli-3/" />
+
+<link rel="canonical" href="https://blog.tedshd.io/posts/2019-06-24-vue-develop-ssr-records-with-vue-cli-3/" />
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aa6">
+<meta name="theme-color" content="">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Tedshd">
+
+<meta property="og:title" content="Vue - 使用 Vue cli 3 開發 SSR 紀錄" />
+<meta property="og:description" content="Vue - 使用 Vue cli 3 開發 SSR 紀錄 Intro 因為工作需求需要一個能夠 SSR 的工具 由於是接手別的團隊回來的程式也剛好要做大動作的重構(打掉重練 之前的團隊是使用 koot.js 個人" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.tedshd.io/posts/2019-06-24-vue-develop-ssr-records-with-vue-cli-3/" />
+<meta property="og:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+<meta property="article:published_time" content="2019-06-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-29T17:42:46+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+
+<meta name="twitter:title" content="Vue - 使用 Vue cli 3 開發 SSR 紀錄"/>
+<meta name="twitter:description" content="Vue - 使用 Vue cli 3 開發 SSR 紀錄 Intro 因為工作需求需要一個能夠 SSR 的工具 由於是接手別的團隊回來的程式也剛好要做大動作的重構(打掉重練 之前的團隊是使用 koot.js 個人"/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+<script data-ad-client="ca-pub-0553186380244641" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://blog.tedshd.io/css/style.css'>
+
+    
+<link>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Hanuman:400,700|Inconsolata|Roboto:400,400i,700,700i&display=swap&subset=khmer"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
+
+</head><body><header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+        <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+                <a class="p-navigation__link u-vertically-center p-link--logo" href="https://blog.tedshd.io/">
+                    tedshd&#39;s DevNote
+                </a>
+            </div>
+            
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+                <i class="p-icon--menu"></i>
+            </a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
+                <i class="p-icon--close"></i>
+            </a>
+        </div>
+
+        <nav class="p-navigation__nav">
+            <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+
+            <ul class="p-navigation__links" role="menu">
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/categories">Categories</a>
+                </li>
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/tags">tags</a>
+                </li>
+                
+            </ul>
+
+            
+            <form class="p-search-box" action="https://www.google.com/search" target="_blank">
+    <input type="search" class="p-search-box__input" name="q" placeholder='Search'
+        required="" aria-label="Query">
+    <input type="hidden" name="sitesearch" value="https://blog.tedshd.io/">
+    <button type="reset" class="p-search-box__reset" alt="reset" aria-label="Reset">
+        <i class="p-icon--close"></i>
+    </button>
+    <button type="submit" class="p-search-box__button" alt="search" aria-label="Search">
+        <i class="p-icon--search"></i>
+    </button>
+</form>
+            
+        </nav>
+    </div>
+</header><div id="main-content">
+<div class="page-banner">
+    <div class="row u-vertically-center">
+        <div class="col-8 pure-g">
+            <div class="pure-u">
+                <img src="https://graph.facebook.com/100004089951579/picture?type=large" alt="tedshd&#39;s DevNote" width="100" height="100"
+                    style="border-radius: 50%;display: inline; margin: 1rem;box-shadow: 0 0 5px rgba(0, 0, 0, 1);vertical-align: middle;">
+            </div>
+            <div class="pure-u">
+                <h2>tedshd&#39;s DevNote</h2>
+                <p>Develop &amp; Design Note by Ted</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="p-navigation__links sub_menu" role="menu">
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tedshd.github.io/resume/">About</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tysh310246.blogspot.tw/">Blog</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://www.facebook.com/chander.shiu">Facebook</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://github.com/tedshd">Github</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://tw.linkedin.com/in/tedshd">Linkedin</a>
+    </li>
+    
+</ul>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;text-align: center;" data-ad-client="ca-pub-0553186380244641"
+    data-ad-slot="1505807492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<header class="">
+    <div class="row">
+        <h1>Vue - 使用 Vue cli 3 開發 SSR 紀錄</h1>
+    </div>
+</header>
+
+
+<section class="p-strip is-shallow">
+    <main class="row post-content">
+        
+        <p class="p-media-object__content">
+            <span class="u-capitalized">on</span>
+            2019-06-24
+        </p>
+        
+        <h2 id="vue---使用-vue-cli-3-開發-ssr-紀錄">Vue - 使用 Vue cli 3 開發 SSR 紀錄</h2>
+<h3 id="intro">Intro</h3>
+<p>因為工作需求需要一個能夠 SSR 的工具</p>
+<p>由於是接手別的團隊回來的程式也剛好要做大動作的重構(打掉重練</p>
+<p>之前的團隊是使用 koot.js</p>
+<p>個人花了點時間看了一下還不錯, 但是</p>
+<ol>
+<li>
+<p>對 react 不太熟</p>
+</li>
+<li>
+<p>居然還是用 less, 我在 2017 就已經捨棄使用預處理器來處理樣式了, 擁抱 CSS L4</p>
+</li>
+<li>
+<p>還是比較喜歡 Vue 的架構</p>
+</li>
+</ol>
+<p>所以就心痛的來研究一下 Vue cli 處理 SSR 的方式</p>
+<p>官方有文件</p>
+<p><a href="https://ssr.vuejs.org/zh/">Vue.js 服务器端渲染指南</a></p>
+<p>看完以後</p>
+<p>恩&hellip;</p>
+<p>好麻煩啊</p>
+<p>使用工具和 framework 的目的就是要無腦使用啊</p>
+<p>還要寫一大堆 code 幹嘛</p>
+<p>這邊先列出自己的需求</p>
+<ol>
+<li>
+<p>SSR 而且需要是 <a href="https://blog.v123582.tw/2016/04/03/%E4%B8%8D%E5%8F%AF%E4%B8%8D%E7%9F%A5%E7%9A%84%E5%89%8D%E7%AB%AF%E8%B6%A8%E5%8B%A2-Isomorphic-%E8%88%87-UniversalJS/">Universal</a> 的處理方式</p>
+</li>
+<li>
+<p>在樣式能夠使用 postcss 處理 CSS L4</p>
+</li>
+<li>
+<p>能夠處理 Metadata</p>
+</li>
+<li>
+<p>能夠把環境需求用設定處理掉或根本不用設定就處理掉</p>
+</li>
+<li>
+<p>因為工作需求需要多語系..</p>
+</li>
+<li>
+<p>最好是要有 PWA</p>
+</li>
+</ol>
+<p>所以就開始了痛苦的尋找之旅</p>
+<h3 id="result">Result</h3>
+<h4 id="使用-vue-clihttpsclivuejsorg">使用 <a href="https://cli.vuejs.org">vue cli</a></h4>
+<p>之前從第一版就開始在使用了, 所以算是比較熟的, 且學習成本低</p>
+<p>跟 react 比我比較喜歡 vue 的寫法</p>
+<p>且到了第三版的現在已經越來越成熟且方便設定</p>
+<p>還有自己的生態圈</p>
+<p>插件可以方便找查與安裝</p>
+<p><strong>第 6 點滿足</strong></p>
+<h4 id="使用-vue-cli-plugin-ssrhttpsgithubcomakryumvue-cli-plugin-ssr">使用 <a href="https://github.com/Akryum/vue-cli-plugin-ssr">vue-cli-plugin-ssr</a></h4>
+<p>這個用 vue ui 在找 plugin 時有不少人用</p>
+<p>預設不用設定</p>
+<p>在開發時就可以直接把 vue 轉成 SSR 輸出來看很方便(寫一套就自動幫你處理好 SSR &amp; CSR)</p>
+<p><strong>第 1 點滿足</strong></p>
+<h4 id="處理非同步資料-client--server-side">處理非同步資料 client &amp; server side</h4>
+<p><a href="https://ssr.vuejs.org/guide/data.html#data-store">Data Pre-Fetching and State</a></p>
+<p>主要就是先處理 API 然後 response 回來的資料放到 store 裡</p>
+<p>這邊可以結合 <a href="https://github.com/axios/axios">axios</a> 去使用</p>
+<h4 id="處理-meta-data">處理 Meta data</h4>
+<p>這比較麻煩</p>
+<p>除了要 SSR 以外必須也需要能在 CSR 一起處理掉</p>
+<p>有一個套件蠻多人推的是 <a href="https://github.com/nuxt/vue-meta">vue meta</a></p>
+<p>但是在搭配上述的 <code>vue-cli-plugin-ssr</code> 時, vue meta 的 SSR 設定是不 work 的</p>
+<p>有人開了 <a href="https://github.com/Akryum/vue-cli-plugin-ssr/issues/33">issue</a> 但是被擺很久了&hellip;</p>
+<p>其實很多套件都可以處理 SSR 和 CSR 的 meta tag</p>
+<p>但是在跟 <a href="https://github.com/Akryum/vue-cli-plugin-ssr">vue-cli-plugin-ssr</a> 搭配時都遇到個問題就是當 meta 資訊是從後端動態來的話就不行了</p>
+<p>因為從 api 來的話要在 SSR 處理必須要在 vue component 中的 <code>serverPrefetch</code> 先處理 async 回來的動作</p>
+<p>然後把 API 拉回來的資料放到 store 中處理才能讓 SSR 處理時有資料</p>
+<p>但是 meta tag 的資訊很不好處理</p>
+<p>必須要遵循以下文件中的方式</p>
+<p><a href="https://ssr.vuejs.org/zh/guide/head.html">Head Management</a></p>
+<p>但是試過用 mixin 沒法處理 meta 上的 case&hellip;</p>
+<p>如果把 meta 的資料獨立 API 處理也許有機會</p>
+<p>最後只好自己寫個 function 做 hack 的處理</p>
+<p>在 <code>computed</code> 做了一個 init 的 function 來處理建立 metadata</p>
+<p>但是目前這 function 處理 CSR 的部分還不算太 ok, 因為自己目前都是動態砍掉 HTML DOM 在重建 DOM 會有些微效能上的問題</p>
+<h4 id="樣式處理">樣式處理</h4>
+<p>Vue 採用 CSS module 的設計</p>
+<p>Vue cli 使用了 CSS Loader</p>
+<p>但是個人其實不是很喜歡使用 CSS module 的方法</p>
+<p>因為它是採用動態處理 style 的方式</p>
+<p>在某些 case 底下會造成 UI 大量重繪</p>
+<p>這在畫面上體驗很差</p>
+<p>除非自己做一個 loading 處理掉這問題</p>
+<p>再加上如果要使用 CSS L4 feature 得有些調整</p>
+<p>最後使用 <a href="https://github.com/postcss/postcss-import">postcss-import</a></p>
+<p>就可以維持用 CSS loader 且在使用 import 可以適當的使用 CSS L4 而且是可以做簡單的模組化</p>
+<h4 id="使用-vue-cli-plugin-i18nhttpsgithubcomkazuponvue-cli-plugin-i18n">使用 <a href="https://github.com/kazupon/vue-cli-plugin-i18n">vue-cli-plugin-i18n</a></h4>
+<p>切換語系</p>
+<p><a href="https://kazupon.github.io/vue-i18n/zh/guide/locale.html">语言环境变更</a></p>
+<p>這部分還沒試驗</p>
+<h4 id="device-detect">device detect</h4>
+<p>這套健在 <code>vue-cli-plugin-ssr</code> 底下無痛使用可以在 SSR 的情況就處理依照 UA 判斷 device</p>
+<p><a href="https://github.com/duskload/mobile-device-detect">mobile-device-detect</a></p>
+<h3 id="目前情況">目前情況</h3>
+<p>這些解決方案目前還沒用在線上環境</p>
+<p>主要因為發現接回來的東西根本沒必要那麼的費工</p>
+<p>加上合適的新專案喊停了</p>
+<p>所以目前還是在研究階段</p>
+<p>有興趣這邊有研究一下我目前正在研究用的 prototype</p>
+<p><a href="https://github.com/tedshd/vue_ssr">ssr</a></p>
+
+    </main>
+</section>
+
+<footer class="p-strip is-wrapper">
+    <div class="row">
+        <div class="p-article-pagination">
+    
+    <a class="p-article-pagination__link--previous" href="https://blog.tedshd.io/posts/2019-06-19-mac-php-redis-install/">
+        <span class="p-article-pagination__label">Previous</span>
+        <span class="p-article-pagination__title">
+            Mac - php redis install
+        </span>
+    </a>
+    
+
+    
+    <a class="p-article-pagination__link--next" href="https://blog.tedshd.io/posts/2019-07-03-web-icon-use-notes/">
+        <span class="p-article-pagination__label">Next</span>
+        <span class="p-article-pagination__title">
+            web - favicon 使用筆記
+        </span>
+    </a>
+    
+</div>
+    </div>
+</footer>
+
+        </div><footer class="p-strip is-shallow page-footer">
+    <div class="row">
+        <div class="col-12  u-align--center">
+            <p>
+                © 2020 Tedshd
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>

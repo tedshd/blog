@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web favicon on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/web-favicon/</link>
+    <description>Recent content in web favicon on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/web-favicon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>web - favicon 使用筆記</title>
+      <link>https://blog.tedshd.io/posts/2019-07-03-web-icon-use-notes/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2019-07-03-web-icon-use-notes/</guid>
+      <description>favicon 使用筆記 隨著 web 發展越來越久 所需要準備的 favicon 等 icon 需要用到越來越多地方了 且這也是一個服務重要的依據 有設定 favicon 就是能夠給人對這個服務有個既定的印象 能</description>
+    </item>
+    
+  </channel>
+</rss>

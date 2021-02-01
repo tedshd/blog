@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+
+
+
+
+<title>Google search result with structured data | tedshd&#39;s DevNote</title>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content='前言 現在可以確認的是 Google 並不會以單純的 Google structured data 來呈現在 search result 以往驗證過的是 search result 裡的 title 和描述並不完全會採用 meta 中的 title 和 description 現在在線上的頁面也再次驗證了 Google'>
+<meta name="keywords" content=''>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://blog.tedshd.io/posts/google_search_result_structure_data_research_log/">
+<link rel="alternate" media="handheld" href="https://blog.tedshd.io/posts/google_search_result_structure_data_research_log/" />
+
+<link rel="canonical" href="https://blog.tedshd.io/posts/google_search_result_structure_data_research_log/" />
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aa6">
+<meta name="theme-color" content="">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Tedshd">
+
+<meta property="og:title" content="Google search result with structured data" />
+<meta property="og:description" content="前言 現在可以確認的是 Google 並不會以單純的 Google structured data 來呈現在 search result 以往驗證過的是 search result 裡的 title 和描述並不完全會採用 meta 中的 title 和 description 現在在線上的頁面也再次驗證了 Google" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.tedshd.io/posts/google_search_result_structure_data_research_log/" />
+<meta property="og:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+<meta property="article:published_time" content="2020-05-04T13:53:19+08:00" />
+<meta property="article:modified_time" content="2020-05-04T14:56:02+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+
+<meta name="twitter:title" content="Google search result with structured data"/>
+<meta name="twitter:description" content="前言 現在可以確認的是 Google 並不會以單純的 Google structured data 來呈現在 search result 以往驗證過的是 search result 裡的 title 和描述並不完全會採用 meta 中的 title 和 description 現在在線上的頁面也再次驗證了 Google"/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+<script data-ad-client="ca-pub-0553186380244641" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://blog.tedshd.io/css/style.css'>
+
+    
+<link>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Hanuman:400,700|Inconsolata|Roboto:400,400i,700,700i&display=swap&subset=khmer"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
+
+</head><body><header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+        <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+                <a class="p-navigation__link u-vertically-center p-link--logo" href="https://blog.tedshd.io/">
+                    tedshd&#39;s DevNote
+                </a>
+            </div>
+            
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+                <i class="p-icon--menu"></i>
+            </a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
+                <i class="p-icon--close"></i>
+            </a>
+        </div>
+
+        <nav class="p-navigation__nav">
+            <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+
+            <ul class="p-navigation__links" role="menu">
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/categories">Categories</a>
+                </li>
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/tags">tags</a>
+                </li>
+                
+            </ul>
+
+            
+            <form class="p-search-box" action="https://www.google.com/search" target="_blank">
+    <input type="search" class="p-search-box__input" name="q" placeholder='Search'
+        required="" aria-label="Query">
+    <input type="hidden" name="sitesearch" value="https://blog.tedshd.io/">
+    <button type="reset" class="p-search-box__reset" alt="reset" aria-label="Reset">
+        <i class="p-icon--close"></i>
+    </button>
+    <button type="submit" class="p-search-box__button" alt="search" aria-label="Search">
+        <i class="p-icon--search"></i>
+    </button>
+</form>
+            
+        </nav>
+    </div>
+</header><div id="main-content">
+<div class="page-banner">
+    <div class="row u-vertically-center">
+        <div class="col-8 pure-g">
+            <div class="pure-u">
+                <img src="https://graph.facebook.com/100004089951579/picture?type=large" alt="tedshd&#39;s DevNote" width="100" height="100"
+                    style="border-radius: 50%;display: inline; margin: 1rem;box-shadow: 0 0 5px rgba(0, 0, 0, 1);vertical-align: middle;">
+            </div>
+            <div class="pure-u">
+                <h2>tedshd&#39;s DevNote</h2>
+                <p>Develop &amp; Design Note by Ted</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="p-navigation__links sub_menu" role="menu">
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tedshd.github.io/resume/">About</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tysh310246.blogspot.tw/">Blog</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://www.facebook.com/chander.shiu">Facebook</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://github.com/tedshd">Github</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://tw.linkedin.com/in/tedshd">Linkedin</a>
+    </li>
+    
+</ul>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;text-align: center;" data-ad-client="ca-pub-0553186380244641"
+    data-ad-slot="1505807492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<header class="">
+    <div class="row">
+        <h1>Google search result with structured data</h1>
+    </div>
+</header>
+
+
+<section class="p-strip is-shallow">
+    <main class="row post-content">
+        
+        <p class="p-media-object__content">
+            <span class="u-capitalized">on</span>
+            2020-05-04
+        </p>
+        
+        <h2 id="前言">前言</h2>
+<p>現在可以確認的是 Google 並不會以單純的 Google structured data 來呈現在 search result</p>
+<p>以往驗證過的是 search result 裡的 title 和描述並不完全會採用 meta 中的 title 和 description</p>
+<p>現在在線上的頁面也再次驗證了 Google 已經在使用 NLP 分析網站的內容了</p>
+<p>以往是用 landing page 來測試, 因為內容不豐富所以不好測試</p>
+<p>稍微變動 Google search result 也很難得到期望的結果</p>
+<p>這已經和 2018 年以前的情況不一樣了</p>
+<h2 id="測試結果">測試結果</h2>
+<p><a href="https://blog.photogrid.app/posts/how_to_add_customized_watermark/">https://blog.photogrid.app/posts/how_to_add_customized_watermark/</a></p>
+<p><a href="https://search.google.com/structured-data/testing-tool/u/0/?hl=zh-TW#url=https%3A%2F%2Fblog.photogrid.app%2Fposts%2Fhow_to_add_customized_watermark%2F">結構化測試工具</a></p>
+<p><img src="/images/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7_2020-05-04_%E4%B8%8B%E5%8D%881.49.49.png" alt="screenshot image"></p>
+<p>從上面的結果可以知道</p>
+<p>mobile search result 的 image 是抓到頁面中的 image 而非 structure data(json-ld) 中的 image</p>
+<p>而且 image 的 alt 也是 Google 自己判斷添加的</p>
+<h2 id="結語">結語</h2>
+<p>有趣的一件事情是該頁面也是沒什麼內容的(因為就是個嵌入 Youtube 影片的頁面</p>
+<p>因為這頁面最近在自然搜尋流量增加(在 Google search console 看到的)</p>
+<p>所以就關注了一下</p>
+<p>個人覺得這也間接驗證了兩件事</p>
+<ol>
+<li>
+<p>Google 越來越重視內容且會分析頁面的內容</p>
+</li>
+<li>
+<p>自然搜尋進去的點擊增加是會增加排名的, 就算沒有啥內容 XD(但是這個還要多一點驗證</p>
+</li>
+</ol>
+<p>所以在做頁面時也請產品或 PM 想好是要有什麼內容</p>
+<p>給人看的懂也要給 Google 爬蟲看的懂 XD</p>
+
+    </main>
+</section>
+
+<footer class="p-strip is-wrapper">
+    <div class="row">
+        <div class="p-article-pagination">
+    
+    <a class="p-article-pagination__link--previous" href="https://blog.tedshd.io/posts/mobile_web_remove_touch_background/">
+        <span class="p-article-pagination__label">Previous</span>
+        <span class="p-article-pagination__title">
+            Mobile web remove touch background
+        </span>
+    </a>
+    
+
+    
+    <a class="p-article-pagination__link--next" href="https://blog.tedshd.io/posts/php_load_font_to_image/">
+        <span class="p-article-pagination__label">Next</span>
+        <span class="p-article-pagination__title">
+            php - 載入文字轉成圖片
+        </span>
+    </a>
+    
+</div>
+    </div>
+</footer>
+
+        </div><footer class="p-strip is-shallow page-footer">
+    <div class="row">
+        <div class="col-12  u-align--center">
+            <p>
+                © 2020 Tedshd
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>

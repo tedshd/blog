@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+
+
+
+
+<title>nodejs | tedshd&#39;s DevNote</title>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content='Develop &amp; Design Note by Ted'>
+<meta name="keywords" content=''>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://blog.tedshd.io/categories/nodejs/">
+<link rel="alternate" media="handheld" href="https://blog.tedshd.io/categories/nodejs/" />
+
+<link rel="canonical" href="https://blog.tedshd.io/categories/nodejs/" />
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aa6">
+<meta name="theme-color" content="">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Tedshd">
+
+<meta property="og:title" content="nodejs" />
+<meta property="og:description" content="Develop &amp; Design Note by Ted" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.tedshd.io/categories/nodejs/" />
+<meta property="og:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+<meta property="og:updated_time" content="2020-10-30T15:20:10+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+
+<meta name="twitter:title" content="nodejs"/>
+<meta name="twitter:description" content="Develop &amp; Design Note by Ted"/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+<script data-ad-client="ca-pub-0553186380244641" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    
+    <link href="/categories/nodejs/index.xml" rel="alternate" type="application/rss+xml" title="tedshd&#39;s DevNote" />
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://blog.tedshd.io/css/style.css'>
+
+    
+<link>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Hanuman:400,700|Inconsolata|Roboto:400,400i,700,700i&display=swap&subset=khmer"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
+
+</head><body><header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+        <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+                <a class="p-navigation__link u-vertically-center p-link--logo" href="https://blog.tedshd.io/">
+                    tedshd&#39;s DevNote
+                </a>
+            </div>
+            
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+                <i class="p-icon--menu"></i>
+            </a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
+                <i class="p-icon--close"></i>
+            </a>
+        </div>
+
+        <nav class="p-navigation__nav">
+            <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+
+            <ul class="p-navigation__links" role="menu">
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/categories">Categories</a>
+                </li>
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/tags">tags</a>
+                </li>
+                
+            </ul>
+
+            
+            <form class="p-search-box" action="https://www.google.com/search" target="_blank">
+    <input type="search" class="p-search-box__input" name="q" placeholder='Search'
+        required="" aria-label="Query">
+    <input type="hidden" name="sitesearch" value="https://blog.tedshd.io/">
+    <button type="reset" class="p-search-box__reset" alt="reset" aria-label="Reset">
+        <i class="p-icon--close"></i>
+    </button>
+    <button type="submit" class="p-search-box__button" alt="search" aria-label="Search">
+        <i class="p-icon--search"></i>
+    </button>
+</form>
+            
+        </nav>
+    </div>
+</header><div id="main-content">
+
+
+
+<div class="page-banner">
+    <div class="row">
+        <h1>
+            <span class="u-capitalized">category</span>:
+            nodejs
+        </h1>
+        
+    </div>
+</div>
+
+
+
+<ul class="p-navigation__links sub_menu" role="menu">
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tedshd.github.io/resume/">About</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tysh310246.blogspot.tw/">Blog</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://www.facebook.com/chander.shiu">Facebook</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://github.com/tedshd">Github</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://tw.linkedin.com/in/tedshd">Linkedin</a>
+    </li>
+    
+</ul>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;text-align: center;" data-ad-client="ca-pub-0553186380244641"
+    data-ad-slot="1505807492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div class="p-strip is-wrapper posts">
+    <div class="row">
+        
+
+        
+
+        <div class="col-12">
+            <div class="p-card">
+                <h3><a href="https://blog.tedshd.io/posts/2016-05-25-nodejs-direct-instruction/">Node.js - 直接執行指令</a></h3>
+
+                
+                
+                <p>
+
+
+<span class=" u-capitalized ">
+    on
+</span>
+2016-05-25
+</p>
+                
+
+                
+                <p><h2 id="nodejs---直接執行指令">Node.js - 直接執行指令</h2>
+<p>因為最近要用 nodejs 做一些事, 所以就趕鴨子上架的先把功能做出來再說</p>
+<p>然後就立馬遇到問題了&hellip;</p>
+<p>在 PHP 中要直接執行 command line 是使用 <code>exec</code></p>
+<p>因為之前都用 PHP 寫 Shell Scripts 所以找了一下用 nodejs 要如何寫</p>
+<p>先是找到了以下的 code</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">run_cmd</span>(<span style="color:#a6e22e">cmd</span>, <span style="color:#a6e22e">args</span>, <span style="color:#a6e22e">callBack</span> ) {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">spawn</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;child_process&#39;</span>).<span style="color:#a6e22e">spawn</span>;
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">child</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">spawn</span>(<span style="color:#a6e22e">cmd</span>, <span style="color:#a6e22e">args</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">resp</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+
+    <span style="color:#a6e22e">child</span>.<span style="color:#a6e22e">stdout</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;data&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">buffer</span>) { <span style="color:#a6e22e">resp</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">buffer</span>.<span style="color:#a6e22e">toString</span>(); });
+    <span style="color:#a6e22e">child</span>.<span style="color:#a6e22e">stdout</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;end&#39;</span>, <span style="color:#66d9ef">function</span>() { <span style="color:#a6e22e">callBack</span> (<span style="color:#a6e22e">resp</span>); });
+}
+
+<span style="color:#75715e">// example
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">run_cmd</span>( <span style="color:#e6db74">&#34;ls&#34;</span>, [<span style="color:#e6db74">&#34;-l&#34;</span>], <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">text</span>) {
+    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span> (<span style="color:#a6e22e">text</span>) ;
+});
+</code></pre></div><p>但是發現如果是要用像是 <code>mkdir</code> 或者要 run shell 就會出 <code>ENOENT</code> 的 error</p>
+<p>結果找到了其他的範例程式碼改良後</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">exec_cmd</span>(<span style="color:#a6e22e">cmd</span>, <span style="color:#a6e22e">callBack</span> ) {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">childProcess</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;child_process&#39;</span>);
+
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ls</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">childProcess</span>.<span style="color:#a6e22e">exec</span>(<span style="color:#a6e22e">cmd</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">error</span>, <span style="color:#a6e22e">stdout</span>, <span style="color:#a6e22e">stderr</span>) {
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">error</span>) {
+            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">stack</span>);
+            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Error code: &#39;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">error</span>.<span style="color:#a6e22e">code</span>);
+        }
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Child Process STDOUT: &#39;</span><span style="color:#f92672">+</span> <span style="color:#a6e22e">stdout</span>);
+        <span style="color:#a6e22e">callBack</span>(<span style="color:#a6e22e">stdout</span>);
+    });
+}
+</code></pre></div><p>這樣就行了</p>
+<p>這似乎是因為 <code>spawn</code> 和 <code>exec</code> 的機制的問題</p>
+<p>但查了一下, 還是不了解 <code>spawn</code> 和 <code>exec</code> 在這例子中的差別與錯誤的發生原因, 只能等有空時再來研究了&hellip;</p>
+<p><a href="http://blog.fens.me/nodejs-child-process/">Refer - Node.js进程通信模块child_process</a>
+<a href="http://www.html-js.com/article/A-day-to-learn-to-talk-about-JavaScript-spawn-and-exec-Nodejs-in-the-childprocess-module">Refer - 说说Node.js child_process模块中的spawn和exec方法</a></p>
+</p>
+                
+
+                
+
+                
+                <p><a href="https://blog.tedshd.io/posts/2016-05-25-nodejs-direct-instruction/">Read more</a></p>
+                
+            </div>
+        </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        
+        
+        
+    </div>
+</div>
+
+<div class="p-strip is-wrapper">
+    <div class="row">
+        <footer class="p-article-pagination">
+    
+    <a class="p-article-pagination__link--previous p-article-pagination__link--no-title" href="/categories/nodejs/">
+        <span class="p-article-pagination__label">Previous</span>
+    </a>
+    
+
+    
+</footer>
+    </div>
+</div>
+
+
+        </div><footer class="p-strip is-shallow page-footer">
+    <div class="row">
+        <div class="col-12  u-align--center">
+            <p>
+                © 2020 Tedshd
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>
