@@ -2,7 +2,7 @@
 title: "使用 IMAP & SMTP 來加強處理 Gmail"
 date: 2021-01-12T10:18:11+08:00
 draft: false
-categories: []
+categories: ['imap', 'smtp']
 ---
 
 ## Intro
