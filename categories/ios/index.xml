@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iOS on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/ios/</link>
+    <description>Recent content in iOS on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Mon, 02 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/ios/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>web - mobile web on iPhone X first preview</title>
+      <link>https://blog.tedshd.io/posts/2017-10-02-web-mobile-web-on-iphone-x-first-preview/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2017-10-02-web-mobile-web-on-iphone-x-first-preview/</guid>
+      <description>web - mobile web on iPhone X first preview Intro On 2017 9/12.
+Apple published iPhone X.
+And this device has so special screen.
+So many web &amp;amp; iOS developer worry about some case like.
+(form Apple)
+OMG!
+It can effect app show on full screen.
+So Apple has provide guideline about iPhone X.
+iPhone X - Overview - iOS Human Interface Guidelines
+It is great change for web &amp;amp; iOS developer.</description>
+    </item>
+    
+  </channel>
+</rss>

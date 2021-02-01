@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>headless on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/headless/</link>
+    <description>Recent content in headless on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Wed, 26 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/headless/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chrome headless 研究筆記</title>
+      <link>https://blog.tedshd.io/posts/2018-12-26-chrome-headless-research-notes/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-12-26-chrome-headless-research-notes/</guid>
+      <description>Chrome headless 研究筆記 最近要用到 chrome headless 的部分功能 且得在 ubuntu or debian server 實踐 所以筆記一下 Intro headless 大致分兩種用法 CLI libary Refer - Getting Started with Headless Chrome CLI 用法簡單但是受限很多且沒有找到具體詳</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codeignite on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/codeignite/</link>
+    <description>Recent content in Codeignite on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Wed, 23 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/codeignite/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Codeigniter - load data in view for JavaScript</title>
+      <link>https://blog.tedshd.io/posts/2013-10-23-codeigniter-load-data-in-view-for-javascript/</link>
+      <pubDate>Wed, 23 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-10-23-codeigniter-load-data-in-view-for-javascript/</guid>
+      <description>load data in view for JavaScript 如果要從後端帶資料給 JavaScript, 很常用 AJAX 的方式, 但假如是頁面在 load 進來時就需要使用後端的資料, 一開始就把資料帶在頁面上然後再用 JavaScript 取得頁面上的</description>
+    </item>
+    
+  </channel>
+</rss>

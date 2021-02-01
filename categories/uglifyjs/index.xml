@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>uglifyjs on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/uglifyjs/</link>
+    <description>Recent content in uglifyjs on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sat, 15 Aug 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/uglifyjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript - Google Closure Compiler V.S. Gulp uglify</title>
+      <link>https://blog.tedshd.io/posts/2015-08-15-javascript-google-closure-compiler-vs-gulp-uglify/</link>
+      <pubDate>Sat, 15 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-08-15-javascript-google-closure-compiler-vs-gulp-uglify/</guid>
+      <description>JavaScript - Google Closure Compiler V.S. Gulp uglify Intro I have two choice
+  Google Closure Compiler
+  UglifyJs
+  Google Closure Compiler Google Closure Compiler
+Google Closure Compiler is a tool for minify and uglify js.
+  From Google
+  Java
+  Command Line
+  Slow
+  UglifyJs mishoo/UglifyJS2
+  More option setting
+  Node.js
+  Command Line</description>
+    </item>
+    
+  </channel>
+</rss>

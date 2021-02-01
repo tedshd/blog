@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/git/</link>
+    <description>Recent content in git on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Tue, 09 Dec 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git hooks</title>
+      <link>https://blog.tedshd.io/posts/2014-12-09-git-hooks/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-12-09-git-hooks/</guid>
+      <description>git hooks 和其他版本控制系統一樣，當某些重要事件發生時，Git 有方法可以觸發自訂腳本。有兩組掛鉤(hooks)：用戶端和伺服器端。用戶端掛鉤用於用</description>
+    </item>
+    
+    <item>
+      <title>Git - GitHub gh-pages</title>
+      <link>https://blog.tedshd.io/posts/2014-08-16-git-github-gh-pages/</link>
+      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-08-16-git-github-gh-pages/</guid>
+      <description>Git - GitHub gh-pages 有時在 GitHub 上亂晃 常常發現一個問題就是有一些很有趣的前端實作, 或別人寫的一些功能沒有所謂的 demo page(當然有些是不需要 demo page) 我不知道是把 GitHub</description>
+    </item>
+    
+    <item>
+      <title>Git -Tip &amp; Note</title>
+      <link>https://blog.tedshd.io/posts/2014-07-01-git-tip/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-07-01-git-tip/</guid>
+      <description>Git -Tip &amp;amp; Note git pull 出現 CONFLICT 要回復到 pull 之前 git reset --hard &amp;lt;commit id&amp;gt; 強制 push 取代 remote git push -f 取消 merage (須知道 merage 前的 commit id) git reset --hard &amp;lt;commit id&amp;gt; 拉 remote 的新 branch 到 local(local 不存在該 branch) git checkout --track -b &amp;lt;local new branch&amp;gt; &amp;lt;remote branch&amp;gt; 不小</description>
+    </item>
+    
+    <item>
+      <title>Git - command</title>
+      <link>https://blog.tedshd.io/posts/2013-09-20-git-command/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-20-git-command/</guid>
+      <description>Git - command git status # 查看修改哪些檔案 git diff # 比對修改了的地方與上一個 commit 有何不同 git diff &amp;lt;file&amp;gt; # 比對修改的檔案與上一個 commit 有何不同 git diff &amp;lt;old commit id&amp;gt;..&amp;lt;new commit id&amp;gt; # 比對不同 commit id 的檔</description>
+    </item>
+    
+    <item>
+      <title>Git - 使用別人的 repository</title>
+      <link>https://blog.tedshd.io/posts/2013-09-18-git-uses-someone-elses-repository/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-18-git-uses-someone-elses-repository/</guid>
+      <description>Git - 使用別人的 repository in GitHub sample use javascript-htmlspecialchars use SSH git clone git@github.com:tedshd/javascript-htmlspecialchars.git // use SSH 單純的 clone 別人的 repository 只是只能使用它 如 commit 之後是無法 push 上去, 因為不是這 repository 的擁有者 只要進去該 repository 的 .git/config 只要看見 [remote</description>
+    </item>
+    
+    <item>
+      <title>Git - Note</title>
+      <link>https://blog.tedshd.io/posts/2013-09-06-git-note/</link>
+      <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-09-06-git-note/</guid>
+      <description>Git Doc 中文導讀 LearnGitBranching</description>
+    </item>
+    
+    <item>
+      <title>gitconfig</title>
+      <link>https://blog.tedshd.io/posts/2013-08-23-gitconfig/</link>
+      <pubDate>Fri, 23 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-23-gitconfig/</guid>
+      <description>gitconfig Mac gitconfig path
+~/.gitconfig[user] name = tedshd email = tedshd@gmail.com [alias] st = status co = checkout br = branch d = difftool [color] diff = auto status = auto branch = auto ui = auto [credential] helper = osxkeychain [push] default = simple [core] editor = vim [diff] tool = vimdiff [difftool] prompt = false vim diff
+git d terminal
+git diff </description>
+    </item>
+    
+  </channel>
+</rss>

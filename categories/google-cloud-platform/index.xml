@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google cloud platform on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/google-cloud-platform/</link>
+    <description>Recent content in google cloud platform on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sun, 20 Dec 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/google-cloud-platform/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Cloud Platform - 空間不足, 設定 swap, kernel 升級</title>
+      <link>https://blog.tedshd.io/posts/2015-12-20-google-cloud-platform-not-enough-space-set-the-swap-kernel-upgrades/</link>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-12-20-google-cloud-platform-not-enough-space-set-the-swap-kernel-upgrades/</guid>
+      <description>Google Cloud Platform - 空間不足, 設定 swap, kernel 升級 kernel 升級, 設定 swap 最近強者我朋友在 Google Cloud Platform 上的 computer engine 上的 VM 升級 kernel 時發現升一升就 GG 了 連不進去了 用快照再開一台試驗還是如此</description>
+    </item>
+    
+    <item>
+      <title>Google Cloud Platform - Study Log</title>
+      <link>https://blog.tedshd.io/posts/2015-09-28-google-cloud-platform-study-log/</link>
+      <pubDate>Mon, 28 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-09-28-google-cloud-platform-study-log/</guid>
+      <description>Google Cloud Platform - Study Log Intro 之前有幸參加亞太區 Google Cloud Platform 發表會, 聽完後就有點心動(因為價錢低於 AWS), 但ㄧ直沒時間研究怎麼用就這樣拖了很久&amp;hellip; 加上之前用</description>
+    </item>
+    
+  </channel>
+</rss>

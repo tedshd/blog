@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+
+
+
+
+<title>PHP - install phpcs(PHP CodeSniffer) | tedshd&#39;s DevNote</title>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content='PHP - install phpcs(PHP CodeSniffer) Use pear install phpcs
+in Linux(Ubuntu 14.04) sudo pear install --alldeps php_codesniffer in Mac(Mac OS X 10.10.1 Yosemite) install pear sudo curl -O http://pear.php.net/go-pear.phar then
+sudo php -d detect_unicode=0 go-pear.phar Update
+pear upgrade pear pear upgrade install codesniffer sudo pear install --alldeps php_codesniffer check
+phpcs -i return
+The installed coding standards are MySource, PEAR, PHPCS, PSR1, PSR2, Squiz and Zend if return
+Warning: include_once(PHP/CodeSniffer/CLI.php): failed to open stream: No such file or directory in /usr/bin/phpcs on line 22 Warning: include_once(): Failed opening &#39;PHP/CodeSniffer/CLI.'>
+<meta name="keywords" content=''>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/">
+<link rel="alternate" media="handheld" href="https://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/" />
+
+<link rel="canonical" href="https://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/" />
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aa6">
+<meta name="theme-color" content="">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Tedshd">
+
+<meta property="og:title" content="PHP - install phpcs(PHP CodeSniffer)" />
+<meta property="og:description" content="PHP - install phpcs(PHP CodeSniffer) Use pear install phpcs
+in Linux(Ubuntu 14.04) sudo pear install --alldeps php_codesniffer in Mac(Mac OS X 10.10.1 Yosemite) install pear sudo curl -O http://pear.php.net/go-pear.phar then
+sudo php -d detect_unicode=0 go-pear.phar Update
+pear upgrade pear pear upgrade install codesniffer sudo pear install --alldeps php_codesniffer check
+phpcs -i return
+The installed coding standards are MySource, PEAR, PHPCS, PSR1, PSR2, Squiz and Zend if return
+Warning: include_once(PHP/CodeSniffer/CLI.php): failed to open stream: No such file or directory in /usr/bin/phpcs on line 22 Warning: include_once(): Failed opening &#39;PHP/CodeSniffer/CLI." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/" />
+<meta property="og:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+<meta property="article:published_time" content="2014-12-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-29T17:42:46+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+
+<meta name="twitter:title" content="PHP - install phpcs(PHP CodeSniffer)"/>
+<meta name="twitter:description" content="PHP - install phpcs(PHP CodeSniffer) Use pear install phpcs
+in Linux(Ubuntu 14.04) sudo pear install --alldeps php_codesniffer in Mac(Mac OS X 10.10.1 Yosemite) install pear sudo curl -O http://pear.php.net/go-pear.phar then
+sudo php -d detect_unicode=0 go-pear.phar Update
+pear upgrade pear pear upgrade install codesniffer sudo pear install --alldeps php_codesniffer check
+phpcs -i return
+The installed coding standards are MySource, PEAR, PHPCS, PSR1, PSR2, Squiz and Zend if return
+Warning: include_once(PHP/CodeSniffer/CLI.php): failed to open stream: No such file or directory in /usr/bin/phpcs on line 22 Warning: include_once(): Failed opening &#39;PHP/CodeSniffer/CLI."/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+<script data-ad-client="ca-pub-0553186380244641" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://blog.tedshd.io/css/style.css'>
+
+    
+<link>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Hanuman:400,700|Inconsolata|Roboto:400,400i,700,700i&display=swap&subset=khmer"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
+
+</head><body><header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+        <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+                <a class="p-navigation__link u-vertically-center p-link--logo" href="https://blog.tedshd.io/">
+                    tedshd&#39;s DevNote
+                </a>
+            </div>
+            
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+                <i class="p-icon--menu"></i>
+            </a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
+                <i class="p-icon--close"></i>
+            </a>
+        </div>
+
+        <nav class="p-navigation__nav">
+            <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+
+            <ul class="p-navigation__links" role="menu">
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/categories">Categories</a>
+                </li>
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/tags">tags</a>
+                </li>
+                
+            </ul>
+
+            
+            <form class="p-search-box" action="https://www.google.com/search" target="_blank">
+    <input type="search" class="p-search-box__input" name="q" placeholder='Search'
+        required="" aria-label="Query">
+    <input type="hidden" name="sitesearch" value="https://blog.tedshd.io/">
+    <button type="reset" class="p-search-box__reset" alt="reset" aria-label="Reset">
+        <i class="p-icon--close"></i>
+    </button>
+    <button type="submit" class="p-search-box__button" alt="search" aria-label="Search">
+        <i class="p-icon--search"></i>
+    </button>
+</form>
+            
+        </nav>
+    </div>
+</header><div id="main-content">
+<div class="page-banner">
+    <div class="row u-vertically-center">
+        <div class="col-8 pure-g">
+            <div class="pure-u">
+                <img src="https://graph.facebook.com/100004089951579/picture?type=large" alt="tedshd&#39;s DevNote" width="100" height="100"
+                    style="border-radius: 50%;display: inline; margin: 1rem;box-shadow: 0 0 5px rgba(0, 0, 0, 1);vertical-align: middle;">
+            </div>
+            <div class="pure-u">
+                <h2>tedshd&#39;s DevNote</h2>
+                <p>Develop &amp; Design Note by Ted</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="p-navigation__links sub_menu" role="menu">
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tedshd.github.io/resume/">About</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tysh310246.blogspot.tw/">Blog</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://www.facebook.com/chander.shiu">Facebook</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://github.com/tedshd">Github</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://tw.linkedin.com/in/tedshd">Linkedin</a>
+    </li>
+    
+</ul>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;text-align: center;" data-ad-client="ca-pub-0553186380244641"
+    data-ad-slot="1505807492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<header class="">
+    <div class="row">
+        <h1>PHP - install phpcs(PHP CodeSniffer)</h1>
+    </div>
+</header>
+
+
+<section class="p-strip is-shallow">
+    <main class="row post-content">
+        
+        <p class="p-media-object__content">
+            <span class="u-capitalized">on</span>
+            2014-12-18
+        </p>
+        
+        <h2 id="php---install-phpcsphp-codesniffer">PHP - install phpcs(PHP CodeSniffer)</h2>
+<p>Use pear install phpcs</p>
+<h3 id="in-linuxubuntu-1404">in Linux(Ubuntu 14.04)</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo pear install --alldeps php_codesniffer
+</code></pre></div><h3 id="in-macmac-os-x-10101-yosemite">in Mac(Mac OS X 10.10.1 Yosemite)</h3>
+<h4 id="install-pear">install pear</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo curl -O  http://pear.php.net/go-pear.phar
+</code></pre></div><p>then</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo php -d detect_unicode<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span> go-pear.phar
+</code></pre></div><p>Update</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pear upgrade pear
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">pear upgrade
+</code></pre></div><h4 id="install-codesniffer">install codesniffer</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo pear install --alldeps php_codesniffer
+</code></pre></div><p>check</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">phpcs -i
+</code></pre></div><p>return</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">The installed coding standards are MySource, PEAR, PHPCS, PSR1, PSR2, Squiz and Zend
+</code></pre></div><p>if return</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Warning: include_once<span style="color:#f92672">(</span>PHP/CodeSniffer/CLI.php<span style="color:#f92672">)</span>: failed to open stream: No such file or directory in /usr/bin/phpcs on line <span style="color:#ae81ff">22</span>
+
+Warning: include_once<span style="color:#f92672">()</span>: Failed opening <span style="color:#e6db74">&#39;PHP/CodeSniffer/CLI.php&#39;</span> <span style="color:#66d9ef">for</span> inclusion <span style="color:#f92672">(</span>include_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;.:&#39;</span><span style="color:#f92672">)</span> in /usr/bin/phpcs on line <span style="color:#ae81ff">22</span>
+
+Fatal error: Class <span style="color:#e6db74">&#39;PHP_CodeSniffer_CLI&#39;</span> not found in /usr/bin/phpcs on line <span style="color:#ae81ff">25</span>
+</code></pre></div><p>Must include pear path</p>
+<p>Modify php.ini</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo vim /etc/php.ini
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#a6e22e">include_path</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;.:/usr/share/pear&#34;</span>
+</code></pre></div><h3 id="usage">Usage</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">phpcs &lt;php file&gt;
+</code></pre></div><p><a href="http://pear.php.net/">Refer - PEAR - PHP Extension and Application Repository</a>
+<a href="http://pear.php.net/package/PHP_CodeSniffer/download">Refer - PHP_CodeSniffer</a>
+<a href="https://rtcamp.com/tutorials/standards/php/code-sniffer/">Refer - Code Sniffer</a>
+<a href="http://coolestguidesontheplanet.com/installing-pear-osx-10-9-mavericks-osx10-810-7/">Refer - Installing PEAR on OSX 10.9 Mavericks and OSX10.8/10.7</a></p>
+
+    </main>
+</section>
+
+<footer class="p-strip is-wrapper">
+    <div class="row">
+        <div class="p-article-pagination">
+    
+    <a class="p-article-pagination__link--previous" href="https://blog.tedshd.io/posts/2014-12-09-git-hooks/">
+        <span class="p-article-pagination__label">Previous</span>
+        <span class="p-article-pagination__title">
+            git hooks
+        </span>
+    </a>
+    
+
+    
+    <a class="p-article-pagination__link--next" href="https://blog.tedshd.io/posts/2014-12-21-javascript-converting-a-javascript-string-to-a-html-object/">
+        <span class="p-article-pagination__label">Next</span>
+        <span class="p-article-pagination__title">
+            JavaScript - Converting a JavaScript string to a html object
+        </span>
+    </a>
+    
+</div>
+    </div>
+</footer>
+
+        </div><footer class="p-strip is-shallow page-footer">
+    <div class="row">
+        <div class="col-12  u-align--center">
+            <p>
+                © 2020 Tedshd
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/linux/</link>
+    <description>Recent content in Linux on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Wed, 24 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac - Use readlink in Mac OS X</title>
+      <link>https://blog.tedshd.io/posts/2018-10-24-mac-use-readlink-in-mac-os-x/</link>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2018-10-24-mac-use-readlink-in-mac-os-x/</guid>
+      <description>Mac - Use readlink in Mac OS X  install coreutils  brew install coreutils test greadlink  greadlink -f &amp;lt;file name&amp;gt; alias command line  alias readlink=greadlink refer - How can I get the behavior of GNU&amp;rsquo;s readlink -f on a Mac?;</description>
+    </item>
+    
+    <item>
+      <title>Linux - install gogole chrome in debian Linux</title>
+      <link>https://blog.tedshd.io/posts/2016-08-03-linux-install-gogole-chrome-in-debian-linux/</link>
+      <pubDate>Wed, 03 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-08-03-linux-install-gogole-chrome-in-debian-linux/</guid>
+      <description>Linux - install gogole chrome in debian Linux wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - sudo sh -c &amp;#39;echo &amp;#34;deb http://dl.google.com/linux/chrome/deb/ stable main&amp;#34; &amp;gt;&amp;gt; /etc/apt/sources.list.d/google.list&amp;#39; sudo apt-get update sudo apt-get install google-chrome-stable refer - How to install Chrome browser properly via command line?</description>
+    </item>
+    
+    <item>
+      <title>php - Ubuntu 14 PHP 5.6 or to upgrade from PHP 5.5</title>
+      <link>https://blog.tedshd.io/posts/2015-10-31-php-ubuntu-14-php-56-or-to-upgrade-from-php-55/</link>
+      <pubDate>Sat, 31 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-10-31-php-ubuntu-14-php-56-or-to-upgrade-from-php-55/</guid>
+      <description>php - Ubuntu 14 PHP 5.6 or to upgrade from PHP 5.5 sudo apt-get -y update sudo add-apt-repository ppa:ondrej/php5-5.6 sudo apt-get -y update sudo apt-get -y install php5 php5-mhash php5-mcrypt php5-curl php5-cli php5-mysql php5-gd php5-intl php5-xsl php5-bcmath if use php -v check version is 5.5.x
+I use
+sudo apt-get -u install php5-cli Refer - PHP 5.5 or 5.6—Ubuntu</description>
+    </item>
+    
+    <item>
+      <title>Linux / Unix - terminal control</title>
+      <link>https://blog.tedshd.io/posts/2015-09-30-linux-unix-terminal-control/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-09-30-linux-unix-terminal-control/</guid>
+      <description>Linux / Unix - terminal control 終端機指令列的一些操作 Ctrl + a: 回到此行最前面 Ctrl + e: 到此行的最後面 Ctrl + u: 清除一行中游標之前的所有文字 Ctrl + k: 清除一行字游標之後的所有文</description>
+    </item>
+    
+    <item>
+      <title>Linux - Set Encoding In Linux Environment</title>
+      <link>https://blog.tedshd.io/posts/2015-06-16-linux-set-encoding-in-linux-environment/</link>
+      <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2015-06-16-linux-set-encoding-in-linux-environment/</guid>
+      <description>Linux - Set Encoding In Linux Environment Add
+export LC_ALL=en_US.UTF-8 export LANG=en_US.UTF-8 export LANGUAGE=en_US.UTF-8 in .bashrc or .zshrc
+Refer - How to set up a clean UTF-8 environment in Linux</description>
+    </item>
+    
+    <item>
+      <title>Vim</title>
+      <link>https://blog.tedshd.io/posts/2013-08-21-vim/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-08-21-vim/</guid>
+      <description>Vim More a 輸入文字 i 插入字元 o 新增一行 :wq 儲存後離開 :w 儲存 :q 離開 :q! 離開不存檔 :w! 儲存 readonly Esc 離開編輯模式 h 左 j 下 k 上 l 右 v 選擇 yy 複製整行 nyy 複製n行 yw 複製</description>
+    </item>
+    
+  </channel>
+</rss>

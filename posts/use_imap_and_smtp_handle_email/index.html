@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+
+
+
+
+<title>使用 IMAP & SMTP 來加強處理 Gmail | tedshd&#39;s DevNote</title>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content='Intro Gmail 提供 IMAP &amp; SMTP 的功能 內送郵件 (IMAP) 伺服器 imap.gmail.com 需要安全資料傳輸層 (SSL)：是 通訊埠：993 外寄郵件 (SMTP) 伺服器 smtp.gmail.com 需要安全資料傳輸層 (SSL)：是 需要傳'>
+<meta name="keywords" content=''>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://blog.tedshd.io/posts/use_imap_and_smtp_handle_email/">
+<link rel="alternate" media="handheld" href="https://blog.tedshd.io/posts/use_imap_and_smtp_handle_email/" />
+
+<link rel="canonical" href="https://blog.tedshd.io/posts/use_imap_and_smtp_handle_email/" />
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aa6">
+<meta name="theme-color" content="">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Tedshd">
+
+<meta property="og:title" content="使用 IMAP &amp; SMTP 來加強處理 Gmail" />
+<meta property="og:description" content="Intro Gmail 提供 IMAP &amp; SMTP 的功能 內送郵件 (IMAP) 伺服器 imap.gmail.com 需要安全資料傳輸層 (SSL)：是 通訊埠：993 外寄郵件 (SMTP) 伺服器 smtp.gmail.com 需要安全資料傳輸層 (SSL)：是 需要傳" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.tedshd.io/posts/use_imap_and_smtp_handle_email/" />
+<meta property="og:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+<meta property="article:published_time" content="2021-01-12T10:18:11+08:00" />
+<meta property="article:modified_time" content="2021-02-01T11:31:19+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+
+<meta name="twitter:title" content="使用 IMAP &amp; SMTP 來加強處理 Gmail"/>
+<meta name="twitter:description" content="Intro Gmail 提供 IMAP &amp; SMTP 的功能 內送郵件 (IMAP) 伺服器 imap.gmail.com 需要安全資料傳輸層 (SSL)：是 通訊埠：993 外寄郵件 (SMTP) 伺服器 smtp.gmail.com 需要安全資料傳輸層 (SSL)：是 需要傳"/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+<script data-ad-client="ca-pub-0553186380244641" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://blog.tedshd.io/css/style.css'>
+
+    
+<link>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Hanuman:400,700|Inconsolata|Roboto:400,400i,700,700i&display=swap&subset=khmer"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
+
+</head><body><header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+        <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+                <a class="p-navigation__link u-vertically-center p-link--logo" href="https://blog.tedshd.io/">
+                    tedshd&#39;s DevNote
+                </a>
+            </div>
+            
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+                <i class="p-icon--menu"></i>
+            </a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
+                <i class="p-icon--close"></i>
+            </a>
+        </div>
+
+        <nav class="p-navigation__nav">
+            <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+
+            <ul class="p-navigation__links" role="menu">
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/categories">Categories</a>
+                </li>
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/tags">tags</a>
+                </li>
+                
+            </ul>
+
+            
+            <form class="p-search-box" action="https://www.google.com/search" target="_blank">
+    <input type="search" class="p-search-box__input" name="q" placeholder='Search'
+        required="" aria-label="Query">
+    <input type="hidden" name="sitesearch" value="https://blog.tedshd.io/">
+    <button type="reset" class="p-search-box__reset" alt="reset" aria-label="Reset">
+        <i class="p-icon--close"></i>
+    </button>
+    <button type="submit" class="p-search-box__button" alt="search" aria-label="Search">
+        <i class="p-icon--search"></i>
+    </button>
+</form>
+            
+        </nav>
+    </div>
+</header><div id="main-content">
+<div class="page-banner">
+    <div class="row u-vertically-center">
+        <div class="col-8 pure-g">
+            <div class="pure-u">
+                <img src="https://graph.facebook.com/100004089951579/picture?type=large" alt="tedshd&#39;s DevNote" width="100" height="100"
+                    style="border-radius: 50%;display: inline; margin: 1rem;box-shadow: 0 0 5px rgba(0, 0, 0, 1);vertical-align: middle;">
+            </div>
+            <div class="pure-u">
+                <h2>tedshd&#39;s DevNote</h2>
+                <p>Develop &amp; Design Note by Ted</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="p-navigation__links sub_menu" role="menu">
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tedshd.github.io/resume/">About</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tysh310246.blogspot.tw/">Blog</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://www.facebook.com/chander.shiu">Facebook</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://github.com/tedshd">Github</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://tw.linkedin.com/in/tedshd">Linkedin</a>
+    </li>
+    
+</ul>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;text-align: center;" data-ad-client="ca-pub-0553186380244641"
+    data-ad-slot="1505807492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<header class="">
+    <div class="row">
+        <h1>使用 IMAP &amp; SMTP 來加強處理 Gmail</h1>
+    </div>
+</header>
+
+
+<section class="p-strip is-shallow">
+    <main class="row post-content">
+        
+        <p class="p-media-object__content">
+            <span class="u-capitalized">on</span>
+            2021-01-12
+        </p>
+        
+        <h2 id="intro">Intro</h2>
+<p>Gmail 提供 IMAP &amp; SMTP 的功能</p>
+<h4 id="內送郵件-imap-伺服器">內送郵件 (IMAP) 伺服器</h4>
+<ul>
+<li>imap.gmail.com</li>
+<li>需要安全資料傳輸層 (SSL)：是</li>
+<li>通訊埠：993</li>
+</ul>
+<h4 id="外寄郵件-smtp-伺服器">外寄郵件 (SMTP) 伺服器</h4>
+<ul>
+<li>smtp.gmail.com</li>
+<li>需要安全資料傳輸層 (SSL)：是</li>
+<li>需要傳輸層安全性 (TLS)：是 (如果可用)</li>
+<li>需要驗證：是</li>
+<li>安全資料傳輸層 (SSL) 通訊埠：465</li>
+<li>傳輸層安全性 (TLS)/STARTTLS 通訊埠：587</li>
+</ul>
+<p><a href="https://support.google.com/mail/answer/7126229">Refer - 透過其他電子郵件平台查看 Gmail</a></p>
+<p>簡單的說 IMAP(Internet Message Access Protocol) 可以存取該 mail 的信件</p>
+<p>SMTP(Simple Mail Transfer Protocol) 是可以利用該 mail 發信</p>
+<p>詳細說明可以參照 wiki</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E5%9B%A0%E7%89%B9%E7%BD%91%E4%BF%A1%E6%81%AF%E8%AE%BF%E9%97%AE%E5%8D%8F%E8%AE%AE">Refer - 網際網路資訊存取協定</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/%E7%AE%80%E5%8D%95%E9%82%AE%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE">Refer - 簡單郵件傳輸協定</a></p>
+<p>另外還有 POP3(Post Office Protocol) 這個和 IMAP 類似的協定</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E9%83%B5%E5%B1%80%E5%8D%94%E5%AE%9A">Refer - 郵局協定</a></p>
+<p>主要 POP3 和 IMAP 的差異主要差在 POP3 是把信件內容拉下來, IMAP 不會, IMAP 是即時連線存取, 但是 IMAP 的好處就是即時連線同步, 這樣在多個裝置就可以即時的更新信件的狀態</p>
+<p>所以在一些常見的客戶端程式例如 outlook 或是 Mac OS 裡面的郵件都是利用這些協定在處理 email</p>
+<p>這邊當然也可以利用支援這些協定的程式語言寫一些功能來處理 email</p>
+<h2 id="使用情境">使用情境</h2>
+<p>因為公司的服務每天會有大量的 feedback mail 寄到設定的 Gmail 信箱</p>
+<p>雖然會有實習生協助整理和處理 feedback mail 但是還是很花人力</p>
+<p>這年頭最貴的就是人力了</p>
+<p>所以公司有個基於 Python 的程式在協助處理 feedback mail</p>
+<p>那程式主要做的事情就是簡單的辨識 SPAM 與替 feedback 的內容打上 tag 以便於之後快速處理使用者的 feedback</p>
+<h2 id="how-to-do">How to do?</h2>
+<ol>
+<li>先開啟 Gmail 裡面的 IMAP 的功能</li>
+</ol>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/storage-bucket-83851.appspot.com/o/blog%2F%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202021-01-11%20%E4%B8%8B%E5%8D%884.04.52.png?alt=media&amp;token=be7f6b2c-28bf-4716-bda3-35e8a890507c" alt=""></p>
+<ol start="2">
+<li>設定用於第三方應用程式驗證的密碼(並非 Google OAuth)</li>
+</ol>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/storage-bucket-83851.appspot.com/o/blog%2F%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202021-01-11%20%E4%B8%8B%E5%8D%884.09.50.png?alt=media&amp;token=85f3770d-ee49-4163-b0d1-c3bb8cb49cc2" alt=""></p>
+<p><img src="https://firebasestorage.googleapis.com/v0/b/storage-bucket-83851.appspot.com/o/blog%2F%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202021-01-11%20%E4%B8%8B%E5%8D%884.11.15.png?alt=media&amp;token=84d05c47-29c7-4bae-8786-735afad5f7a4" alt=""></p>
+<ol start="3">
+<li>開始寫程式</li>
+</ol>
+<h2 id="怎麼開始寫-code">怎麼開始寫 code?</h2>
+<p>這邊以 Python 為例</p>
+<p>在開始前得先搞懂流程要幹什麼</p>
+<ol>
+<li>連接 IMAP server</li>
+<li>撈信件</li>
+<li>讀取信件主旨(subject) 和信件內容(content) 和確認附件(attachement)</li>
+</ol>
+<h3 id="smaple-code">smaple code</h3>
+<p>以下使用 Python</p>
+<h4 id="建立-imap-server-連去信箱讀取信件">建立 IMAP server 連去信箱讀取信件</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime, timedelta, date
+
+<span style="color:#f92672">import</span> imaplib
+<span style="color:#f92672">import</span> email
+
+<span style="color:#f92672">from</span> email.header <span style="color:#f92672">import</span> decode_header
+<span style="color:#75715e"># pip install imap-tools</span>
+<span style="color:#f92672">from</span> imap_tools.imap_utf7 <span style="color:#f92672">import</span> encode, decode
+
+ACCOUNT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;@gmail.com&#39;</span>
+PWD <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+
+mail <span style="color:#f92672">=</span> imaplib<span style="color:#f92672">.</span>IMAP4_SSL(<span style="color:#e6db74">&#39;imap.gmail.com&#39;</span>)
+mail<span style="color:#f92672">.</span>login(ACCOUNT, PWD)
+status, data <span style="color:#f92672">=</span> mail<span style="color:#f92672">.</span>list()
+mail<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#39;inbox&#39;</span>)
+<span style="color:#75715e"># 取前一天的時間</span>
+today <span style="color:#f92672">=</span> (date<span style="color:#f92672">.</span>today() <span style="color:#f92672">-</span> timedelta(<span style="color:#ae81ff">1</span>))<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">-%b-%Y&#39;</span>)
+<span style="color:#75715e"># 找出前一天未讀的信件</span>
+typ, data <span style="color:#f92672">=</span> mail<span style="color:#f92672">.</span>search(None, <span style="color:#e6db74">&#39;(UNSEEN)&#39;</span>, <span style="color:#e6db74">&#39;(SENTSINCE {0})&#39;</span><span style="color:#f92672">.</span>format(today))
+
+<span style="color:#75715e"># 取到 message id list(message id 就是每封信的 id)</span>
+ids <span style="color:#f92672">=</span> data[<span style="color:#ae81ff">0</span>]
+id_list <span style="color:#f92672">=</span> ids<span style="color:#f92672">.</span>split()
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> id_list:
+    typ, data <span style="color:#f92672">=</span> mail<span style="color:#f92672">.</span>fetch(i, <span style="color:#e6db74">&#39;(RFC822)&#39;</span>)
+    <span style="color:#66d9ef">if</span> typ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;OK&#39;</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;get mail ok&#39;</span>)
+
+    <span style="color:#66d9ef">for</span> response_part <span style="color:#f92672">in</span> data:
+            <span style="color:#66d9ef">if</span> isinstance(response_part, tuple):
+                rawMail <span style="color:#f92672">=</span> response_part[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>decode()
+                <span style="color:#75715e"># 取得信件</span>
+                msg <span style="color:#f92672">=</span> email<span style="color:#f92672">.</span>message_from_string(rawMail)
+                <span style="color:#66d9ef">print</span>(msg)
+</code></pre></div><p>基本上到這裡拿到 msg 就是這封信件的資訊了</p>
+<p>就可以取出來做一些處理</p>
+<p>例如: 判斷來信者來回信, 判斷內容替信件添加標籤 等等</p>
+<p>關於 <code>imap.search</code> 可以如何使用可參考</p>
+<p><a href="https://coderwall.com/p/gorteg/python-s-imaplib">Refer - Python&rsquo;s imaplib (Example)</a></p>
+<h4 id="回信">回信</h4>
+<p>幾本上回信也是寄信的一種</p>
+<p>寄信的部分就是得用到 SMTP</p>
+<p>幾本上的流程就是</p>
+<ol>
+<li>
+<p>連接 Gmail 的 SMTP server</p>
+</li>
+<li>
+<p>寫信</p>
+</li>
+<li>
+<p>寄信</p>
+</li>
+<li>
+<p>關閉連接</p>
+</li>
+</ol>
+<p>以下為寄信範例</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> email
+<span style="color:#f92672">import</span> smtplib
+<span style="color:#f92672">from</span> email.mime.multipart <span style="color:#f92672">import</span> MIMEMultipart
+<span style="color:#f92672">from</span> email.mime.text <span style="color:#f92672">import</span> MIMEText
+
+smtp_server <span style="color:#f92672">=</span> smtplib<span style="color:#f92672">.</span>SMTP_SSL(<span style="color:#e6db74">&#39;smtp.gmail.com&#39;</span>)
+
+ACCOUNT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;@gmail.com&#39;</span>
+PWD <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+
+smtp_server<span style="color:#f92672">.</span>login(ACCOUNT, PWD)
+send_mail <span style="color:#f92672">=</span> MIMEMultipart(<span style="color:#e6db74">&#39;mixed&#39;</span>)
+body <span style="color:#f92672">=</span> MIMEMultipart(<span style="color:#e6db74">&#39;alternative&#39;</span>)
+body<span style="color:#f92672">.</span>attach(MIMEText(<span style="color:#e6db74">&#39;test send mail&#39;</span>, <span style="color:#e6db74">&#39;plain&#39;</span>))
+body<span style="color:#f92672">.</span>attach(MIMEText(<span style="color:#e6db74">&#39;&lt;div&gt;test send mail&lt;div&gt;&#39;</span>, <span style="color:#e6db74">&#39;html&#39;</span>))
+send_mail<span style="color:#f92672">.</span>attach(body)
+
+send_mail[<span style="color:#e6db74">&#39;message-id&#39;</span>] <span style="color:#f92672">=</span> email<span style="color:#f92672">.</span>utils<span style="color:#f92672">.</span>make_msgid()
+send_mail[<span style="color:#e6db74">&#39;subject&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+send_mail[<span style="color:#e6db74">&#39;to&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+send_mail[<span style="color:#e6db74">&#39;from&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;@gmail.com&#39;</span>
+
+smtp_server<span style="color:#f92672">.</span>sendmail(<span style="color:#e6db74">&#39;@gmail.com&#39;</span>, send_mail[<span style="color:#e6db74">&#39;to&#39;</span>], send_mail<span style="color:#f92672">.</span>as_string())
+
+smtp_server<span style="color:#f92672">.</span>quit()
+</code></pre></div><p>需要回信的話就得在發送時指定 references 和指定要回覆給哪封信(每一封信都有獨立的 message id)</p>
+<p>所以會先用 imap 取到 mail list 這樣就會有 message id 的資訊了</p>
+<p>以下為回信的範例</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime, timedelta, date
+
+<span style="color:#f92672">import</span> imaplib
+<span style="color:#f92672">import</span> email
+
+<span style="color:#f92672">from</span> email.header <span style="color:#f92672">import</span> decode_header
+<span style="color:#75715e"># pip install imap-tools</span>
+<span style="color:#f92672">from</span> imap_tools.imap_utf7 <span style="color:#f92672">import</span> encode, decode
+
+ACCOUNT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;@gmail.com&#39;</span>
+PWD <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+
+mail <span style="color:#f92672">=</span> imaplib<span style="color:#f92672">.</span>IMAP4_SSL(<span style="color:#e6db74">&#39;imap.gmail.com&#39;</span>)
+mail<span style="color:#f92672">.</span>login(ACCOUNT, PWD)
+status, data <span style="color:#f92672">=</span> mail<span style="color:#f92672">.</span>list()
+mail<span style="color:#f92672">.</span>select(<span style="color:#e6db74">&#39;inbox&#39;</span>)
+<span style="color:#75715e"># 取前一天的時間</span>
+today <span style="color:#f92672">=</span> (date<span style="color:#f92672">.</span>today() <span style="color:#f92672">-</span> timedelta(<span style="color:#ae81ff">1</span>))<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">-%b-%Y&#39;</span>)
+<span style="color:#75715e"># 找出前一天未讀的信件</span>
+typ, data <span style="color:#f92672">=</span> mail<span style="color:#f92672">.</span>search(None, <span style="color:#e6db74">&#39;(UNSEEN)&#39;</span>, <span style="color:#e6db74">&#39;(SENTSINCE {0})&#39;</span><span style="color:#f92672">.</span>format(today))
+
+<span style="color:#75715e"># 取到 message id list(message id 就是每封信的 id)</span>
+ids <span style="color:#f92672">=</span> data[<span style="color:#ae81ff">0</span>]
+id_list <span style="color:#f92672">=</span> ids<span style="color:#f92672">.</span>split()
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> id_list:
+    typ, data <span style="color:#f92672">=</span> mail<span style="color:#f92672">.</span>fetch(i, <span style="color:#e6db74">&#39;(RFC822)&#39;</span>)
+    <span style="color:#66d9ef">if</span> typ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;OK&#39;</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;get mail ok&#39;</span>)
+
+    <span style="color:#66d9ef">for</span> response_part <span style="color:#f92672">in</span> data:
+            <span style="color:#66d9ef">if</span> isinstance(response_part, tuple):
+                raw_mail <span style="color:#f92672">=</span> response_part[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>decode()
+                <span style="color:#75715e"># 取得信件</span>
+                msg <span style="color:#f92672">=</span> email<span style="color:#f92672">.</span>message_from_string(raw_mail)
+                <span style="color:#66d9ef">print</span>(msg)
+                var_subject <span style="color:#f92672">=</span> msg[<span style="color:#e6db74">&#39;subject&#39;</span>]
+                subject, encoding <span style="color:#f92672">=</span> decode_header(var_subject)[<span style="color:#ae81ff">0</span>]
+
+                <span style="color:#75715e"># add origin content</span>
+                <span style="color:#66d9ef">for</span> part <span style="color:#f92672">in</span> msg<span style="color:#f92672">.</span>walk():
+                    <span style="color:#66d9ef">if</span> (part<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;Content-Disposition&#39;</span>) <span style="color:#f92672">and</span> part<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;Content-Disposition&#39;</span>)<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#34;attachment&#34;</span>)):
+                        part<span style="color:#f92672">.</span>set_type(<span style="color:#e6db74">&#39;text/plain&#39;</span>)
+                        part<span style="color:#f92672">.</span>set_payload(<span style="color:#e6db74">&#39;Attachment removed: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74"> (</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">, </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> bytes)&#39;</span> <span style="color:#f92672">%</span> (part<span style="color:#f92672">.</span>get_filename(), part<span style="color:#f92672">.</span>get_content_type(), len(part<span style="color:#f92672">.</span>get_payload(decode<span style="color:#f92672">=</span>True))))
+                        <span style="color:#66d9ef">del</span> part[<span style="color:#e6db74">&#39;Content-Disposition&#39;</span>]
+                        <span style="color:#66d9ef">del</span> part[<span style="color:#e6db74">&#39;Content-Transfer-Encoding&#39;</span>]
+
+                reply_mail <span style="color:#f92672">=</span> MIMEMultipart(<span style="color:#e6db74">&#39;mixed&#39;</span>)
+                body <span style="color:#f92672">=</span> MIMEMultipart(<span style="color:#e6db74">&#39;alternative&#39;</span>)
+                body<span style="color:#f92672">.</span>attach(MIMEText(<span style="color:#e6db74">&#39;reply mail&#39;</span>, <span style="color:#e6db74">&#39;plain&#39;</span>))
+                body<span style="color:#f92672">.</span>attach(MIMEText(<span style="color:#e6db74">&#39;&lt;div&gt;reply mail&lt;/div&gt;&#39;</span>, <span style="color:#e6db74">&#39;html&#39;</span>))
+                reply_mail<span style="color:#f92672">.</span>attach(body)
+
+                reply_mail[<span style="color:#e6db74">&#39;message-id&#39;</span>] <span style="color:#f92672">=</span> email<span style="color:#f92672">.</span>utils<span style="color:#f92672">.</span>make_msgid()
+                reply_mail[<span style="color:#e6db74">&#39;in-reply-to&#39;</span>] <span style="color:#f92672">=</span> msg[<span style="color:#e6db74">&#39;message-id&#39;</span>]
+                reply_mail[<span style="color:#e6db74">&#39;references&#39;</span>] <span style="color:#f92672">=</span> msg[<span style="color:#e6db74">&#39;message-id&#39;</span>]
+                reply_mail[<span style="color:#e6db74">&#39;subject&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;re: &#39;</span> <span style="color:#f92672">+</span> msg[<span style="color:#e6db74">&#39;subject&#39;</span>]
+                reply_mail[<span style="color:#e6db74">&#39;to&#39;</span>] <span style="color:#f92672">=</span> msg[<span style="color:#e6db74">&#39;reply-to&#39;</span>] <span style="color:#f92672">or</span> msg[<span style="color:#e6db74">&#39;from&#39;</span>]
+                reply_mail[<span style="color:#e6db74">&#39;from&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;@gmail.com&#39;</span>
+
+                smtp_server<span style="color:#f92672">.</span>sendmail(<span style="color:#e6db74">&#39;@gmail.com&#39;</span>, new[<span style="color:#e6db74">&#39;to&#39;</span>], new<span style="color:#f92672">.</span>as_string())
+</code></pre></div>
+    </main>
+</section>
+
+<footer class="p-strip is-wrapper">
+    <div class="row">
+        <div class="p-article-pagination">
+    
+    <a class="p-article-pagination__link--previous" href="https://blog.tedshd.io/posts/docker_usage/">
+        <span class="p-article-pagination__label">Previous</span>
+        <span class="p-article-pagination__title">
+            docker 使用紀錄
+        </span>
+    </a>
+    
+
+    
+    <a class="p-article-pagination__link--next" href="https://blog.tedshd.io/posts/php_urlencode_rawurlencode_and_http_build_query/">
+        <span class="p-article-pagination__label">Next</span>
+        <span class="p-article-pagination__title">
+            PHP - 使用 urlencode rawurlencode 的差異和使用 http_build_query
+        </span>
+    </a>
+    
+</div>
+    </div>
+</footer>
+
+        </div><footer class="p-strip is-shallow page-footer">
+    <div class="row">
+        <div class="col-12  u-align--center">
+            <p>
+                © 2020 Tedshd
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>

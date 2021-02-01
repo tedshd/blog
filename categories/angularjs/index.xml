@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AngularJS on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/angularjs/</link>
+    <description>Recent content in AngularJS on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sun, 01 Jun 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/angularjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AngularJS - $http</title>
+      <link>https://blog.tedshd.io/posts/2014-06-01-angularjs-http/</link>
+      <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-06-01-angularjs-http/</guid>
+      <description>AngularJS - $http Angular use $http handle AJAX behavior. It support method to handle rest API and basic usage. But its default Content-type is application/json Basic usage $http({ method: &amp;#39;GET&amp;#39;, // support GET, POST, PUT, DELETE url: &amp;#39;../php/response.php&amp;#39;, params: data, // GET method query string data: data, headers: { &amp;#39;Content-Type&amp;#39;: &amp;#39;application/x-www-form-urlencoded; charset=UTF-8&amp;#39; }, timeout: 30000, // timeout abort AJAX cache: false }). success(function(data, status, headers, config) { // this callback</description>
+    </item>
+    
+    <item>
+      <title>AngularJS - do something after ng-repeat</title>
+      <link>https://blog.tedshd.io/posts/2014-05-25-angularjs-do-something-after-ng-repeat/</link>
+      <pubDate>Sun, 25 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-25-angularjs-do-something-after-ng-repeat/</guid>
+      <description>AngularJS - do something after ng-repeat 在學習用 AngularJS 的過程中遇到個問題就是 ng-repeat 好厲害喔, code 變得好少喔 但我想再 ng-repeat 完移掉 loading view 要怎麼移啊? 用 setTimeout 跟白癡一樣, 又不知道時間要設多久 只好</description>
+    </item>
+    
+    <item>
+      <title>AngularJS - routing</title>
+      <link>https://blog.tedshd.io/posts/2014-05-25-angularjs-routing/</link>
+      <pubDate>Sun, 25 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-25-angularjs-routing/</guid>
+      <description>AngularJS - routing 這裡不探究 AngularJS 是如何辦到的 基本上就是用 hash #, 也可用 HTML5 的 history API 這裡只有說有哪些用法 基本 sample 這寫法是 1.2.16 的寫法, 不保證以後會變(因為在舊版的 AngularJS 寫法不</description>
+    </item>
+    
+  </channel>
+</rss>

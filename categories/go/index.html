@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+
+
+
+
+<title>go | tedshd&#39;s DevNote</title>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content='Develop &amp; Design Note by Ted'>
+<meta name="keywords" content=''>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://blog.tedshd.io/categories/go/">
+<link rel="alternate" media="handheld" href="https://blog.tedshd.io/categories/go/" />
+
+<link rel="canonical" href="https://blog.tedshd.io/categories/go/" />
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aa6">
+<meta name="theme-color" content="">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Tedshd">
+
+<meta property="og:title" content="go" />
+<meta property="og:description" content="Develop &amp; Design Note by Ted" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://blog.tedshd.io/categories/go/" />
+<meta property="og:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+<meta property="og:updated_time" content="2020-10-30T15:20:10+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+
+<meta name="twitter:title" content="go"/>
+<meta name="twitter:description" content="Develop &amp; Design Note by Ted"/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+<script data-ad-client="ca-pub-0553186380244641" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    
+    <link href="/categories/go/index.xml" rel="alternate" type="application/rss+xml" title="tedshd&#39;s DevNote" />
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://blog.tedshd.io/css/style.css'>
+
+    
+<link>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Hanuman:400,700|Inconsolata|Roboto:400,400i,700,700i&display=swap&subset=khmer"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
+
+</head><body><header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+        <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+                <a class="p-navigation__link u-vertically-center p-link--logo" href="https://blog.tedshd.io/">
+                    tedshd&#39;s DevNote
+                </a>
+            </div>
+            
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+                <i class="p-icon--menu"></i>
+            </a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
+                <i class="p-icon--close"></i>
+            </a>
+        </div>
+
+        <nav class="p-navigation__nav">
+            <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+
+            <ul class="p-navigation__links" role="menu">
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/categories">Categories</a>
+                </li>
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/tags">tags</a>
+                </li>
+                
+            </ul>
+
+            
+            <form class="p-search-box" action="https://www.google.com/search" target="_blank">
+    <input type="search" class="p-search-box__input" name="q" placeholder='Search'
+        required="" aria-label="Query">
+    <input type="hidden" name="sitesearch" value="https://blog.tedshd.io/">
+    <button type="reset" class="p-search-box__reset" alt="reset" aria-label="Reset">
+        <i class="p-icon--close"></i>
+    </button>
+    <button type="submit" class="p-search-box__button" alt="search" aria-label="Search">
+        <i class="p-icon--search"></i>
+    </button>
+</form>
+            
+        </nav>
+    </div>
+</header><div id="main-content">
+
+
+
+<div class="page-banner">
+    <div class="row">
+        <h1>
+            <span class="u-capitalized">category</span>:
+            go
+        </h1>
+        
+    </div>
+</div>
+
+
+
+<ul class="p-navigation__links sub_menu" role="menu">
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tedshd.github.io/resume/">About</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tysh310246.blogspot.tw/">Blog</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://www.facebook.com/chander.shiu">Facebook</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://github.com/tedshd">Github</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://tw.linkedin.com/in/tedshd">Linkedin</a>
+    </li>
+    
+</ul>
+
+
+
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;text-align: center;" data-ad-client="ca-pub-0553186380244641"
+    data-ad-slot="1505807492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div class="p-strip is-wrapper posts">
+    <div class="row">
+        
+
+        
+
+        <div class="col-12">
+            <div class="p-card">
+                <h3><a href="https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/">HTML form submit same name in php, nodejs, golang</a></h3>
+
+                
+                
+                <p>
+
+
+<span class=" u-capitalized ">
+    on
+</span>
+2020-10-24
+</p>
+                
+
+                
+                <p><p>一直以來大部分時間都在用 PHP 開發</p>
+<p>所以也用 PHP 來處理 HTML Form</p>
+<p>所以都下意識地認為 <code>&lt;input type=&quot;checkbox&quot; name=&quot;game[]&quot; value=&quot;FGO&quot;&gt;</code></p>
+<p>這樣的 <code>name=&quot;game[]&quot;</code> 的處理方式是正規的處理 HTML Form 的多選的方式</p>
+<p>也疑惑為何大多的 HTML Form 的教學甚至 MDN 都沒有提到這件事</p>
+<p>就在某一天我在檢視到同事寫的 code 時</p>
+<p>發現同事用 JavaScript 處理</p>
+<p>硬爬出來自己組字串送出去</p>
+<p>我才想起這令人感到恐懼的事情</p>
+<p>因為公司同事是寫 golang 的專門, 就算前端不熟</p>
+<p>應該也不至於連這樣概念都沒有就用硬爬的方式處理</p>
+<p>所以再調整的同時也跟同事確認後</p>
+<p>我也真正的直視這問題</p>
+<p>到底要怎麼處理表單中多選的資料?</p>
+<p>PHP 寫久的人大多都知道要用上面列出的方法</p>
+<p><code>name=&quot;game[]&quot;</code></p>
+<p>就是 <code>game</code> + <code>[]</code></p>
+<p>但是當我認真地尋找關於這個問題時</p>
+<p>意外地發現了一篇 stackoverflow 的問答</p>
+<p><a href="https://stackoverflow.com/questions/16552680/several-checkboxes-sharing-the-same-name">Several Checkboxes sharing the same name</a></p>
+<p>其實 W3C 根本沒有管你 name=&rdquo;&rdquo; 重複要如何處理</p>
+<p>以下是 PHP, nodejs, golang 的原生方式來測試的結果</p>
+<h2 id="php">PHP</h2>
+<p>以下問答有提供了 PHP <a href="https://www.php.net/manual/en/faq.html.php#faq.html.arrays">doc</a> 說明 PHP 如何處理多選</p>
+<p><a href="https://stackoverflow.com/questions/14026361/php-multiple-checkbox-array">PHP Multiple Checkbox Array</a></p>
+<p>在 name 後面添加 <code>[]</code> 即可處理把相同的 name 組成 Array</p>
+<p>沒有加的話是會取<strong>最後一個</strong></p>
+<p>POST &amp; GET 都是如此處理</p>
+<p>example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;game[]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;FGO&#34;</span> /&gt;
+&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;game[]&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GirlsFrontline&#34;</span> /&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+$_GET[<span style="color:#e6db74">&#39;game&#39;</span>];
+$_POST[<span style="color:#e6db74">&#39;game&#39;</span>];
+</code></pre></div><h2 id="nodejs">nodejs</h2>
+<p>GET 和 POST 用的方式不一樣</p>
+<p>基本上都會用到 <code>querystring</code> module</p>
+<p><code>querystring</code> module 主要都在處理 querystring 相關的功能</p>
+<p>主要靠它 parse querystring format(ex: key=calue&amp;key2=value2)</p>
+<p>所以 nodejs 會自動把同樣的 name 併在一起組成 array</p>
+<h3 id="get">GET</h3>
+<p>會需要用 <code>url</code> module</p>
+<p><code>url</code> module 主要是要拿掉 GET 的 url 的 querystring 再丟給 <code>querystring</code> 處理</p>
+<p>example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;game&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;FGO&#34;</span> /&gt;
+&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;game&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GirlsFrontline&#34;</span> /&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;url&#34;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">querystring</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;querystring&#34;</span>);
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">thisUrl</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URL</span>(<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">url</span>, <span style="color:#e6db74">&#34;http://&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">headers</span>.<span style="color:#a6e22e">host</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">query</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>(<span style="color:#a6e22e">thisUrl</span>.<span style="color:#a6e22e">search</span>).<span style="color:#a6e22e">toString</span>(); <span style="color:#75715e">// 這一段是要把 `?key=calue&amp;key2=value2` =&gt; `key=calue&amp;key2=value2`
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">querystring</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">query</span>)[<span style="color:#e6db74">&#34;game&#34;</span>];
+</code></pre></div><h3 id="post">POST</h3>
+<p>把接進來的 body 組起來再使用 <code>querystring</code> parse</p>
+<p>example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">formData</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">data</span>) {
+  <span style="color:#a6e22e">formData</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">data</span>;
+});
+<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#34;end&#34;</span>, <span style="color:#66d9ef">function</span> () {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">querystring</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">formData</span>)[<span style="color:#e6db74">&#34;game&#34;</span>]);
+});
+</code></pre></div><p><a href="https://nodejs.org/api/url.html">URL | Node.js v15.0.1 Documentation</a></p>
+<p><a href="https://nodejs.org/api/querystring.html">Query string | Node.js v15.0.1 Documentation</a></p>
+<h2 id="golang">golang</h2>
+<p>import <code>http</code> 就可以處理 GET 和 POST 的情況</p>
+<p>大致上的處理方式和行為和 nodejs 一樣(只差在語言的寫法不一樣)</p>
+<p>也是會自動把同樣的 name 併在一起</p>
+<p>組成 slice</p>
+<h3 id="get-1">GET</h3>
+<p>request struct 裡面有 URL 有 function <code>Query</code> 可以拿到所有的 querystring</p>
+<p>example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;game&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;FGO&#34;</span> /&gt;
+&lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;checkbox&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;game&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GirlsFrontline&#34;</span> /&gt;
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;net/http&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">getHandler</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">URL</span>.<span style="color:#a6e22e">Query</span>()[<span style="color:#e6db74">&#34;game&#34;</span>])
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/get&#34;</span>, <span style="color:#a6e22e">getHandler</span>)
+}
+</code></pre></div><h3 id="post-1">POST</h3>
+<p>request 有一個 <code>parseForm</code> 的 function 可以抓取 HTTP <code>POST</code>, <code>PUT</code>, and <code>PATCH</code> 的 body</p>
+<p>example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;net/http&#34;</span>
+)
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">postHandler</span>(<span style="color:#a6e22e">w</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ResponseWriter</span>, <span style="color:#a6e22e">r</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+    <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">ParseForm</span>()
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">Form</span>[<span style="color:#e6db74">&#34;game&#34;</span>])
+}
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">HandleFunc</span>(<span style="color:#e6db74">&#34;/post&#34;</span>, <span style="color:#a6e22e">postHandler</span>)
+}
+</code></pre></div><p><a href="https://golang.org/pkg/net/http/#Request.ParseForm">http - parseForm</a></p>
+<h2 id="最後總結">最後總結</h2>
+<p><strong>只有 PHP 要在相同的 name 後面添加 <code>[]</code> 才可以在 PHP 端收到的 name 併在一起</strong></p>
+<p><strong>nodejs 和 golang 都只要是 name 一樣就可以了</strong></p>
+<p>針對這三種語言都有寫了 demo code</p>
+<p>只要三種語言的環境裝好</p>
+<p>都可以直接起 local server 來試驗看看</p>
+<p><a href="https://github.com/tedshd/html_form_multiple_name">html_form_multiple_name</a></p>
+</p>
+                
+
+                
+
+                
+                <p><a href="https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/">Read more</a></p>
+                
+            </div>
+        </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        
+        
+        
+    </div>
+</div>
+
+<div class="p-strip is-wrapper">
+    <div class="row">
+        <footer class="p-article-pagination">
+    
+
+    
+</footer>
+    </div>
+</div>
+
+
+        </div><footer class="p-strip is-shallow page-footer">
+    <div class="row">
+        <div class="col-12  u-align--center">
+            <p>
+                © 2020 Tedshd
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>

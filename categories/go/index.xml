@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/go/</link>
+    <description>Recent content in go on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Sat, 24 Oct 2020 15:39:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML form submit same name in php, nodejs, golang</title>
+      <link>https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/</link>
+      <pubDate>Sat, 24 Oct 2020 15:39:19 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/</guid>
+      <description>一直以來大部分時間都在用 PHP 開發 所以也用 PHP 來處理 HTML Form 所以都下意識地認為 &amp;lt;input type=&amp;quot;checkbox&amp;quot; name=&amp;quot;game[]&amp;quot; value=&amp;quot;FGO&amp;quot;&amp;gt; 這樣的 name=&amp;quot;game[]&amp;quot; 的處理方式是正規的處理 HTML Form 的多選的方式 也疑惑為何大多的 HTML</description>
+    </item>
+    
+  </channel>
+</rss>

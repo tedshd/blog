@@ -1,0 +1,1638 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/</loc>
+    <lastmod>2021-01-18T13:32:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/php/</loc>
+    <lastmod>2021-01-18T13:32:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/php_urlencode_rawurlencode_and_http_build_query/</loc>
+    <lastmod>2021-01-18T13:32:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/</loc>
+    <lastmod>2021-02-01T11:31:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/</loc>
+    <lastmod>2021-02-01T11:31:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/use_imap_and_smtp_handle_email/</loc>
+    <lastmod>2021-02-01T11:31:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/docker/</loc>
+    <lastmod>2020-12-24T16:49:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/docker_usage/</loc>
+    <lastmod>2020-12-24T16:49:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/mac/</loc>
+    <lastmod>2020-12-24T16:49:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/gcp/</loc>
+    <lastmod>2020-11-20T14:19:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/puppeteer/</loc>
+    <lastmod>2020-11-20T14:19:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/puppeteer_on_ubuntu_server/</loc>
+    <lastmod>2020-11-20T14:19:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/ubuntu/</loc>
+    <lastmod>2020-11-20T14:19:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/javascript/</loc>
+    <lastmod>2020-12-10T14:19:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/sort_case_handle_in_javascript/</loc>
+    <lastmod>2020-12-10T14:19:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/form/</loc>
+    <lastmod>2020-10-30T15:20:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/go/</loc>
+    <lastmod>2020-10-30T15:20:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/golang/</loc>
+    <lastmod>2020-10-30T15:20:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/html/</loc>
+    <lastmod>2020-10-30T15:20:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/form_multi_checked_in_php_nodejs_golang/</loc>
+    <lastmod>2020-10-30T15:20:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/nodejs/</loc>
+    <lastmod>2020-10-30T15:20:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/canvas/</loc>
+    <lastmod>2020-09-03T16:07:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/html2canvas/</loc>
+    <lastmod>2020-09-03T16:07:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/prepare_resume/</loc>
+    <lastmod>2020-09-03T16:20:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/language_and_character_in_digital/</loc>
+    <lastmod>2020-12-10T17:17:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/load_large_table_improve_performance/</loc>
+    <lastmod>2020-05-25T16:27:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/php_load_font_to_image/</loc>
+    <lastmod>2020-05-14T11:23:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/google_search_result_structure_data_research_log/</loc>
+    <lastmod>2020-05-04T14:56:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/mobile_web_remove_touch_background/</loc>
+    <lastmod>2020-03-04T17:31:24+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/canvas_research_log/</loc>
+    <lastmod>2020-12-10T14:19:29+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/node/</loc>
+    <lastmod>2020-03-05T00:22:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/npm_install_local/</loc>
+    <lastmod>2020-03-05T00:22:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/seo/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-12-23-seo-enhanced-youtube-video-seo/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/youtube/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/firebase/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-12-20-firebase-firebase-functions/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/functions/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-12-02-header-accept-language/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/http/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-12-02-php-check-http-protocol/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/google/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-11-21-google-enhance-disonion-in-google-search-results/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-11-18-2019-mozilla-developer-roadshow-asia-taipei-record/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/firefox-mozilla/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-11-04-youtube-dl-using-notes/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-10-29-php-float-float-ingress-scientific-marker-conversion/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-10-03-web-html-metadata-image-size-with-open-graph-etc/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-09-27-google-knowledge-panel/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/redis/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-09-05-redis-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-09-03-golang-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-07-03-web-icon-use-notes/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/web-favicon/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/vue/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-06-24-vue-develop-ssr-records-with-vue-cli-3/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-06-19-mac-php-redis-install/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-06-14-golang-gvm-golang-version-manger/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-03-25-vue-vue-cli-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2019-01-30-javascript-half-angle-full-angle-conversion/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-12-26-chrome-headless-research-notes/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/headless/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-12-18-2018-google-cloud-training-camp-notes/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/google-gcp/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-11-21-javascript-calculate-exposure-of-web-page-components/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-11-16-mac-get-file-user-name/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-11-06-line-2018-1111-shared-line-point-research-notes/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-10-25-mac-shell-script-check-os/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-10-25-mac-stat-get-owner-name/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/linux/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-10-24-mac-use-readlink-in-mac-os-x/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/paypal/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-10-20-paypal-how-to-take-the-api-seal/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-09-20-javascript-use-the-right-time/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/mobile/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-09-16-web-develop-on-mobile-web/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-08-23-what-is-web-viewport-do-you-really-understand-the-screen-size-of-the-mobile-device-its-ancient/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/amp/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-06-17-amp-amp-analytics/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-05-11-paypal-paypal-ec/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/webview/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-04-19-webview-handle-ios-status-bar-empty-height-in-webview/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-04-18-image-load-error-handle/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/html-image/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-03-15-something-about-favicon-on-website/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-01-12-4736834/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2018-01-09-php-geoip-set-the-record/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/php-geoip/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-12-13-php-loop-directory/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-12-04-php-compared-to-time/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/apple/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/ios/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-10-02-web-mobile-web-on-iphone-x-first-preview/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-09-17-2472689/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-09-11-html-dns-prefetch-preconnect-prefetch-and-prerender-research-notes/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-09-05-2262937/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-08-25-amp-accelerated-mobile-pages-key-point/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-05-12-1822543/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/javascript-google/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/css/</loc>
+    <lastmod>2020-02-26T11:02:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-05-04-1790526/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-04-25-1747072/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-04-24-google-search-develop-for-seo-research-log/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/google-seo/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2017-02-24-amp-accelerated-mobile-pages/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-12-08-1183912/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-11-03-javascript-get-text-from-dom-object-not-include-wrap-html-tag-in-child/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-09-19-content-security-policy-on-the-feasibility-of-general-site-placed/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/csp-security/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-09-07-javascript-touch-and-click-behavior-in-mobile-browser/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/sublime/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-09-01-sublime-text-how-to-modify-font-size-in-sidebar/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-08-31-gulp-one-problem-i-found-when-i-use-css-minify-with-some-css-library/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/gulp-javascript-css/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/chrome/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-08-03-linux-install-gogole-chrome-in-debian-linux/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/webdriver-bdd/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-07-19-webdriverio-introduction-to-front-end-test-notes/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-07-17-lets-encrypt-has-a-certificate-problem-in-android-chrome/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/nginx/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/ssl/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-06-28-javascript-why-i-from-requirejs-to-webpack/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/javascript-webpack-requirejs/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-06-10-javascript-the-abstract-an-action-instance/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/slack/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-05-28-slack-bot-research-notes/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-05-25-nodejs-direct-instruction/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/facebook/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-04-20-javascript-facebook-save-to-facebook-button/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/ad/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-04-15-google-adsense-domain-settings/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-03-22-667492/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/vim/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-03-08-vim-javascript-auto-complete/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-01-31-466975/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2016-01-27-javascript-get-css-style/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/google-cloud-platform/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-12-20-google-cloud-platform-not-enough-space-set-the-swap-kernel-upgrades/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-11-20-css4-css4-thoughts-and-postcss/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/postcss/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-11-01-something-about-xsscross-site-scripting/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/xss/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-10-31-php-ubuntu-14-php-56-or-to-upgrade-from-php-55/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-10-14-javascript-get-some-value-about-form-input-type-and-select/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-09-30-linux-unix-terminal-control/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-09-30-nginx-study-log/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-09-28-google-cloud-platform-study-log/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/dom/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-08-28-javascript-something-about-childnodes-and-nextsibling-why-they-get-dom-is-not-as-you-imagine/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-08-16-php-auto-update-static-files-cache/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/gulp/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-08-15-javascript-google-closure-compiler-vs-gulp-uglify/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/uglifyjs/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-08-11-css-web-font/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/font/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-08-09-gulpjs-concatenate-file-when-gulp-watch/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/apache/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-08-05-apache-apache-command-line-on-mac-ubuntu/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-07-30-javascript-scrolltop/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-07-22-mac-hide-desktop-icon/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-07-11-css3-object-fit/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-06-27-javascript-insertbefore/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/encoding/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-06-16-linux-set-encoding-in-linux-environment/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/ajax/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-06-08-javascript-dynamic-load-script-jsonp-callback/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/jsonp/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-05-15-docker-mac-research-log/</loc>
+    <lastmod>2020-02-04T11:21:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-05-07-apache-dir-permission-cnfig/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/keyboard/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/maker/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-05-02-maker-gh60-revchn/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-04-14-javascript-use-createelement-or-string/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/javscript/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-04-05-css-modify-pseudo-element-content/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-03-23-hubot-develop-log/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-01-27-javascript-cross-module-communication/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-01-12-ajax-rest/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2015-01-10-ajax-xmlhttprequest-introduction/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/css3/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-12-30-javascript-detect-css3-transitionend/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-12-21-javascript-converting-a-javascript-string-to-a-html-object/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-12-18-php-install-phpcsphp-codesniffer/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/git/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-12-09-git-hooks/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/firefox/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-11-15-firefox-10-year-anniversary-party/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-10-01-javascript-handle-textarea-value/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/compass/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-08-29-compass-use-transform-in-compass-101/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-08-27-web-develop-flexible-footer/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-08-21-mac-sshfs/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-08-16-git-github-gh-pages/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/github/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-08-07-gulpjs-use-log/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-08-06-miiitv-20-f2e/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-07-15-miiitv-web-player-structure/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-07-14-youku-api/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-07-10-css-sass-handle-index/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/sass/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/html5/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-07-02-html5-video-introduction/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-07-01-git-tip/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-07-01-javascript-handle-load-img-fail/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/windows/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-06-23-windows-81-app-develop-introduction/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-06-02-css-font-family/</loc>
+    <lastmod>2020-02-26T11:02:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/angularjs/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-06-01-angularjs-http/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-05-30-javascript-multiple-lines-omitted/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-05-25-angularjs-do-something-after-ng-repeat/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-05-25-angularjs-routing/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-05-23-javascript-custom-facebook-share-button/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-05-13-javascript-random-array-sort/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-05-08-html5-full-screen-mode/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/mongodb/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-04-29-mongodb-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/samsung/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-04-28-samsung-samrt-tv-network-error-handle/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-04-24-pgrest-build-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/postgresql/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-04-07-css-vertical-reset/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-04-05-vim-colorscheme/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/mac-sublime-text/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/node.js/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-04-04-nodejs-install/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-04-04-sublime-command-line/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-03-13-javascript-delete-element/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-03-08-clean-code-time-code-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/develop/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-03-07-develop-samsung-smart-tv-apps-updatesdk-50/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-03-05-javascript-time-seconds-to-hhmmss/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-03-02-javascript-scroll-progress/</loc>
+    <lastmod>2020-11-18T10:39:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-02-27-sublime-change-layout-view-in-2-columns/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/sublime-text/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-02-19-javascript-jquery-index-in-javascript/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-02-06-javascript-encryption/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-01-31-javascript-get-element-height/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-01-27-mac-build-front-end-developer-environment/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-01-23-samsung-samrt-tv-volume-osd/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-01-21-miiitv-for-samsung-smart-tv/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-01-18-samsung-samrt-tv-save-load-data/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2014-01-10-css-text-around-shadows/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-25-javascript-jsonp/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-20-javascript-youtube-api-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-19-konami-cheat-simple-javascript-implementation/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-18-javascript-some-articles-collection/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-16-develop-samsung-smart-tv-apps/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-10-css-opacity-effect-child-element/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-08-website-switch-layout/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-07-detect-mobile-device/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-07-javascript-easy-to-get-dom/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-12-03-google-map-api-research-log/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-11-25-facebook-api-get-uid/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-11-20-sass-compile-two-spaces/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-11-09-javascript-event/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-11-07-android-noteview/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/codeignite/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-10-23-codeigniter-load-data-in-view-for-javascript/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-10-23-javascript-handle-json/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/file_upload/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-10-20-javascript-file-upload/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-10-12-use-css3-animation-in-compass/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-10-06-file-upload-show-progress-bar/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-30-ajax-xmlhttprequest/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-29-file-upload-using-ajax/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-23-kbtalking-pure-pro-programming/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-20-git-command/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-18-git-uses-someone-elses-repository/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-12-adobe-flash-player-118800168-upload-file-issue/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/css-javascript/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/flashplayer/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/issue/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-12-waterfall-stream-pinterest-style-layout/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-10-coding-style/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-10-place-on-and-embed-code-from-internet/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-08-javascript-design-pattern/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-06-git-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-05-effecktcss-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-03-javascript-onbeforeunload/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/codeigniter/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-02-codeigniter-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-02-sublime-text-plug-in/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-01-sublime-text-initial-setting/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-09-01-sublime-text-hot-key/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-30-php-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-29-codeigniter-ajaxpost/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/mysql/</loc>
+    <lastmod>2020-11-09T16:02:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-28-mysql-command/</loc>
+    <lastmod>2020-11-09T16:02:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/computer-science/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-random-number-science/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-and-logical-block/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-operating-system/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-boolean-logic/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-of-finite-state-machine/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-du-linji/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-fluid-machine/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-algorithm/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-hardware-and-science-dialogue/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-capable/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-translation-of-science-language/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-computer-science-of-quantum-computation/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-logdown-tab-test/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-27-vim-config-in-mac/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-25-javascript-type/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-23-gitconfig/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-21-css-attribute/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-21-css-note/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-21-html-design-pattern/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-21-vim/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-21-text-overflow-ellipsis/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-20-file-upload-notice-issue/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-14-linux-unix-command/</loc>
+    <lastmod>2020-09-08T11:34:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/mac-linux/</loc>
+    <lastmod>2020-09-08T11:34:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-13-login-forget-pwd/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/categories/jquery/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-08-jquery-design-pattern/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-03-innerheight-innerwidth/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-03-jquery-selector/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-03-performance-test-javascript/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-02-check-browser/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-02-fileupload-by-yui-library/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-02-hello-world/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/posts/2013-08-02-javascript-function/</loc>
+    <lastmod>2020-01-29T17:42:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.tedshd.io/tedshd/</loc>
+  </url>
+  
+</urlset>

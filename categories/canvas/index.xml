@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>canvas on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/canvas/</link>
+    <description>Recent content in canvas on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Thu, 03 Sep 2020 16:05:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/canvas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Html2canvas</title>
+      <link>https://blog.tedshd.io/posts/html2canvas/</link>
+      <pubDate>Thu, 03 Sep 2020 16:05:40 +0800</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/html2canvas/</guid>
+      <description>網站直接網頁截圖 基本上就是把要截圖的內容轉成 canvas 物件 再轉成圖片下載即可 現成套件 html2canvas https://html2canvas.hertzen.com/ 但是如果要截圖的內容有用外部 url 載入的圖片需要注意一下 CORS 問題 補</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    
+
+
+
+
+<title>Computer Science - 有限狀態機 | tedshd&#39;s DevNote</title>
+<meta charset="utf-8">
+<meta name="google" content="notranslate">
+<meta id="viewport" name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content='有限狀態機 它可以執行隨時間而改變的函數,也就是不但與目前的輸入值有關,也受之前輸入值影響的函數. 有限狀態機的基本構想是將一個對照表與記憶元件'>
+<meta name="keywords" content=''>
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://blog.tedshd.io/posts/2013-08-27-computer-science-of-finite-state-machine/">
+<link rel="alternate" media="handheld" href="https://blog.tedshd.io/posts/2013-08-27-computer-science-of-finite-state-machine/" />
+
+<link rel="canonical" href="https://blog.tedshd.io/posts/2013-08-27-computer-science-of-finite-state-machine/" />
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon-152x152.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aa6">
+<meta name="theme-color" content="">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="Tedshd">
+
+<meta property="og:title" content="Computer Science - 有限狀態機" />
+<meta property="og:description" content="有限狀態機 它可以執行隨時間而改變的函數,也就是不但與目前的輸入值有關,也受之前輸入值影響的函數. 有限狀態機的基本構想是將一個對照表與記憶元件" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.tedshd.io/posts/2013-08-27-computer-science-of-finite-state-machine/" />
+<meta property="og:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+<meta property="article:published_time" content="2013-08-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-29T17:42:46+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://s3.amazonaws.com/logdown-production/system/blog/3202/og_image/logdown.png"/>
+
+<meta name="twitter:title" content="Computer Science - 有限狀態機"/>
+<meta name="twitter:description" content="有限狀態機 它可以執行隨時間而改變的函數,也就是不但與目前的輸入值有關,也受之前輸入值影響的函數. 有限狀態機的基本構想是將一個對照表與記憶元件"/>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="">
+
+<script data-ad-client="ca-pub-0553186380244641" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href='https://blog.tedshd.io/css/style.css'>
+
+    
+<link>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Hanuman:400,700|Inconsolata|Roboto:400,400i,700,700i&display=swap&subset=khmer"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.1/grids-responsive-min.css">
+
+</head><body><header id="navigation" class="p-navigation">
+    <div class="p-navigation__row">
+        <div class="p-navigation__banner">
+            <div class="p-navigation__logo">
+                <a class="p-navigation__link u-vertically-center p-link--logo" href="https://blog.tedshd.io/">
+                    tedshd&#39;s DevNote
+                </a>
+            </div>
+            
+            <a href="#navigation" class="p-navigation__toggle--open" title="menu">
+                <i class="p-icon--menu"></i>
+            </a>
+            <a href="#navigation-closed" class="p-navigation__toggle--close" title="close menu">
+                <i class="p-icon--close"></i>
+            </a>
+        </div>
+
+        <nav class="p-navigation__nav">
+            <span class="u-off-screen">
+                <a href="#main-content">Jump to main content</a>
+            </span>
+
+            <ul class="p-navigation__links" role="menu">
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/categories">Categories</a>
+                </li>
+                
+                <li class="p-navigation__link" role="menuitem">
+                    <a href="/tags">tags</a>
+                </li>
+                
+            </ul>
+
+            
+            <form class="p-search-box" action="https://www.google.com/search" target="_blank">
+    <input type="search" class="p-search-box__input" name="q" placeholder='Search'
+        required="" aria-label="Query">
+    <input type="hidden" name="sitesearch" value="https://blog.tedshd.io/">
+    <button type="reset" class="p-search-box__reset" alt="reset" aria-label="Reset">
+        <i class="p-icon--close"></i>
+    </button>
+    <button type="submit" class="p-search-box__button" alt="search" aria-label="Search">
+        <i class="p-icon--search"></i>
+    </button>
+</form>
+            
+        </nav>
+    </div>
+</header><div id="main-content">
+<div class="page-banner">
+    <div class="row u-vertically-center">
+        <div class="col-8 pure-g">
+            <div class="pure-u">
+                <img src="https://graph.facebook.com/100004089951579/picture?type=large" alt="tedshd&#39;s DevNote" width="100" height="100"
+                    style="border-radius: 50%;display: inline; margin: 1rem;box-shadow: 0 0 5px rgba(0, 0, 0, 1);vertical-align: middle;">
+            </div>
+            <div class="pure-u">
+                <h2>tedshd&#39;s DevNote</h2>
+                <p>Develop &amp; Design Note by Ted</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="p-navigation__links sub_menu" role="menu">
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tedshd.github.io/resume/">About</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="http://tysh310246.blogspot.tw/">Blog</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://www.facebook.com/chander.shiu">Facebook</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://github.com/tedshd">Github</a>
+    </li>
+    
+    <li class="p-navigation__link" role="menuitem">
+        <a href="https://tw.linkedin.com/in/tedshd">Linkedin</a>
+    </li>
+    
+</ul>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle" style="display:block;text-align: center;" data-ad-client="ca-pub-0553186380244641"
+    data-ad-slot="1505807492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<header class="">
+    <div class="row">
+        <h1>Computer Science - 有限狀態機</h1>
+    </div>
+</header>
+
+
+<section class="p-strip is-shallow">
+    <main class="row post-content">
+        
+        <p class="p-media-object__content">
+            <span class="u-capitalized">on</span>
+            2013-08-27
+        </p>
+        
+        <h2 id="有限狀態機">有限狀態機</h2>
+<p>它可以執行隨時間而改變的函數,也就是不但與目前的輸入值有關,也受之前輸入值影響的函數.</p>
+<p>有限狀態機的基本構想是將一個對照表與記憶元件加以結合,而這個對照表則是以布林邏輯建構的,記憶元件儲存過去的概要,本身就是有限狀態機的[狀態].</p>
+<p>密碼鎖就是簡單的例子,它的狀態就是記住一連串數字輸入鎖中的結果.鎖並不記得撥過的所有數字,但它可以記住最後輸入的幾組數
+字,而這幾組數字就足以在數字序列正確的時候把鎖打開.</p>
+<p>自動筆是一個更簡單的例子,它有兩種可能的狀態,伸出筆芯和縮回筆芯,而且還記得它的按鈕被按了奇數次還是偶數次.
+所有有限狀態機都有一組固定的可能狀態、一組可以改變狀態的輸入(按原子筆的按鈕or撥動鎖上的數字盤)以及一組可能的輸出(筆
+芯的縮回或伸出or開鎖).輸出只由狀態決定,而狀態則取決於輸入的順序.</p>
+<p>為了儲存有限狀態機的狀態,需再介紹最後一個建構區域,也就是可以儲存位元的暫存器.n位元的暫存器有n個輸入及輸出端外,另加一個輸入端以告知暫存器何時該改變狀態.將新資訊存入暫存器的動作叫寫入(writing),當定時輸入端告知暫存器要寫入新狀態時,暫存器的狀態便會改變使與輸入訊號相符.至於暫存器的輸出,則總是顯示目前的狀態.</p>
+<p>暫存器的裝置有很多種,其中之一是以布林邏輯區組將狀態訊息推入一個圓圈循環中,這種暫存器是電腦中最常用的一種,所以當電源突然中斷時,電腦便不會繼續當時所做的工作.</p>
+<p>有限狀態機包含了一個布林邏輯區組及一個暫存器,有限狀態機將布林邏輯區組的輸出寫入暫存器中,然後邏輯區組會依新的輸入及當時的狀態計算出下一個狀態,並再下一個循環寫入暫存器中,如此週而復始的重複,有限狀態機因此不斷更新其狀態.</p>
+<p>包括電腦在內的許多數位計算裝置也都已固定的時間間隔變換其狀態,而變換的頻率則稱為這部機器的時脈(clock rate),在電腦的世界裡,時間並不是連續的,而是一組固定的變換序列.電腦的時脈決定這些狀態變換的速度,因此也決定了實際時間與計算機時間的對應關係.</p>
+<p>雖然有限狀態機的功能非常強大,但它卻無法辨識所有序列形式.例如,我們不可能建構一個用迴文開鎖的有限狀態機,所謂迴文就是由前往後唸和由後往前唸都一樣.因為迴文的長度不一定,且必須要記住迴文前半部中的每個字,才能辨識後半部,又由於前半部有無限多種可能,因此需要一部具有無限個狀態的機器才能處理.</p>
+
+    </main>
+</section>
+
+<footer class="p-strip is-wrapper">
+    <div class="row">
+        <div class="p-article-pagination">
+    
+    <a class="p-article-pagination__link--previous" href="https://blog.tedshd.io/posts/2013-08-27-computer-science-du-linji/">
+        <span class="p-article-pagination__label">Previous</span>
+        <span class="p-article-pagination__title">
+            Computer Science - 杜林機
+        </span>
+    </a>
+    
+
+    
+    <a class="p-article-pagination__link--next" href="https://blog.tedshd.io/posts/2013-08-27-computer-science-boolean-logic/">
+        <span class="p-article-pagination__label">Next</span>
+        <span class="p-article-pagination__title">
+            Computer Science - 布林邏輯
+        </span>
+    </a>
+    
+</div>
+    </div>
+</footer>
+
+        </div><footer class="p-strip is-shallow page-footer">
+    <div class="row">
+        <div class="col-12  u-align--center">
+            <p>
+                © 2020 Tedshd
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49247550-8', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+</body>
+</html>

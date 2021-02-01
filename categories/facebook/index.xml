@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>facebook on tedshd&#39;s DevNote</title>
+    <link>https://blog.tedshd.io/categories/facebook/</link>
+    <description>Recent content in facebook on tedshd&#39;s DevNote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 Tedshd</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.tedshd.io/categories/facebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JavaScript - facebook save to facebook button</title>
+      <link>https://blog.tedshd.io/posts/2016-04-20-javascript-facebook-save-to-facebook-button/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2016-04-20-javascript-facebook-save-to-facebook-button/</guid>
+      <description>JavaScript - facebook save to facebook button 2016 F8 Facebook release new function - save to facebook Then we can use it now Step 1 Go to facebook developer Save Button - Social Plugins - Documentation - Facebook for Developers Step 2 Build or use facebook application If you had facebook application can skip this step If you build facebook application and you can get this code window.fbAsyncInit = function()</description>
+    </item>
+    
+    <item>
+      <title>JavaScript - custom facebook share button</title>
+      <link>https://blog.tedshd.io/posts/2014-05-23-javascript-custom-facebook-share-button/</link>
+      <pubDate>Fri, 23 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2014-05-23-javascript-custom-facebook-share-button/</guid>
+      <description>JavaScript - custom facebook share button Facebook support share API to people and it is easy to use. But sometimes we need customize share button style in our web. We can use 2 way.
+1. Link share api link Simple way
+HTML &amp;lt;a href=&amp;#34;http://www.facebook.com/share.php&amp;#34; class=&amp;#34;custom&amp;#34;&amp;gt;Share&amp;lt;/a&amp;gt; and then you can use CSS custom a style.
+But this only can catch current url to share to facebook.
+2. Use facebook JavaScript SDK This way is powerful</description>
+    </item>
+    
+    <item>
+      <title>Facebook api get UID &amp; AccessToken</title>
+      <link>https://blog.tedshd.io/posts/2013-11-25-facebook-api-get-uid/</link>
+      <pubDate>Mon, 25 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.tedshd.io/posts/2013-11-25-facebook-api-get-uid/</guid>
+      <description>Facebook api get UID &amp;amp; AccessToken Build App in facebook APP_ID is a facebook App id Must set facebook App&amp;rsquo;s web url and use code in it&amp;rsquo;s domain &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;fb_oauth&amp;lt;/title&amp;gt; &amp;lt;script src=&amp;#34;http://code.jquery.com/jquery-1.10.2.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;#34;fb-root&amp;#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;p&amp;gt; &amp;lt;input id=&amp;#34;FBLogin&amp;#34; type=&amp;#34;button&amp;#34; value=&amp;#34;登入臉書&amp;#34; /&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; &amp;lt;span id=&amp;#34;uid&amp;#34;&amp;gt;&amp;lt;/span&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>
