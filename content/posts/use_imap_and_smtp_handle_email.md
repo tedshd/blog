@@ -106,7 +106,7 @@ mail.login(ACCOUNT, PWD)
 status, data = mail.list()
 mail.select('inbox')
 # 取前一天的時間
-today = (date.today() - timedelta(1)).strftime("%d-%b-%Y")
+today = (date.today() - timedelta(1)).strftime('%d-%b-%Y')
 # 找出前一天未讀的信件
 typ, data = mail.search(None, '(UNSEEN)', '(SENTSINCE {0})'.format(today))
 
@@ -124,6 +124,7 @@ for i in id_list:
                 rawMail = response_part[1].decode()
                 # 取得信件
                 msg = email.message_from_string(rawMail)
+                print(msg)
 ```
 
 基本上到這裡拿到 msg 就是這封信件的資訊了
@@ -152,5 +153,102 @@ for i in id_list:
 
 4. 關閉連接
 
-以下為範例
+以下為寄信範例
 
+```python
+import email
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+
+smtp_server = smtplib.SMTP_SSL('smtp.gmail.com')
+
+ACCOUNT = '@gmail.com'
+PWD = ''
+
+smtp_server.login(ACCOUNT, PWD)
+send_mail = MIMEMultipart('mixed')
+body = MIMEMultipart('alternative')
+body.attach(MIMEText('test send mail', 'plain'))
+body.attach(MIMEText('<div>test send mail<div>', 'html'))
+send_mail.attach(body)
+
+send_mail['message-id'] = email.utils.make_msgid()
+send_mail['subject'] = ''
+send_mail['to'] = ''
+send_mail['from'] = '@gmail.com'
+
+smtp_server.sendmail('@gmail.com', send_mail['to'], send_mail.as_string())
+
+smtp_server.quit()
+```
+
+需要回信的話就得在發送時指定 references 和指定要回覆給哪封信(每一封信都有獨立的 message id)
+
+所以會先用 imap 取到 mail list 這樣就會有 message id 的資訊了
+
+以下為回信的範例
+
+```python
+from datetime import datetime, timedelta, date
+
+import imaplib
+import email
+
+from email.header import decode_header
+# pip install imap-tools
+from imap_tools.imap_utf7 import encode, decode
+
+ACCOUNT = '@gmail.com'
+PWD = ''
+
+mail = imaplib.IMAP4_SSL('imap.gmail.com')
+mail.login(ACCOUNT, PWD)
+status, data = mail.list()
+mail.select('inbox')
+# 取前一天的時間
+today = (date.today() - timedelta(1)).strftime('%d-%b-%Y')
+# 找出前一天未讀的信件
+typ, data = mail.search(None, '(UNSEEN)', '(SENTSINCE {0})'.format(today))
+
+# 取到 message id list(message id 就是每封信的 id)
+ids = data[0]
+id_list = ids.split()
+
+for i in id_list:
+    typ, data = mail.fetch(i, '(RFC822)')
+    if typ == 'OK':
+        print('get mail ok')
+
+    for response_part in data:
+            if isinstance(response_part, tuple):
+                raw_mail = response_part[1].decode()
+                # 取得信件
+                msg = email.message_from_string(raw_mail)
+                print(msg)
+                var_subject = msg['subject']
+                subject, encoding = decode_header(var_subject)[0]
+
+                # add origin content
+                for part in msg.walk():
+                    if (part.get('Content-Disposition') and part.get('Content-Disposition').startswith("attachment")):
+                        part.set_type('text/plain')
+                        part.set_payload('Attachment removed: %s (%s, %d bytes)' % (part.get_filename(), part.get_content_type(), len(part.get_payload(decode=True))))
+                        del part['Content-Disposition']
+                        del part['Content-Transfer-Encoding']
+
+                reply_mail = MIMEMultipart('mixed')
+                body = MIMEMultipart('alternative')
+                body.attach(MIMEText('reply mail', 'plain'))
+                body.attach(MIMEText('<div>reply mail</div>', 'html'))
+                reply_mail.attach(body)
+
+                reply_mail['message-id'] = email.utils.make_msgid()
+                reply_mail['in-reply-to'] = msg['message-id']
+                reply_mail['references'] = msg['message-id']
+                reply_mail['subject'] = 're: ' + msg['subject']
+                reply_mail['to'] = msg['reply-to'] or msg['from']
+                reply_mail['from'] = '@gmail.com'
+
+                smtp_server.sendmail('@gmail.com', new['to'], new.as_string())
+```
