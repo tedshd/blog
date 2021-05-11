@@ -148,3 +148,11 @@ docker run -idt --name <container name> -v <mount absolute path or ~ path>:<dock
 ## `docker logs <container_id>`
 
 查看 docker 處理的紀錄
+
+## `docker cp <file> <container_id>:/<file>`
+
+把檔案複製到 docker container 裡面
+
+## `docker cp <container_id>:/<file> <file>`
+
+把檔案從 container 裡面複製出來
