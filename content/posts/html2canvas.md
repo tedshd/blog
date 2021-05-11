@@ -15,9 +15,21 @@ categories: ["canvas"]
 
 https://html2canvas.hertzen.com/
 
-但是如果要截圖的內容有用外部 url 載入的圖片需要注意一下 CORS 問題
+但是如果要截圖的內容有用外部 url 載入的圖片需要注意一下 CORS 問題(canvas 的限制)
 
-### 補充轉換圖片的機制
+### 解決外部 url 載入圖片時 CORS 問題
+
+原理
+
+把外部載入的圖片轉換成二進制再轉成 dataurl
+
+因為在 browser 上面可以解析與渲染 dataurl
+
+所以就可以呈現在 canvas 裡面
+
+這樣之後要截圖下載這個 canvas 的內容也沒問題
+
+### 補充轉換圖片的機制(解決載入外部圖片 CORS 問題)
 
 #### 處理方式 - 圖片轉 blob
 
@@ -39,13 +51,13 @@ function toDataURL(url, callback) {
 }
 ```
 
-#### 問題
+#### 問題(更新 2021/05/11)
 
-CORS 問題
+CORS 問題越來越嚴格了
 
-因為在瀏覽器上面 XMLHttpRequest 物件處理會有 CORS 問題要處理
+在瀏覽器上面 XMLHttpRequest 物件處理 binary 現在會有 CORS 問題要處理
 
-需要在要處理的圖片 url 處理 CORS
+需要在要處理的圖片 url 處理 CORS(圖片所在的 host 必須有允許 CORS 的 header)
 
 [refer - Allowing cross-origin use of images and canvas](https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image)
 
