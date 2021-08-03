@@ -157,6 +157,14 @@ SELECT * FROM users where id in (1,2,3,4,5);
 mysqldump -A --ssl-mode=DISABLED -u <user> -p<password> -h <host> <database> <table> | mysql -u root -h <host> -P <post> <database>
 ```
 
+必要時需要另外添加參數
+
+```shell
+--column-statistics=0 --lock-tables=false
+```
+
+[Refer - mysqldump — A Database Backup Program](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html#option_mysqldump_column-statistics)
+
 ### 直接把 query 出來的一筆資料新增(複製)
 
 ```sql
