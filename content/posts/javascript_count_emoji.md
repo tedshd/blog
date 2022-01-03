@@ -11,11 +11,15 @@ categories: [JavaScript, emoji]
 
 一個字元是單位是一
 
-但是因為 emoji unicode 後面定義的
+但是因為 emoji 的 unicode 是比較後面定義的
 
 這超出了原有 JavaScript 原有定義的範圍
 
-所以 emoji 的字串長度一率都是從 2 起跳
+可以參照網站的介紹
+
+[Unicode – The World Standard for Text and Emoji](https://home.unicode.org/)
+
+所以 emoji 的字串長度在 JavaScript 一率都是從 2 起跳
 
 這在 Web 中會造成有需要處理字串長度的地方就會出現問題
 
