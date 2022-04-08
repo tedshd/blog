@@ -173,6 +173,7 @@ sudo lsof -i -P -n | grep LISTEN
 netstat -tulpn | grep LISTEN
 # 確認開啟的port
 lsof -n -i | grep LISTEN **(for Mac)**
+sudo lsof -i -P | grep LISTEN | grep :$PORT
 
 ### apt
 
