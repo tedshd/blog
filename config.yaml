@@ -3,8 +3,8 @@ languageCode: en-us
 defaultContentLanguage: en
 title: tedshd's DevNote
 theme: hugo-theme-okayish-blog
-copyright: © 2020 Tedshd
-googleAnalytics: UA-49247550-8
+copyright: © 2022 Tedshd
+# googleAnalytics: UA-49247550-8
 disqusShortname: tedshd
 enableGitInfo: true
 hasCJKLanguage: true
