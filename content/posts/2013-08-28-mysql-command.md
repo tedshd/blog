@@ -171,6 +171,32 @@ mysqldump -A --ssl-mode=DISABLED -u <user> -p<password> -h <host> <database> <ta
 insert into <table> (欄位1, 欄位2, 欄位3) select 欄位1, 欄位2, 欄位3 from <table> where id=10;
 ```
 
+### 找出欄位有重複的值
+
+```sql
+SELECT <column_name>, COUNT(<column_name>) FROM <table_name> GROUP BY <column_name> HAVING COUNT(<column_name>) > 1;
+```
+
+### time zone 相關
+
+#### 確認時區
+
+```sql
+SELECT @@global.time_zone;
+```
+
+#### 確認當前時間
+
+```sql
+SELECT NOW();
+```
+
+#### 設定時區
+
+```sql
+SET GLOBAL time_zone = ‘-6:00’;
+```
+
 ### troubleshooting
 
 On Mac
