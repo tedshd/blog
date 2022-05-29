@@ -163,17 +163,33 @@ scp -r <local directory> <username@tohostname>:<remote path>
 scp -i <key> <local directory> <username@tohostname>:<remote path>
 ```
 
-tar -zcvf <archive-name>.tar.gz <directory-name>
+```shell
 # 壓縮資料夾
+tar -zcvf <archive-name>.tar.gz <directory-name>
 
 tar -zxvf <archive-name>.tar.gz <directory-name>
 # 解壓縮資料夾
+```
 
-sudo lsof -i -P -n | grep LISTEN
-netstat -tulpn | grep LISTEN
-# 確認開啟的port
+## 確認開啟的port
+
+```shell
 lsof -n -i | grep LISTEN **(for Mac)**
+
+netstat -tulpn | grep LISTEN
+```
+
+```shell
+sudo lsof -i -P -n | grep LISTEN
+
 sudo lsof -i -P | grep LISTEN | grep :$PORT
+```
+
+## check nginx service
+
+```shell
+ps -ef | grep nginx
+```
 
 ### apt
 
