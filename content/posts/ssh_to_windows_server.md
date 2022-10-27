@@ -15,6 +15,12 @@ categories: [Linux, Windows, Windows Server, SSH]
 
 這次處理的 server 版本是 Windows Server 2019
 
+## SSH on GCP Compute Engine
+
+如果是建置在 Google Cloud 的 Compute Engine 上的話
+
+就參考文件 [Getting started with OpenSSH on Windows Compute Engine instances](https://cloud.google.com/blog/products/compute/using-openssh-on-windows-compute-engine-instances) 就可以了
+
 ## 前置作業
 
 之前似乎是採用 remote desktop 的方式
