@@ -69,7 +69,7 @@ side project 是一個單純的 web service
 
 這樣部署時就不會受到部署環境影響
 
-這便採用的 docker image 管理服務就是 [Artifact Registry](https://cloud.google.com/artifact-registry/docs/overview)
+這邊採用的 docker image 管理服務就是 [Artifact Registry](https://cloud.google.com/artifact-registry/docs/overview)
 
 簡單的說就是一個私有的 docker hub
 
@@ -99,7 +99,7 @@ AWS 對應的服務是 [Elastic Container Registry](https://aws.amazon.com/tw/ec
 
 [Create repositories](https://cloud.google.com/artifact-registry/docs/repositories/create-repos)
 
-這邊建議直接在 console 建立比較好操作
+這邊建議直接在 google console 的 web 介面建立比較好操作
 
 建立 repositories 後需要注意的是能夠操作這個 repositories 的帳號
 
