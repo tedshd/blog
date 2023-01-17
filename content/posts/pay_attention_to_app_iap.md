@@ -51,6 +51,16 @@ https://support.google.com/googleplay/answer/7018481
 
 ## 購買 / 訂閱狀態是跟著 Google 或是 Apple 帳號
 
-需要注意自己服務如何和 Google 帳號或是 Apple 帳號關聯
+需要注意自己服務如何和 Google 帳號或是 Apple 帳號關聯(或是訂單 id 關聯)
 
 ## 客戶端需要和商店確認訂單與後端確認訂閱狀態(增強安全性)
+
+## App store 文案需要添加訂閱相關事項與協議
+
+[Guideline 3.1.2 - Business - Payments - Subscriptions](https://developer.apple.com/forums/thread/112963)
+
+這部分可以參考其他有訂閱或購買制的 App 的 App store 頁面
+
+## iOS 需要添加恢復訂閱功能
+
+因為服務和訂閱並非緊密關聯, 所以需要實作恢復訂閱來讓服務的帳號和訂閱能重新關聯起來
