@@ -34,13 +34,9 @@ PM 說好像是 iOS 15 以上支援(我自己是沒找到相關的資料證明�
 
 ## demo
 
-{{< rawhtml >}}
-
 <video width="1280" height="720" controls>
   <source src="https://firebasestorage.googleapis.com/v0/b/storage-bucket-83851.appspot.com/o/logdown%2Fdemo.mp4?alt=media&token=6c6a2dc8-c859-4f8e-a88f-882d1e77addc" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
-{{< /rawhtml >}}
 
 [Refer - Best Practices for Link Previews in Messages](https://developer.apple.com/library/archive/technotes/tn2444/_index.html)

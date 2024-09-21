@@ -2,7 +2,7 @@ baseURL: 'https://blog.tedshd.io/'
 languageCode: en-us
 defaultContentLanguage: en
 title: tedshd's DevNote
-theme: hugo-theme-okayish-blog
+theme: beautifulhugo
 copyright: © 2022 Tedshd
 # googleAnalytics: UA-49247550-8
 disqusShortname: tedshd
@@ -33,10 +33,16 @@ taxonomies:
 # so that you can provide metadata for each author
 #
 # See: https://gohugo.io/content-management/taxonomies/#add-custom-metadata-to-a-taxonomy-term
-  author: Tedshd
 
 # Add menu items to the navigation bar as below.
 # N.B. Use identifiers as the keys for translations.
+author:
+  name: "Tedshd"
+  website: "https://tedshd.io/"
+  github: "https://github.com/tedshd"
+  twitter: "https://twitter.com/ted_shiu"
+  linkedin: "https://www.linkedin.com/in/tedshd/"
+  facebook: "https://www.facebook.com/chander.shiu"
 
 menu:
   main:

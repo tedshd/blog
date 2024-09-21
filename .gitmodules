@@ -2,3 +2,21 @@
 	path = public
 	url = git@github.com:tedshd/tedshd.github.io.git
 	branch = master
+[submodule "themes/smigle"]
+	path = themes/smigle
+	url = https://gitlab.com/ian-s-mcb/smigle-hugo-theme.git
+[submodule "themes/typo"]
+	path = themes/typo
+	url = git@github.com:tomfran/typo.git
+[submodule "themes/beautifulhugo"]
+	path = themes/beautifulhugo
+	url = https://github.com/halogenica/beautifulhugo.git
+[submodule "themes/fluency"]
+	path = themes/fluency
+	url = https://github.com/wayjam/hugo-theme-fluency.git
+[submodule "themes/potato-dark"]
+	path = themes/potato-dark
+	url = https://github.com/surajmandalcell/potato-dark
+[submodule "themes/anubis2"]
+	path = themes/anubis2
+	url = https://github.com/Junyi-99/hugo-theme-anubis2.git
