@@ -68,6 +68,8 @@ claude mcp add playwright npx @playwright/mcp@latest
 claude mcp add -s user playwright npx @playwright/mcp@latest
 ```
 
+這種通用的工具建議使用全域安裝。
+
 ### Claude Desktop
 
 編輯設定檔，加入：
@@ -87,8 +89,14 @@ claude mcp add -s user playwright npx @playwright/mcp@latest
 
 ### 前置需求
 
+**Chrome DevTools MCP 需要 Node.js v20.19 以上：**
+
 1. 安裝 Node.js（從 [nodejs.org](https://nodejs.org) 下載 LTS 版本）
 2. 瀏覽器會在首次使用時自動安裝
+
+```bash
+node --version
+```
 
 ---
 
