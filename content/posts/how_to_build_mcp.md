@@ -1,5 +1,5 @@
 ---
-title: "How_to_build_mcp"
+title: "如何自己建立 mcp 服務"
 date: 2026-06-30T23:51:33+08:00
 draft: false
 categories: []
